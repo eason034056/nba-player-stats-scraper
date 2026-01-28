@@ -1,0 +1,17 @@
+# NBA Player Game Logs Scraper 依賴套件
+# =====================================
+# 這個檔案列出所有必要的 Python 套件及其版本
+# GitHub Actions 會使用這個檔案安裝套件
+
+# selenium: 自動化網頁瀏覽器操作
+# 用於控制 Chrome 瀏覽器爬取網頁資料
+selenium>=4.15.0
+
+# webdriver-manager: 自動管理 WebDriver
+# 會自動下載和管理適合的 ChromeDriver 版本
+# 這樣就不需要手動下載 ChromeDriver
+webdriver-manager>=4.0.0
+
+# pandas: 資料處理和分析
+# 用於將爬取的資料轉換成 DataFrame 並儲存為 CSV
+pandas>=2.0.0

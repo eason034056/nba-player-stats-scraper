@@ -1,0 +1,171 @@
+# GitHub Actions Workflow: NBA Player Game Logs Scraper
+# =====================================================
+# 這個 workflow 會每天早上 6 點（芝加哥時間）自動執行爬蟲
+# 並將更新的 CSV 檔案 commit 回 repository
+
+# name: workflow 的名稱，會顯示在 GitHub Actions 頁面
+name: NBA Player Game Logs Scraper
+
+# on: 定義觸發 workflow 的條件
+on:
+  # schedule: 定時執行（使用 cron 語法）
+  schedule:
+    # cron 語法說明：分 時 日 月 週
+    # "0 12 * * *" 的意思是：
+    #   - 0: 第 0 分鐘
+    #   - 12: 第 12 小時（UTC 時間）
+    #   - *: 每天
+    #   - *: 每月
+    #   - *: 每週的每一天
+    # 
+    # 【重要】GitHub Actions 使用 UTC 時間！
+    # UTC 12:00 = 芝加哥時間 (UTC-6 CST / UTC-5 CDT) 06:00
+    # 所以設定 12 點 UTC = 芝加哥早上 6 點
+    # 註：芝加哥使用日光節約時間，冬季 UTC-6，夏季 UTC-5
+    - cron: '0 12 * * *'
+  
+  # workflow_dispatch: 允許手動觸發
+  # 這樣你可以在 GitHub 網頁上手動執行測試
+  workflow_dispatch:
+    # inputs: 定義手動觸發時可以輸入的參數
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: '啟用 debug 模式'
+        required: false
+        default: false
+
+# jobs: 定義要執行的工作
+jobs:
+  # scrape: 工作的 ID（自定義名稱）
+  scrape:
+    # name: 工作的顯示名稱
+    name: Scrape NBA Player Game Logs
+    
+    # runs-on: 指定執行環境
+    # ubuntu-latest: 使用最新版本的 Ubuntu Linux
+    runs-on: ubuntu-latest
+    
+    # permissions: 設定 GITHUB_TOKEN 的權限
+    # 需要 contents: write 才能 push 檔案到 repository
+    permissions:
+      contents: write
+    
+    # steps: 定義執行步驟
+    steps:
+      # ============================================================
+      # 步驟 1: Checkout Repository
+      # ============================================================
+      # uses: 使用 GitHub 官方或社群提供的 action
+      # actions/checkout@v4: 將 repository 的程式碼下載到執行環境
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 表示取得完整的 git 歷史
+          # 這對於 commit 操作是必要的
+          fetch-depth: 0
+      
+      # ============================================================
+      # 步驟 2: 設定 Python 環境
+      # ============================================================
+      # actions/setup-python@v5: 設定 Python 環境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          # python-version: 指定 Python 版本
+          python-version: '3.11'
+          # cache: 快取 pip 套件，加速後續執行
+          cache: 'pip'
+      
+      # ============================================================
+      # 步驟 3: 安裝 Chrome 瀏覽器
+      # ============================================================
+      # 這一步在 Ubuntu 環境中安裝 Google Chrome
+      # Selenium 需要實際的瀏覽器來執行
+      - name: Install Chrome
+        run: |
+          # 更新套件列表
+          sudo apt-get update
+          # 安裝 wget（下載工具）
+          sudo apt-get install -y wget
+          # 從 Google 官方下載最新版 Chrome
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          # 安裝 Chrome（-y 自動同意，--fix-broken 修復依賴問題）
+          sudo apt-get install -y ./google-chrome-stable_current_amd64.deb --fix-broken
+          # 顯示 Chrome 版本（用於除錯）
+          google-chrome --version
+      
+      # ============================================================
+      # 步驟 4: 安裝 Python 依賴套件
+      # ============================================================
+      - name: Install Python dependencies
+        run: |
+          # 升級 pip 到最新版本
+          python -m pip install --upgrade pip
+          # 安裝 requirements.txt 中列出的所有套件
+          pip install -r requirements.txt
+      
+      # ============================================================
+      # 步驟 5: 執行爬蟲
+      # ============================================================
+      - name: Run Scraper
+        run: |
+          # 執行爬蟲腳本
+          python scrape_nba.py
+        # env: 設定環境變數
+        env:
+          # PYTHONUNBUFFERED: 讓 Python 輸出不被緩衝
+          # 這樣可以即時看到輸出
+          PYTHONUNBUFFERED: '1'
+      
+      # ============================================================
+      # 步驟 6: 上傳日誌檔案（作為 artifact）
+      # ============================================================
+      # 即使爬蟲失敗，也上傳日誌供除錯
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
+        # if: always() 表示不管前面的步驟成功或失敗，都執行這一步
+        if: always()
+        with:
+          # name: artifact 的名稱
+          name: scrape-logs
+          # path: 要上傳的檔案
+          path: scrape_log.txt
+          # retention-days: 保留天數
+          retention-days: 7
+      
+      # ============================================================
+      # 步驟 7: Commit 並 Push 更新的 CSV 檔案
+      # ============================================================
+      - name: Commit and Push changes
+        run: |
+          # 設定 git 使用者資訊
+          # 這是 GitHub Actions bot 的標準設定
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 取得當前日期（芝加哥時間）
+          # TZ='America/Chicago' 設定時區
+          # date '+%Y-%m-%d %H:%M:%S' 格式化日期
+          CURRENT_DATE=$(TZ='America/Chicago' date '+%Y-%m-%d %H:%M:%S')
+          
+          # 加入 CSV 檔案到 staging area
+          # 2>/dev/null 忽略錯誤訊息（如果檔案不存在）
+          git add nba_player_game_logs.csv 2>/dev/null || true
+          
+          # 檢查是否有變更需要 commit
+          # git diff --staged --quiet 如果有變更會返回非 0
+          if git diff --staged --quiet; then
+            echo "沒有變更需要 commit"
+          else
+            # 有變更，執行 commit
+            git commit -m "📊 Update NBA player game logs - ${CURRENT_DATE}"
+            # Push 到 repository
+            git push
+            echo "✓ 已成功更新並 push CSV 檔案"
+          fi
+        # env: 設定環境變數
+        env:
+          # GITHUB_TOKEN: GitHub 自動提供的認證 token
+          # 用於 push 操作
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
