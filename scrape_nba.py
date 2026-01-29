@@ -60,8 +60,79 @@ logging.basicConfig(
         logging.FileHandler('scrape_log.txt', encoding='utf-8')  # FileHandler 輸出到檔案
     ]
 )
-# logging.getLogger() 取得 logger 物件，用於記錄日誌
-logger = logging.getLogger(__name__)  # __name__ 是當前模組的名稱
+logger = logging.getLogger(__name__)
+
+# ============================================================
+# 步驟 3: CSV 檔案設定
+# ============================================================
+CSV_FILENAME = "nba_player_game_logs.csv"
+SEASON = "2025-2026"
+
+# CSV 欄位名稱（用於建立 DataFrame）
+COLUMNS = [
+    "Player", "Season", "Date", "Team", "Opponent", "W/L", "Status",
+    "Pos", "MIN", "PTS", "FGM", "FGA", "FG%", "3PM", "3PA", "3P%",
+    "FTM", "FTA", "FT%", "ORB", "DRB", "REB", "AST", "STL", "BLK",
+    "TOV", "PF", "FIC"
+]
+
+
+def load_existing_data():
+    """
+    載入現有的 CSV 資料
+    
+    Returns:
+        tuple: (df, player_last_dates)
+        - df: pandas DataFrame，現有資料（如果沒有檔案則為空 DataFrame）
+        - player_last_dates: dict，每位球員最後一場比賽的日期
+          格式：{"LeBron James": datetime(2025, 1, 28), ...}
+    
+    這個函數會：
+    1. 嘗試讀取現有的 CSV 檔案
+    2. 解析每位球員最新的比賽日期
+    3. 返回資料供後續增量爬取使用
+    """
+    player_last_dates = {}
+    
+    # os.path.exists() 檢查檔案是否存在
+    if os.path.exists(CSV_FILENAME):
+        try:
+            # pd.read_csv() 讀取 CSV 檔案
+            df = pd.read_csv(CSV_FILENAME, encoding='utf-8-sig')
+            logger.info(f"已載入現有資料：{len(df)} 筆記錄")
+            
+            # 解析每位球員的最新比賽日期
+            # groupby('Player') 按球員分組
+            for player, group in df.groupby('Player'):
+                # 取得該球員所有比賽日期
+                dates = group['Date'].tolist()
+                
+                # 嘗試解析日期，找出最新的
+                latest_date = None
+                for date_str in dates:
+                    try:
+                        # pd.to_datetime() 將字串轉換為日期
+                        # format='%m/%d/%Y' 指定日期格式（如 "1/25/2026"）
+                        parsed_date = pd.to_datetime(date_str, format='%m/%d/%Y')
+                        if latest_date is None or parsed_date > latest_date:
+                            latest_date = parsed_date
+                    except Exception:
+                        continue
+                
+                if latest_date:
+                    # 儲存每位球員的最新比賽日期
+                    player_last_dates[player] = latest_date
+            
+            logger.info(f"找到 {len(player_last_dates)} 位球員的歷史資料")
+            return df, player_last_dates
+            
+        except Exception as e:
+            logger.warning(f"無法讀取現有 CSV 檔案：{e}")
+            # 返回空的 DataFrame
+            return pd.DataFrame(columns=COLUMNS), {}
+    else:
+        logger.info("沒有找到現有的 CSV 檔案，將進行完整爬取")
+        return pd.DataFrame(columns=COLUMNS), {}
 
 
 def setup_chrome_driver():
@@ -193,44 +264,61 @@ def get_player_links(driver, wait):
     # (By.CSS_SELECTOR, "table") 使用 CSS 選擇器尋找 <table> 元素
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table")))
     
-    # driver.find_elements() 尋找所有符合條件的元素（複數）
-    # "table tbody tr td:nth-child(2) a" 的意思是：
-    #   - table: 表格元素
-    #   - tbody: 表格主體
-    #   - tr: 表格的每一列
-    #   - td:nth-child(2): 每列的第二個儲存格（球員姓名所在欄位）
-    #   - a: 該儲存格中的超連結
-    player_links = driver.find_elements(By.CSS_SELECTOR, "table tbody tr td:nth-child(2) a")
+    # 取得球員連結和姓名
+    player_elements = driver.find_elements(By.CSS_SELECTOR, "table tbody tr td:nth-child(2) a")
     
-    # 使用列表推導式提取所有連結的網址
-    # link.get_attribute("href") 取得每個 <a> 標籤的 href 屬性（網址）
-    links = [link.get_attribute("href") for link in player_links]
+    # 同時取得球員姓名和連結
+    # 這樣可以在之後快速判斷是否需要爬取
+    players = []
+    for elem in player_elements:
+        name = elem.text.strip()
+        url = elem.get_attribute("href")
+        players.append((name, url))
     
-    logger.info(f"找到 {len(links)} 位球員的連結")
-    return links
+    logger.info(f"找到 {len(players)} 位球員")
+    return players
 
 
-def get_player_name(driver):
+def should_scrape_player(player_name, player_last_dates):
     """
-    從頁面取得球員姓名
+    判斷是否需要爬取該球員的資料
     
     Args:
-        driver: Selenium WebDriver 物件
+        player_name: str，球員姓名
+        player_last_dates: dict，每位球員最後一場比賽的日期
         
     Returns:
-        str: 球員姓名，如果取得失敗則返回 "Unknown"
-        
-    這個函數使用 JavaScript 來取得 h2 元素的純文字內容
-    排除 span 標籤內的文字（如球衣號碼）
+        tuple: (should_scrape, reason)
+        - should_scrape: bool，是否需要爬取
+        - reason: str，原因說明
+    
+    判斷邏輯：
+    1. 如果是新球員（沒有歷史資料）→ 需要完整爬取
+    2. 如果最後一場比賽是今天或昨天 → 可能不需要爬取
+    3. 如果最後一場比賽超過 1 天 → 需要爬取新資料
     """
+    today = datetime.now()
+    
+    # 如果是新球員，需要完整爬取
+    if player_name not in player_last_dates:
+        return True, "新球員"
+    
+    last_date = player_last_dates[player_name]
+    days_since_last = (today - last_date).days
+    
+    # 如果最後一場比賽是今天 → 不需要爬取
+    if days_since_last == 0:
+        return False, "今天已有資料"
+    
+    # 如果超過 1 天沒有新資料 → 需要爬取
+    # （因為 NBA 比賽通常每 1-2 天就有）
+    return True, f"距上次 {days_since_last} 天"
+
+
+def get_player_name_from_page(driver):
+    """從頁面取得球員姓名"""
     try:
-        # 找到 h2 元素（包含球員姓名）
         h2_element = driver.find_element(By.CSS_SELECTOR, "div.half-column-left h2")
-        
-        # 使用 JavaScript 取得純文字內容
-        # childNodes 是該元素的所有子節點
-        # nodeType === Node.TEXT_NODE (值為 3) 檢查是否為純文字節點
-        # nodeValue 取得該節點的文字值
         player_name_raw = driver.execute_script("""
             var h2 = arguments[0];
             var text = '';
@@ -243,319 +331,326 @@ def get_player_name(driver):
         """, h2_element)
         return player_name_raw.strip()
     except Exception:
-        return "Unknown"
+        return None
 
 
 def select_dropdown_option(select_element, options_to_try, fallback_index=0):
-    """
-    嘗試選擇下拉選單的選項
-    
-    Args:
-        select_element: Selenium Select 物件
-        options_to_try: list, 要嘗試的選項文字列表
-        fallback_index: int, 如果所有選項都找不到，使用的索引
-        
-    Returns:
-        bool: 是否成功選擇選項
-        
-    這個函數會依序嘗試選擇列表中的選項
-    如果都失敗，則使用 fallback_index 的選項
-    """
+    """嘗試選擇下拉選單的選項"""
     for option_text in options_to_try:
         try:
-            # select_by_visible_text() 根據可見文字選擇選項
             select_element.select_by_visible_text(option_text)
             return True
         except Exception:
             continue
-    
-    # 如果所有選項都找不到，嘗試使用索引
     try:
-        # select_by_index() 根據索引位置選擇（從 0 開始）
         select_element.select_by_index(fallback_index)
         return True
     except Exception:
         return False
 
 
-def scrape_player_game_logs(driver, wait, links, season="2025-2026"):
+def parse_game_date(date_str):
     """
-    爬取所有球員的 Game Log 資料
+    解析比賽日期字串
     
     Args:
-        driver: Selenium WebDriver 物件
-        wait: WebDriverWait 物件
-        links: list, 球員頁面 URL 列表
-        season: str, 要爬取的賽季（預設 "2025-2026"）
+        date_str: str，日期字串（如 "1/25/2026"）
         
     Returns:
-        tuple: (all_logs, success_count, failure_count, failure_reasons)
-        - all_logs: list, 所有比賽記錄
-        - success_count: int, 成功的球員數
-        - failure_count: int, 失敗的球員數
-        - failure_reasons: dict, 失敗原因統計
-        
-    這是主要的爬蟲函數，會遍歷所有球員並抓取他們的 Game Log
+        datetime 或 None
     """
-    # all_logs 儲存所有球員的比賽記錄
-    all_logs = []
-    # failure_reasons 記錄各種錯誤類型的發生次數
-    failure_reasons = {}
-    # 成功和失敗的計數器
-    success_count = 0
-    failure_count = 0
+    try:
+        return pd.to_datetime(date_str, format='%m/%d/%Y')
+    except Exception:
+        return None
+
+
+def scrape_player_games(driver, wait, player_name, game_log_url, last_date=None):
+    """
+    爬取單一球員的比賽資料
     
-    # enumerate(links, start=1) 同時取得索引和值，索引從 1 開始
-    for idx, link in enumerate(links, start=1):
-        # 將球員概要頁面的 URL 轉換成 Game Log 頁面的 URL
-        # replace() 把網址中的 "Summary" 替換成 "GameLogs"
-        game_log_url = link.replace("/Summary/", "/GameLogs/")
+    Args:
+        driver: Selenium WebDriver
+        wait: WebDriverWait
+        player_name: str，球員姓名
+        game_log_url: str，Game Log 頁面 URL
+        last_date: datetime 或 None，該球員最後一場比賽的日期
+                   如果提供，只會爬取比這個日期更新的比賽
+    
+    Returns:
+        list: 新的比賽記錄列表
+    
+    【增量爬取的核心邏輯】
+    當 last_date 不為 None 時，只爬取日期 > last_date 的比賽
+    這樣可以大幅減少需要處理的資料量
+    """
+    new_games = []
+    
+    try:
+        driver.get(game_log_url)
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table")))
         
-        # 重試機制：最多重試 3 次
-        max_retries = 3
-        retry_count = 0
-        success = False
+        # 從頁面取得球員姓名（更準確）
+        page_player_name = get_player_name_from_page(driver)
+        if page_player_name:
+            player_name = page_player_name
         
-        while retry_count < max_retries and not success:
+        # 設定下拉選單
+        selects = driver.find_elements(By.TAG_NAME, "select")
+        
+        if len(selects) >= 3:
+            # League
+            league_select = Select(selects[0])
+            select_dropdown_option(league_select, ["NBA"])
+            time.sleep(1)  # 【優化】減少等待時間
+            
+            # Season
+            season_select = Select(selects[1])
+            season_variations = [SEASON, SEASON.replace("-20", "-")]
+            select_dropdown_option(season_select, season_variations)
+            time.sleep(1)
+            
+            # Games
+            games_select = Select(selects[2])
+            select_dropdown_option(games_select, ["All Games", "Regular Season"])
+            time.sleep(1.5)
+            
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody")))
+            time.sleep(0.5)
+        
+        # 抓取表格資料
+        rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
+        
+        for row_idx in range(len(rows)):
             try:
-                if retry_count > 0:
-                    logger.info(f"  ⟳ 重試第 {retry_count} 次...")
-                
-                # 訪問球員的 Game Log 頁面
-                driver.get(game_log_url)
-                
-                # 等待表格出現
-                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table")))
-                
-                # 取得球員姓名
-                player_name = get_player_name(driver)
-                if player_name == "Unknown":
-                    player_name = f"球員 {idx}"
-                
-                if retry_count == 0:
-                    logger.info(f"正在抓取第 {idx}/{len(links)} 位球員：{player_name}")
-                
-                # 尋找頁面上所有的下拉選單
-                selects = driver.find_elements(By.TAG_NAME, "select")
-                
-                if len(selects) >= 3:
-                    # 第一個選擇器：League（聯盟）
-                    league_select = Select(selects[0])
-                    select_dropdown_option(league_select, ["NBA"])
-                    time.sleep(1.5)
-                    
-                    # 第二個選擇器：Season（賽季）
-                    season_select = Select(selects[1])
-                    # 嘗試不同的賽季格式
-                    season_variations = [season, season.replace("-20", "-")]  # "2025-2026" 和 "2025-26"
-                    select_dropdown_option(season_select, season_variations)
-                    time.sleep(1.5)
-                    
-                    # 第三個選擇器：Games（比賽類型）
-                    games_select = Select(selects[2])
-                    select_dropdown_option(games_select, ["All Games", "Regular Season"])
-                    time.sleep(2)
-                    
-                    # 等待表格完全載入
-                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody")))
-                    time.sleep(1)
-                
-                # 抓取表格資料
                 rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
-                game_count = 0
+                if row_idx >= len(rows):
+                    break
                 
-                # 使用索引遍歷，避免 stale element 錯誤
-                for row_idx in range(len(rows)):
-                    try:
-                        # 每次迭代都重新查找所有列
-                        rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
-                        if row_idx >= len(rows):
-                            break
-                        
-                        row = rows[row_idx]
-                        cells = row.find_elements(By.TAG_NAME, "td")
-                        # 提取每個儲存格的文字
-                        cell_data = [cell.text.strip() for cell in cells]
-                        
-                        if cell_data:
-                            # 加上球員姓名和賽季資訊
-                            cell_data_with_info = [player_name, season] + cell_data
-                            all_logs.append(cell_data_with_info)
-                            game_count += 1
-                    except Exception:
+                row = rows[row_idx]
+                cells = row.find_elements(By.TAG_NAME, "td")
+                cell_data = [cell.text.strip() for cell in cells]
+                
+                if not cell_data or len(cell_data) < 3:
+                    continue
+                
+                # 【增量爬取關鍵】檢查日期
+                # cell_data[0] 是日期欄位
+                game_date = parse_game_date(cell_data[0])
+                
+                if last_date and game_date:
+                    # 如果這場比賽的日期 <= 最後記錄的日期，跳過
+                    if game_date <= last_date:
                         continue
                 
-                logger.info(f"  ✓ 成功抓取 {game_count} 場比賽資料")
-                success = True
-                success_count += 1
+                # 加上球員姓名和賽季
+                cell_data_with_info = [player_name, SEASON] + cell_data
+                new_games.append(cell_data_with_info)
                 
-                # 暫停 1 秒，避免對伺服器造成過大負擔
-                time.sleep(1)
-                
-            except Exception as e:
-                retry_count += 1
-                
-                if retry_count < max_retries:
-                    wait_time = retry_count
-                    time.sleep(wait_time)
-                else:
-                    # 分類錯誤類型
-                    error_message = str(e)
-                    if "stale element" in error_message.lower():
-                        error_type = "Stale Element"
-                    elif "timeout" in error_message.lower() or "timed out" in error_message.lower():
-                        error_type = "Timeout"
-                    elif "no such element" in error_message.lower():
-                        error_type = "Element Not Found"
-                    else:
-                        error_type = "Other"
-                    
-                    failure_reasons[error_type] = failure_reasons.get(error_type, 0) + 1
-                    short_error = error_message[:100] + "..." if len(error_message) > 100 else error_message
-                    logger.warning(f"  ✗ 無法抓取球員 {idx} [{error_type}]：{short_error}")
-                    failure_count += 1
-    
-    return all_logs, success_count, failure_count, failure_reasons
+            except Exception:
+                continue
+        
+        return new_games
+        
+    except Exception as e:
+        logger.warning(f"爬取 {player_name} 時發生錯誤：{str(e)[:100]}")
+        return []
 
 
-def save_to_csv(all_logs, filename="nba_player_game_logs.csv"):
+def scrape_all_players(driver, wait, players, player_last_dates):
     """
-    將爬取的資料儲存為 CSV 檔案
+    爬取所有球員的比賽資料（增量模式）
     
     Args:
-        all_logs: list, 所有比賽記錄
-        filename: str, 輸出檔案名稱
+        driver: Selenium WebDriver
+        wait: WebDriverWait
+        players: list，(player_name, url) 的 tuple 列表
+        player_last_dates: dict，每位球員最後一場比賽的日期
         
     Returns:
-        pd.DataFrame: 儲存的 DataFrame
-        
-    這個函數將資料轉換為 pandas DataFrame 並儲存為 CSV
+        tuple: (all_new_games, stats)
+        - all_new_games: list，所有新的比賽記錄
+        - stats: dict，統計資訊
     """
-    # 定義欄位名稱
-    # 這些欄位對應 RealGM Game Log 表格的標題
-    columns = [
-        "Player",      # 球員姓名
-        "Season",      # 賽季
-        "Date",        # 日期
-        "Team",        # 球隊
-        "Opponent",    # 對手
-        "W/L",         # 勝負
-        "Status",      # 狀態（先發/替補）
-        "Pos",         # 位置
-        "MIN",         # 上場時間
-        "PTS",         # 得分
-        "FGM",         # 投籃命中數
-        "FGA",         # 投籃出手數
-        "FG%",         # 投籃命中率
-        "3PM",         # 三分命中數
-        "3PA",         # 三分出手數
-        "3P%",         # 三分命中率
-        "FTM",         # 罰球命中數
-        "FTA",         # 罰球出手數
-        "FT%",         # 罰球命中率
-        "ORB",         # 進攻籃板
-        "DRB",         # 防守籃板
-        "REB",         # 總籃板
-        "AST",         # 助攻
-        "STL",         # 抄截
-        "BLK",         # 阻攻
-        "TOV",         # 失誤
-        "PF",          # 犯規
-        "FIC"          # Floor Impact Counter（綜合表現指標）
-    ]
+    all_new_games = []
+    stats = {
+        'total': len(players),
+        'scraped': 0,        # 有爬取的球員數
+        'skipped': 0,        # 跳過的球員數
+        'new_games': 0,      # 新增的比賽數
+        'errors': 0          # 錯誤數
+    }
     
-    # pd.DataFrame() 將列表轉換成 DataFrame
-    df = pd.DataFrame(all_logs, columns=columns)
+    for idx, (player_name, link) in enumerate(players, start=1):
+        # 判斷是否需要爬取
+        should_scrape, reason = should_scrape_player(player_name, player_last_dates)
+        
+        if not should_scrape:
+            # 【優化】跳過不需要爬取的球員
+            if idx % 50 == 0:  # 每 50 位球員顯示一次進度
+                logger.info(f"進度：{idx}/{len(players)} - 已跳過多位無需更新的球員")
+            stats['skipped'] += 1
+            continue
+        
+        # 取得該球員的最後比賽日期（如果有）
+        last_date = player_last_dates.get(player_name)
+        
+        # 將 URL 轉換為 Game Log URL
+        game_log_url = link.replace("/Summary/", "/GameLogs/")
+        
+        # 顯示進度
+        logger.info(f"[{idx}/{len(players)}] {player_name} ({reason})")
+        
+        # 重試機制
+        max_retries = 2  # 【優化】減少重試次數
+        for retry in range(max_retries):
+            try:
+                new_games = scrape_player_games(
+                    driver, wait, player_name, game_log_url, last_date
+                )
+                
+                if new_games:
+                    all_new_games.extend(new_games)
+                    stats['new_games'] += len(new_games)
+                    logger.info(f"  ✓ 新增 {len(new_games)} 場比賽")
+                else:
+                    logger.info(f"  ✓ 無新比賽")
+                
+                stats['scraped'] += 1
+                break
+                
+            except Exception as e:
+                if retry < max_retries - 1:
+                    time.sleep(2)
+                else:
+                    stats['errors'] += 1
+                    logger.warning(f"  ✗ 錯誤：{str(e)[:50]}")
+        
+        # 【優化】減少等待時間
+        time.sleep(0.8)
     
-    # df.to_csv() 儲存為 CSV 檔案
-    # index=False 不儲存索引欄
-    # encoding='utf-8-sig' 確保中文字元正確顯示
-    df.to_csv(filename, index=False, encoding='utf-8-sig')
+    return all_new_games, stats
+
+
+def save_data(existing_df, new_games):
+    """
+    合併並儲存資料
     
-    logger.info(f"資料已儲存至 {filename}")
-    logger.info(f"總共有 {len(df)} 筆記錄，{len(df.columns)} 個欄位")
+    Args:
+        existing_df: pandas DataFrame，現有資料
+        new_games: list，新的比賽記錄
+        
+    Returns:
+        pandas DataFrame，合併後的資料
     
-    return df
+    這個函數會：
+    1. 將新資料轉換為 DataFrame
+    2. 與現有資料合併
+    3. 移除重複記錄
+    4. 按球員和日期排序
+    5. 儲存為 CSV
+    """
+    if not new_games:
+        logger.info("沒有新資料需要儲存")
+        return existing_df
+    
+    # 建立新資料的 DataFrame
+    new_df = pd.DataFrame(new_games, columns=COLUMNS)
+    logger.info(f"新增 {len(new_df)} 筆記錄")
+    
+    # 合併現有資料和新資料
+    # pd.concat() 將多個 DataFrame 合併
+    # ignore_index=True 重新編排索引
+    if not existing_df.empty:
+        combined_df = pd.concat([existing_df, new_df], ignore_index=True)
+    else:
+        combined_df = new_df
+    
+    # 移除重複記錄
+    # subset 指定用於判斷重複的欄位
+    # keep='last' 保留最後出現的記錄（新資料）
+    combined_df = combined_df.drop_duplicates(
+        subset=['Player', 'Date', 'Team', 'Opponent'],
+        keep='last'
+    )
+    
+    # 按球員姓名和日期排序
+    # 先將日期轉換為 datetime 格式以便正確排序
+    combined_df['_date_sort'] = pd.to_datetime(
+        combined_df['Date'], 
+        format='%m/%d/%Y', 
+        errors='coerce'
+    )
+    combined_df = combined_df.sort_values(
+        ['Player', '_date_sort'], 
+        ascending=[True, False]  # 球員升序，日期降序（最新的在前）
+    )
+    # 移除排序用的臨時欄位
+    combined_df = combined_df.drop('_date_sort', axis=1)
+    
+    # 儲存為 CSV
+    combined_df.to_csv(CSV_FILENAME, index=False, encoding='utf-8-sig')
+    logger.info(f"資料已儲存至 {CSV_FILENAME}")
+    logger.info(f"總共 {len(combined_df)} 筆記錄")
+    
+    return combined_df
 
 
 def main():
-    """
-    主程式入口點
-    
-    這個函數是程式的進入點，會：
-    1. 啟動瀏覽器
-    2. 取得球員列表
-    3. 爬取所有球員的 Game Log
-    4. 儲存為 CSV
-    5. 關閉瀏覽器
-    6. 回報執行結果
-    
-    Returns:
-        int: 退出碼（0 表示成功，1 表示失敗）
-    """
-    # 記錄開始時間
+    """主程式入口點"""
     start_time = datetime.now()
     logger.info("=" * 60)
-    logger.info(f"NBA Game Log 爬蟲開始執行 - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    logger.info(f"NBA Game Log 爬蟲開始執行（增量模式）")
+    logger.info(f"開始時間：{start_time.strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info("=" * 60)
     
     driver = None
     exit_code = 0
     
     try:
-        # 步驟 1: 啟動瀏覽器
+        # 步驟 1: 載入現有資料
+        existing_df, player_last_dates = load_existing_data()
+        
+        # 步驟 2: 啟動瀏覽器
         driver, wait = setup_chrome_driver()
         
-        # 步驟 2: 取得球員列表
-        links = get_player_links(driver, wait)
+        # 步驟 3: 取得球員列表
+        players = get_player_links(driver, wait)
         
-        if not links:
-            logger.error("未找到任何球員連結！")
+        if not players:
+            logger.error("未找到任何球員！")
             return 1
         
-        # 步驟 3: 爬取所有球員的 Game Log
-        all_logs, success_count, failure_count, failure_reasons = scrape_player_game_logs(
-            driver, wait, links
-        )
+        # 步驟 4: 爬取資料（增量模式）
+        new_games, stats = scrape_all_players(driver, wait, players, player_last_dates)
         
-        # 步驟 4: 儲存為 CSV
-        if all_logs:
-            save_to_csv(all_logs)
-        else:
-            logger.warning("沒有抓取到任何資料！")
-            exit_code = 1
+        # 步驟 5: 儲存資料
+        save_data(existing_df, new_games)
         
         # 顯示統計資訊
         logger.info("=" * 60)
         logger.info("爬蟲統計資訊：")
         logger.info("=" * 60)
-        total = success_count + failure_count
-        logger.info(f"✓ 成功：{success_count}/{total} 位球員 ({success_count/total*100:.1f}%)")
-        logger.info(f"✗ 失敗：{failure_count}/{total} 位球員 ({failure_count/total*100:.1f}%)")
-        logger.info(f"📊 總共抓取了 {len(all_logs)} 筆 game log 資料")
+        logger.info(f"總球員數：{stats['total']}")
+        logger.info(f"已爬取：{stats['scraped']} 位球員")
+        logger.info(f"已跳過：{stats['skipped']} 位球員（無需更新）")
+        logger.info(f"新增比賽：{stats['new_games']} 場")
+        logger.info(f"錯誤：{stats['errors']} 次")
         
-        if failure_reasons:
-            logger.info("\n失敗原因分析：")
-            for reason, count in sorted(failure_reasons.items(), key=lambda x: x[1], reverse=True):
-                pct = count/failure_count*100 if failure_count > 0 else 0
-                logger.info(f"  • {reason}: {count} 次 ({pct:.1f}%)")
+        # 計算節省的時間
+        if stats['skipped'] > 0:
+            saved_time = stats['skipped'] * 7  # 每位球員約 7 秒
+            logger.info(f"📈 增量模式節省約 {saved_time // 60} 分鐘")
         
-        # 如果失敗率超過 20%，視為部分失敗
-        if failure_count / total > 0.2:
-            logger.warning("失敗率超過 20%，請檢查網站結構是否有變化")
-            exit_code = 1
-            
     except Exception as e:
         logger.error(f"程式執行錯誤：{e}")
         exit_code = 1
         
     finally:
-        # 步驟 5: 關閉瀏覽器
         if driver:
             driver.quit()
             logger.info("瀏覽器已關閉")
         
-        # 記錄執行時間
         end_time = datetime.now()
         duration = end_time - start_time
         logger.info(f"執行時間：{duration}")
@@ -564,14 +659,5 @@ def main():
     return exit_code
 
 
-# ============================================================
-# 程式入口點
-# ============================================================
-# if __name__ == "__main__": 是 Python 的慣用寫法
-# 當這個檔案被直接執行時（而不是被 import 時），才會執行這段程式碼
-# 這樣可以讓這個檔案既可以作為模組被 import，也可以直接執行
 if __name__ == "__main__":
-    # sys.exit() 以指定的退出碼結束程式
-    # 0 表示成功，非 0 表示失敗
-    # GitHub Actions 會根據退出碼判斷任務是否成功
     sys.exit(main())
