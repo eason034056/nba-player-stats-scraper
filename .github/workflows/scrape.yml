@@ -46,6 +46,11 @@ jobs:
     # ubuntu-latest: 使用最新版本的 Ubuntu Linux
     runs-on: ubuntu-latest
     
+    # timeout-minutes: 設定最長執行時間（分鐘）
+    # 增量模式通常只需要 30-60 分鐘，但完整爬取可能需要 4 小時
+    # GitHub Actions 免費版最長 6 小時
+    timeout-minutes: 240
+    
     # permissions: 設定 GITHUB_TOKEN 的權限
     # 需要 contents: write 才能 push 檔案到 repository
     permissions:
@@ -109,6 +114,13 @@ jobs:
       # 步驟 5: 執行爬蟲
       # ============================================================
       - name: Run Scraper
+        # timeout-minutes: 單一步驟的超時時間
+        # 設定為 180 分鐘（3 小時），給完整爬取足夠時間
+        timeout-minutes: 180
+        # continue-on-error: 即使爬蟲失敗，也繼續執行後續步驟
+        # 這樣可以確保已收集的資料被儲存
+        continue-on-error: true
+        id: scraper
         run: |
           # 執行爬蟲腳本
           python scrape_nba.py
@@ -137,35 +149,59 @@ jobs:
       # ============================================================
       # 步驟 7: Commit 並 Push 更新的 CSV 檔案
       # ============================================================
+      # 即使爬蟲部分失敗，也嘗試儲存已收集的資料
       - name: Commit and Push changes
+        if: always()
         run: |
           # 設定 git 使用者資訊
           # 這是 GitHub Actions bot 的標準設定
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 取得當前日期（芝加哥時間）
-          # TZ='America/Chicago' 設定時區
+          # 取得當前日期（台灣時間）
+          # TZ='Asia/Taipei' 設定時區
           # date '+%Y-%m-%d %H:%M:%S' 格式化日期
-          CURRENT_DATE=$(TZ='America/Chicago' date '+%Y-%m-%d %H:%M:%S')
+          CURRENT_DATE=$(TZ='Asia/Taipei' date '+%Y-%m-%d %H:%M:%S')
           
-          # 加入 CSV 檔案到 staging area
-          # 2>/dev/null 忽略錯誤訊息（如果檔案不存在）
-          git add nba_player_game_logs.csv 2>/dev/null || true
-          
-          # 檢查是否有變更需要 commit
-          # git diff --staged --quiet 如果有變更會返回非 0
-          if git diff --staged --quiet; then
-            echo "沒有變更需要 commit"
+          # 檢查 CSV 檔案是否存在
+          if [ -f "nba_player_game_logs.csv" ]; then
+            # 加入 CSV 檔案到 staging area
+            git add nba_player_game_logs.csv
+            
+            # 檢查是否有變更需要 commit
+            if git diff --staged --quiet; then
+              echo "沒有變更需要 commit"
+            else
+              # 根據爬蟲執行結果決定 commit 訊息
+              if [ "${{ steps.scraper.outcome }}" == "success" ]; then
+                COMMIT_MSG="📊 Update NBA player game logs - ${CURRENT_DATE}"
+              else
+                COMMIT_MSG="📊 Partial update NBA player game logs - ${CURRENT_DATE} (部分成功)"
+              fi
+              
+              # 執行 commit
+              git commit -m "${COMMIT_MSG}"
+              # Push 到 repository
+              git push
+              echo "✓ 已成功更新並 push CSV 檔案"
+            fi
           else
-            # 有變更，執行 commit
-            git commit -m "📊 Update NBA player game logs - ${CURRENT_DATE}"
-            # Push 到 repository
-            git push
-            echo "✓ 已成功更新並 push CSV 檔案"
+            echo "⚠️ CSV 檔案不存在，跳過 commit"
           fi
-        # env: 設定環境變數
         env:
-          # GITHUB_TOKEN: GitHub 自動提供的認證 token
-          # 用於 push 操作
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # ============================================================
+      # 步驟 8: 檢查最終狀態
+      # ============================================================
+      - name: Check final status
+        if: always()
+        run: |
+          if [ "${{ steps.scraper.outcome }}" == "success" ]; then
+            echo "✅ 爬蟲執行成功"
+            exit 0
+          else
+            echo "⚠️ 爬蟲執行遇到問題，請檢查日誌"
+            # 不要讓整個 workflow 失敗，因為資料可能已經部分更新
+            exit 0
+          fi
