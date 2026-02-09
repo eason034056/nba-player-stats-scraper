@@ -69,6 +69,8 @@ jobs:
           # fetch-depth: 0 表示取得完整的 git 歷史
           # 這對於 commit 操作是必要的
           fetch-depth: 0
+          # 明確指定 token，避免憑證不一致
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       # ============================================================
       # 步驟 2: 設定 Python 環境
@@ -181,8 +183,16 @@ jobs:
               
               # 執行 commit
               git commit -m "${COMMIT_MSG}"
-              # Push 到 repository
-              git push
+              # 明確設定 remote 使用 GITHUB_TOKEN
+              git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+              # Push 到 repository（最多重試 3 次）
+              for attempt in 1 2 3; do
+                if git push; then
+                  break
+                fi
+                echo "⚠️ Push 失敗，將在 5 秒後重試（第 ${attempt} 次）"
+                sleep 5
+              done
               echo "✓ 已成功更新並 push CSV 檔案"
             fi
           else
