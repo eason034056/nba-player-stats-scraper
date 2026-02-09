@@ -154,6 +154,20 @@ def setup_chrome_driver():
     options = webdriver.ChromeOptions()
     
     # ============================================================
+    # 【加速】頁面載入策略與資源設定
+    # ============================================================
+    # page_load_strategy 設為 eager，讓 driver.get() 在 DOMContentLoaded 後就返回
+    # 可減少等待圖片/字型等資源載入的時間
+    options.page_load_strategy = "eager"
+    
+    # 阻擋圖片載入以加速（不影響表格 HTML）
+    prefs = {
+        "profile.managed_default_content_settings.images": 2
+    }
+    options.add_experimental_option("prefs", prefs)
+    options.add_argument("--blink-settings=imagesEnabled=false")
+    
+    # ============================================================
     # 【重要】Headless 模式設定 - GitHub Actions 必須啟用
     # ============================================================
     # add_argument("--headless=new") 使用新版 headless 模式
@@ -217,6 +231,15 @@ def setup_chrome_driver():
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
     
+    # 進一步阻擋圖片資源（CDP）
+    try:
+        driver.execute_cdp_cmd("Network.enable", {})
+        driver.execute_cdp_cmd("Network.setBlockedURLs", {
+            "urls": ["*.png", "*.jpg", "*.jpeg", "*.gif", "*.svg", "*.webp"]
+        })
+    except Exception:
+        logger.info("無法設定圖片封鎖，繼續執行")
+    
     # ============================================================
     # 【重要】設定各種超時時間 - 防止連線超時錯誤
     # ============================================================
@@ -228,7 +251,7 @@ def setup_chrome_driver():
     # implicitly_wait(): 設定隱式等待時間（秒）
     # 當找不到元素時，會等待這個時間再拋出錯誤
     # 這是全域設定，對所有 find_element 操作生效
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(2)
     
     # set_script_timeout(): 設定腳本執行超時時間（秒）
     # 用於 execute_script() 和 execute_async_script()
@@ -245,7 +268,7 @@ def setup_chrome_driver():
     
     # WebDriverWait 用於顯式等待特定條件
     # 60 秒是最長等待時間
-    wait = WebDriverWait(driver, 60)
+    wait = WebDriverWait(driver, 30)
     
     logger.info("Chrome 瀏覽器已啟動（Headless 模式 + 反偵測配置）")
     return driver, wait
@@ -290,8 +313,8 @@ def get_player_links(driver, wait, max_retries=3):
             # wait.until() 會等待直到條件達成或超時
             wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table")))
             
-            # 額外等待 2 秒，確保頁面完全載入
-            time.sleep(2)
+            # 等待至少出現一筆球員列
+            wait.until(lambda d: len(d.find_elements(By.CSS_SELECTOR, "table tbody tr")) > 0)
             
             # 取得球員連結和姓名
             player_elements = driver.find_elements(By.CSS_SELECTOR, "table tbody tr td:nth-child(2) a")
@@ -405,6 +428,41 @@ def select_dropdown_option(select_element, options_to_try, fallback_index=0):
         return False
 
 
+def select_option_if_needed(select_element, options_to_try, fallback_index=0):
+    """
+    只在目前選項不是目標值時才變更，避免不必要的重新載入
+    
+    Returns:
+        bool: 是否真的改變了選項
+    """
+    try:
+        current_text = select_element.first_selected_option.text.strip()
+    except Exception:
+        current_text = ""
+    
+    for option_text in options_to_try:
+        if current_text == option_text:
+            return False
+    
+    return select_dropdown_option(select_element, options_to_try, fallback_index)
+
+
+def wait_for_table_refresh(driver, wait):
+    """
+    等待表格重新載入（用於下拉選單變更後）
+    """
+    try:
+        old_table = driver.find_element(By.CSS_SELECTOR, "table")
+        try:
+            wait.until(EC.staleness_of(old_table))
+        except Exception:
+            pass
+    except Exception:
+        pass
+    
+    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody")))
+
+
 def parse_game_date(date_str):
     """
     解析比賽日期字串
@@ -441,6 +499,7 @@ def scrape_player_games(driver, wait, player_name, game_log_url, last_date=None)
     這樣可以大幅減少需要處理的資料量
     """
     new_games = []
+    short_wait = WebDriverWait(driver, 20)
     
     try:
         # 使用 try-except 處理頁面載入超時
@@ -455,7 +514,7 @@ def scrape_player_games(driver, wait, player_name, game_log_url, last_date=None)
                 raise
         
         # 等待表格出現，使用較短的超時時間
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table")))
+        short_wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table")))
         
         # 從頁面取得球員姓名（更準確）
         page_player_name = get_player_name_from_page(driver)
@@ -468,33 +527,34 @@ def scrape_player_games(driver, wait, player_name, game_log_url, last_date=None)
         if len(selects) >= 3:
             # League
             league_select = Select(selects[0])
-            select_dropdown_option(league_select, ["NBA"])
-            time.sleep(1)  # 【優化】減少等待時間
+            if select_option_if_needed(league_select, ["NBA"]):
+                wait_for_table_refresh(driver, short_wait)
+                selects = driver.find_elements(By.TAG_NAME, "select")
             
             # Season
-            season_select = Select(selects[1])
-            season_variations = [SEASON, SEASON.replace("-20", "-")]
-            select_dropdown_option(season_select, season_variations)
-            time.sleep(1)
+            if len(selects) >= 2:
+                season_select = Select(selects[1])
+                season_variations = [SEASON, SEASON.replace("-20", "-")]
+                if select_option_if_needed(season_select, season_variations):
+                    wait_for_table_refresh(driver, short_wait)
+                    selects = driver.find_elements(By.TAG_NAME, "select")
             
             # Games
-            games_select = Select(selects[2])
-            select_dropdown_option(games_select, ["All Games", "Regular Season"])
-            time.sleep(1.5)
-            
-            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody")))
-            time.sleep(0.5)
+            if len(selects) >= 3:
+                games_select = Select(selects[2])
+                if select_option_if_needed(games_select, ["All Games", "Regular Season"]):
+                    wait_for_table_refresh(driver, short_wait)
+        
+        # 確保表格內容已可讀取
+        short_wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody")))
         
         # 抓取表格資料
         rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
+        first_date = None
+        is_descending = None
         
-        for row_idx in range(len(rows)):
+        for row in rows:
             try:
-                rows = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
-                if row_idx >= len(rows):
-                    break
-                
-                row = rows[row_idx]
                 cells = row.find_elements(By.TAG_NAME, "td")
                 cell_data = [cell.text.strip() for cell in cells]
                 
@@ -503,11 +563,18 @@ def scrape_player_games(driver, wait, player_name, game_log_url, last_date=None)
                 
                 # 【增量爬取關鍵】檢查日期
                 # cell_data[0] 是日期欄位
-                game_date = parse_game_date(cell_data[0])
+                game_date = parse_game_date(cell_data[0]) if last_date else None
                 
                 if last_date and game_date:
+                    if first_date is None:
+                        first_date = game_date
+                    elif is_descending is None:
+                        is_descending = first_date >= game_date
+                    
                     # 如果這場比賽的日期 <= 最後記錄的日期，跳過
                     if game_date <= last_date:
+                        if is_descending:
+                            break
                         continue
                 
                 # 加上球員姓名和賽季
