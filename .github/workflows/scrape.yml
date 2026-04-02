@@ -62,9 +62,9 @@ jobs:
       # 步驟 1: Checkout Repository
       # ============================================================
       # uses: 使用 GitHub 官方或社群提供的 action
-      # actions/checkout@v4: 將 repository 的程式碼下載到執行環境
+      # actions/checkout@v6: 將 repository 的程式碼下載到執行環境（支援 Node.js 24）
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # fetch-depth: 0 表示取得完整的 git 歷史
           # 這對於 commit 操作是必要的
@@ -75,9 +75,9 @@ jobs:
       # ============================================================
       # 步驟 2: 設定 Python 環境
       # ============================================================
-      # actions/setup-python@v5: 設定 Python 環境
+      # actions/setup-python@v6: 設定 Python 環境（支援 Node.js 24）
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           # python-version: 指定 Python 版本
           python-version: '3.11'
@@ -137,7 +137,7 @@ jobs:
       # ============================================================
       # 即使爬蟲失敗，也上傳日誌供除錯
       - name: Upload logs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         # if: always() 表示不管前面的步驟成功或失敗，都執行這一步
         if: always()
         with:
