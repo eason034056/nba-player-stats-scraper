@@ -539,11 +539,27 @@ def scrape_player_games(driver, wait, player_name, game_log_url, last_date=None)
                     wait_for_table_refresh(driver, short_wait)
                     selects = driver.find_elements(By.TAG_NAME, "select")
             
-            # Games
+            # Games: 固定優先選 "All Games"，沒有才退回其他選項
             if len(selects) >= 3:
                 games_select = Select(selects[2])
-                if select_option_if_needed(games_select, ["All Games", "Regular Season"]):
-                    wait_for_table_refresh(driver, short_wait)
+                available_options = [opt.text.strip() for opt in games_select.options]
+
+                preferred_options = ["All Games", "Regular Season", "Playoffs", "Preseason"]
+                target_option = next(
+                    (opt for opt in preferred_options if opt in available_options),
+                    available_options[0] if available_options else None,
+                )
+
+                if target_option:
+                    current_text = ""
+                    try:
+                        current_text = games_select.first_selected_option.text.strip()
+                    except Exception:
+                        pass
+
+                    if current_text != target_option:
+                        if select_dropdown_option(games_select, [target_option]):
+                            wait_for_table_refresh(driver, short_wait)
         
         # 確保表格內容已可讀取
         short_wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody")))

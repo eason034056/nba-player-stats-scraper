@@ -1053,3 +1053,57 @@
 2026-02-09 14:17:02,202 - INFO - 瀏覽器已關閉
 2026-02-09 14:17:02,202 - INFO - 執行時間：0:35:16.071228
 2026-02-09 14:17:02,202 - INFO - ============================================================
+2026-04-02 16:48:21,159 - INFO - ============================================================
+2026-04-02 16:48:21,159 - INFO - NBA Game Log 爬蟲開始執行（增量模式）
+2026-04-02 16:48:21,159 - INFO - 開始時間：2026-04-02 16:48:21
+2026-04-02 16:48:21,159 - INFO - ============================================================
+2026-04-02 16:48:21,243 - INFO - 已載入現有資料：20092 筆記錄
+2026-04-02 16:48:21,771 - INFO - 找到 528 位球員的歷史資料
+2026-04-02 16:48:21,771 - INFO - 正在設定 Chrome 瀏覽器...
+2026-04-02 16:48:21,771 - INFO - ====== WebDriver manager ======
+2026-04-02 16:48:25,689 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-02 16:48:26,136 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-02 16:48:26,210 - INFO - There is no [mac64] chromedriver "146.0.7680.165" for browser google-chrome "146.0.7680" in cache
+2026-04-02 16:48:26,215 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-02 16:48:26,485 - INFO - WebDriver version 146.0.7680.165 selected
+2026-04-02 16:48:26,489 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/mac-arm64/chromedriver-mac-arm64.zip
+2026-04-02 16:48:26,491 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/mac-arm64/chromedriver-mac-arm64.zip
+2026-04-02 16:48:26,572 - INFO - Driver downloading response is 200
+2026-04-02 16:48:26,778 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-02 16:48:26,913 - INFO - Driver has been saved in cache [/Users/wuyusen/.wdm/drivers/chromedriver/mac64/146.0.7680.165]
+2026-04-02 16:48:28,837 - INFO - Chrome 瀏覽器已啟動（Headless 模式 + 反偵測配置）
+2026-04-02 16:48:28,838 - INFO - 正在載入球員列表頁面...（嘗試 1/3）
+2026-04-02 16:48:33,887 - INFO - 成功找到 536 位球員
+2026-04-02 16:48:33,888 - INFO - [1/536] Precious Achiuwa (距上次 54 天)
+2026-04-02 16:48:36,851 - INFO -   ✓ 新增 22 場比賽
+2026-04-02 16:48:37,654 - INFO - [2/536] Steven Adams (距上次 74 天)
+2026-04-02 16:48:38,433 - INFO -   ✓ 無新比賽
+2026-04-02 16:48:39,234 - INFO - [3/536] Bam Adebayo (距上次 53 天)
+2026-04-02 16:48:42,529 - INFO -   ✓ 新增 22 場比賽
+2026-04-02 16:48:43,333 - INFO - [4/536] Ochai Agbaji (距上次 60 天)
+2026-04-02 16:48:45,785 - INFO -   ✓ 新增 19 場比賽
+2026-04-02 16:48:46,588 - INFO - [5/536] Santi Aldama (距上次 57 天)
+2026-04-02 16:48:47,353 - INFO -   ✓ 無新比賽
+2026-04-02 16:48:48,155 - INFO - [6/536] Trey Alexander (距上次 83 天)
+2026-04-02 16:49:09,182 - INFO -   ✓ 無新比賽
+2026-04-02 16:49:09,988 - INFO - [7/536] Nickeil Alexander-Walker (距上次 54 天)
+2026-04-02 16:49:13,569 - INFO -   ✓ 新增 22 場比賽
+2026-04-02 16:49:14,373 - INFO - [8/536] Grayson Allen (距上次 56 天)
+2026-04-02 16:49:16,599 - INFO -   ✓ 新增 12 場比賽
+2026-04-02 16:49:17,402 - INFO - [9/536] Jarrett Allen (距上次 54 天)
+2026-04-02 16:49:18,952 - INFO -   ✓ 新增 12 場比賽
+2026-04-02 16:49:19,756 - INFO - [10/536] Jose Alvarado (距上次 53 天)
+2026-04-02 16:49:23,349 - INFO -   ✓ 新增 24 場比賽
+2026-04-02 16:49:24,153 - INFO - [11/536] Kyle Anderson (距上次 54 天)
+2026-04-02 16:49:26,578 - INFO -   ✓ 新增 16 場比賽
+2026-04-02 16:49:27,383 - INFO - [12/536] Alex Antetokounmpo (距上次 1689 天)
+2026-04-02 16:49:27,964 - INFO -   ✓ 新增 2 場比賽
+2026-04-02 16:49:28,765 - INFO - [13/536] Giannis Antetokounmpo (距上次 69 天)
+2026-04-02 16:49:29,923 - INFO -   ✓ 新增 6 場比賽
+2026-04-02 16:49:30,728 - INFO - [14/536] Thanasis Antetokounmpo (距上次 58 天)
+2026-04-02 16:49:32,994 - INFO -   ✓ 新增 13 場比賽
+2026-04-02 16:49:33,800 - INFO - [15/536] OG Anunoby (距上次 57 天)
+2026-04-02 16:49:37,353 - INFO -   ✓ 新增 22 場比賽
+2026-04-02 16:49:38,158 - INFO - [16/536] Deni Avdija (距上次 62 天)
+2026-04-02 16:49:40,773 - INFO -   ✓ 新增 17 場比賽
+2026-04-02 16:49:41,578 - INFO - [17/536] Deandre Ayton (距上次 56 天)
