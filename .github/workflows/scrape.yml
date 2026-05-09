@@ -4,7 +4,7 @@
 # 並將更新的 CSV 檔案 commit 回 repository
 
 # name: workflow 的名稱，會顯示在 GitHub Actions 頁面
-name: NBA Player Game Logs Scraper
+name: NBA & WNBA Player Game Logs Scraper
 
 # on: 定義觸發 workflow 的條件
 on:
@@ -40,16 +40,17 @@ jobs:
   # scrape: 工作的 ID（自定義名稱）
   scrape:
     # name: 工作的顯示名稱
-    name: Scrape NBA Player Game Logs
-    
+    name: Scrape NBA & WNBA Player Game Logs
+
     # runs-on: 指定執行環境
     # ubuntu-latest: 使用最新版本的 Ubuntu Linux
     runs-on: ubuntu-latest
-    
+
     # timeout-minutes: 設定最長執行時間（分鐘）
-    # 增量模式通常只需要 30-60 分鐘，但完整爬取可能需要 4 小時
-    # GitHub Actions 免費版最長 6 小時
-    timeout-minutes: 240
+    # NBA 增量 30-60 分鐘 + WNBA 增量 30-60 分鐘 ≈ 1-2 小時
+    # 首次完整爬取最壞情況：NBA 3h + WNBA 2h ≈ 5h，預留 buffer 設 300 分
+    # GitHub Actions 免費版單 job 上限 6 小時
+    timeout-minutes: 300
     
     # permissions: 設定 GITHUB_TOKEN 的權限
     # 需要 contents: write 才能 push 檔案到 repository
@@ -113,27 +114,41 @@ jobs:
           pip install -r requirements.txt
       
       # ============================================================
-      # 步驟 5: 執行爬蟲
+      # 步驟 5: 執行 NBA 爬蟲
       # ============================================================
-      - name: Run Scraper
+      - name: Run NBA Scraper
         # timeout-minutes: 單一步驟的超時時間
         # 設定為 180 分鐘（3 小時），給完整爬取足夠時間
         timeout-minutes: 180
         # continue-on-error: 即使爬蟲失敗，也繼續執行後續步驟
-        # 這樣可以確保已收集的資料被儲存
+        # 這樣可以確保已收集的資料被儲存（即使 NBA 失敗，WNBA 仍會跑）
         continue-on-error: true
-        id: scraper
+        id: scraper_nba
         run: |
-          # 執行爬蟲腳本
+          # 執行 NBA 爬蟲腳本
           python scrape_nba.py
-        # env: 設定環境變數
         env:
-          # PYTHONUNBUFFERED: 讓 Python 輸出不被緩衝
-          # 這樣可以即時看到輸出
+          # PYTHONUNBUFFERED: 讓 Python 輸出不被緩衝（即時看到輸出）
           PYTHONUNBUFFERED: '1'
-      
+
       # ============================================================
-      # 步驟 6: 上傳日誌檔案（作為 artifact）
+      # 步驟 6: 執行 WNBA 爬蟲（接續 NBA 之後跑）
+      # ============================================================
+      # 與 NBA 共用 checkout/Python/Chrome 環境，只多一段執行時間
+      # 增量爬取 30-60 分鐘；首次完整爬取約 2 小時
+      - name: Run WNBA Scraper
+        timeout-minutes: 120
+        # continue-on-error: 即使 WNBA 失敗，仍要 commit 已成功的部分
+        continue-on-error: true
+        id: scraper_wnba
+        run: |
+          # 執行 WNBA 爬蟲腳本
+          python scrape_wnba.py
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      # ============================================================
+      # 步驟 7: 上傳日誌檔案（作為 artifact）
       # ============================================================
       # 即使爬蟲失敗，也上傳日誌供除錯
       - name: Upload logs
@@ -143,75 +158,88 @@ jobs:
         with:
           # name: artifact 的名稱
           name: scrape-logs
-          # path: 要上傳的檔案
-          path: scrape_log.txt
+          # path: 要上傳的檔案（NBA + WNBA 兩份 log 一起打包）
+          path: |
+            scrape_log.txt
+            scrape_wnba_log.txt
           # retention-days: 保留天數
           retention-days: 7
-      
+
       # ============================================================
-      # 步驟 7: Commit 並 Push 更新的 CSV 檔案
+      # 步驟 8: Commit 並 Push 更新的 CSV 檔案（NBA + WNBA）
       # ============================================================
       # 即使爬蟲部分失敗，也嘗試儲存已收集的資料
+      # NBA 跟 WNBA 任一支成功都會 commit 對應的 CSV
       - name: Commit and Push changes
         if: always()
         run: |
-          # 設定 git 使用者資訊
-          # 這是 GitHub Actions bot 的標準設定
+          # 設定 git 使用者資訊（GitHub Actions bot 的標準設定）
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
+
           # 取得當前日期（台灣時間）
-          # TZ='Asia/Taipei' 設定時區
-          # date '+%Y-%m-%d %H:%M:%S' 格式化日期
           CURRENT_DATE=$(TZ='Asia/Taipei' date '+%Y-%m-%d %H:%M:%S')
-          
-          # 檢查 CSV 檔案是否存在
+
+          # 動態加入存在的 CSV 檔案到 staging area
+          # 即使其中一支爬蟲失敗、CSV 不存在也不影響另一支
           if [ -f "nba_player_game_logs.csv" ]; then
-            # 加入 CSV 檔案到 staging area
             git add nba_player_game_logs.csv
-            
-            # 檢查是否有變更需要 commit
-            if git diff --staged --quiet; then
-              echo "沒有變更需要 commit"
-            else
-              # 根據爬蟲執行結果決定 commit 訊息
-              if [ "${{ steps.scraper.outcome }}" == "success" ]; then
-                COMMIT_MSG="📊 Update NBA player game logs - ${CURRENT_DATE}"
-              else
-                COMMIT_MSG="📊 Partial update NBA player game logs - ${CURRENT_DATE} (部分成功)"
-              fi
-              
-              # 執行 commit
-              git commit -m "${COMMIT_MSG}"
-              # 明確設定 remote 使用 GITHUB_TOKEN
-              git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-              # Push 到 repository（最多重試 3 次）
-              for attempt in 1 2 3; do
-                if git push; then
-                  break
-                fi
-                echo "⚠️ Push 失敗，將在 5 秒後重試（第 ${attempt} 次）"
-                sleep 5
-              done
-              echo "✓ 已成功更新並 push CSV 檔案"
-            fi
           else
-            echo "⚠️ CSV 檔案不存在，跳過 commit"
+            echo "⚠️ nba_player_game_logs.csv 不存在，跳過此檔"
+          fi
+          if [ -f "wnba_player_game_logs.csv" ]; then
+            git add wnba_player_game_logs.csv
+          else
+            echo "⚠️ wnba_player_game_logs.csv 不存在，跳過此檔"
+          fi
+
+          # 檢查是否有變更需要 commit
+          if git diff --staged --quiet; then
+            echo "沒有變更需要 commit（兩支爬蟲都沒有抓到新資料）"
+          else
+            # 💡 根據兩支爬蟲的 outcome 組合決定 commit 訊息
+            NBA_OUTCOME="${{ steps.scraper_nba.outcome }}"
+            WNBA_OUTCOME="${{ steps.scraper_wnba.outcome }}"
+
+            if [ "${NBA_OUTCOME}" == "success" ] && [ "${WNBA_OUTCOME}" == "success" ]; then
+              COMMIT_MSG="📊 Update NBA & WNBA player game logs - ${CURRENT_DATE}"
+            else
+              COMMIT_MSG="📊 Partial update (NBA: ${NBA_OUTCOME}, WNBA: ${WNBA_OUTCOME}) - ${CURRENT_DATE}"
+            fi
+
+            # 執行 commit
+            git commit -m "${COMMIT_MSG}"
+            # 明確設定 remote 使用 GITHUB_TOKEN
+            git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            # Push 到 repository（最多重試 3 次）
+            for attempt in 1 2 3; do
+              if git push; then
+                break
+              fi
+              echo "⚠️ Push 失敗，將在 5 秒後重試（第 ${attempt} 次）"
+              sleep 5
+            done
+            echo "✓ 已成功更新並 push CSV 檔案"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       # ============================================================
-      # 步驟 8: 檢查最終狀態
+      # 步驟 9: 檢查最終狀態（NBA + WNBA 兩個 outcome 都看）
       # ============================================================
       - name: Check final status
         if: always()
         run: |
-          if [ "${{ steps.scraper.outcome }}" == "success" ]; then
-            echo "✅ 爬蟲執行成功"
-            exit 0
+          NBA_OUTCOME="${{ steps.scraper_nba.outcome }}"
+          WNBA_OUTCOME="${{ steps.scraper_wnba.outcome }}"
+
+          echo "NBA  爬蟲: ${NBA_OUTCOME}"
+          echo "WNBA 爬蟲: ${WNBA_OUTCOME}"
+
+          if [ "${NBA_OUTCOME}" == "success" ] && [ "${WNBA_OUTCOME}" == "success" ]; then
+            echo "✅ NBA + WNBA 爬蟲都執行成功"
           else
-            echo "⚠️ 爬蟲執行遇到問題，請檢查日誌"
-            # 不要讓整個 workflow 失敗，因為資料可能已經部分更新
-            exit 0
+            echo "⚠️ 至少一支爬蟲遇到問題，請檢查日誌"
           fi
+          # 不論結果都 exit 0：資料可能已經部分更新成功，不要讓整個 workflow 變紅
+          exit 0

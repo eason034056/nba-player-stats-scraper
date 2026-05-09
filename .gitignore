@@ -1,0 +1,14 @@
+# Python virtual environment
+venv/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS metadata
+.DS_Store
+
+# Scraper logs (uploaded as Actions artifacts, not in git history)
+scrape_log.txt
+scrape_wnba_log.txt
