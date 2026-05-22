@@ -59,7 +59,7 @@ A'ja Wilson,2025,5/20/2025,Aces,Sun,W,Starter,C,29:08,22,6,16,0.375,0,3,0.0,10,1
 A'ja Wilson,2025,5/17/2025,Aces,Liberty,L,Starter,C,35:46,31,11,22,0.5,1,3,0.333,8,8,1.0,2,14,16,3,2,1,4,2,25.0
 A'ja Wilson,2025,5/6/2025,Aces,Mercury,W,Starter,C,22:07,14,4,12,0.333,0,1,0.0,6,8,0.75,0,6,6,3,1,3,0,2,12.5
 A'ja Wilson,2025,5/2/2025,Aces,Wings,W,Starter,C,21:52,19,7,17,0.412,1,4,0.25,4,5,0.8,3,4,7,3,0,2,2,0,13.4
-Aaliyah Edwards,2026,5/20/2026,Sun,Storm,W,Starter,C,26:55,12,5,12,.417,0,2,.000,2,2,1.000,2,2,4,3,1,0,4,4,3.8
+Aaliyah Edwards,2026,5/20/2026,Sun,Storm,W,Starter,C,26:55,12,5,12,0.417,0,2,0.0,2,2,1.0,2,2,4,3,1,0,4,4,3.8
 Aaliyah Edwards,2026,5/18/2026,Sun,Fire,L,Starter,PF,16:37,12,5,6,0.833,0,0,0.0,2,3,0.667,1,1,2,0,2,1,2,1,8.6
 Aaliyah Edwards,2026,5/15/2026,Sun,Aces,L,Starter,C,17:29,6,3,5,0.6,0,0,0.0,0,0,0.0,1,2,3,0,1,0,2,3,2.3
 Aaliyah Edwards,2026,4/29/2026,Sun,Tempo,W,Starter,F,17:16,14,6,8,0.75,0,1,0.0,2,2,1.0,2,3,5,0,0,0,1,1,10.0
@@ -154,13 +154,13 @@ Aaliyah Nye,2025,5/20/2025,Aces,Sun,W,Bench,SG,11:59,3,1,3,0.333,1,3,0.333,0,0,0
 Aaliyah Nye,2025,5/17/2025,Aces,Liberty,L,Bench,SG,3:57,0,0,2,0.0,0,1,0.0,0,0,0.0,1,0,1,0,0,0,0,2,-1.5
 Aaliyah Nye,2025,5/6/2025,Aces,Mercury,W,Bench,SG,19:50,5,1,5,0.2,1,5,0.2,2,2,1.0,2,1,3,0,2,0,0,1,4.8
 Aaliyah Nye,2025,5/2/2025,Aces,Wings,W,Bench,SG,22:25,17,6,11,0.545,5,8,0.625,0,0,0.0,1,1,2,2,2,1,1,2,13.5
-Aicha Coulibaly,2026,5/20/2026,Sky,Wings,L,Bench,C,15:55,0,0,0,.000,0,0,.000,0,0,.000,0,2,2,1,0,0,0,3,1.0
+Aicha Coulibaly,2026,5/20/2026,Sky,Wings,L,Bench,C,15:55,0,0,0,0.0,0,0,0.0,0,0,0.0,0,2,2,1,0,0,0,3,1.0
 Aicha Coulibaly,2026,5/17/2026,Sky,Lynx,W,Bench,C,21:20,8,1,8,0.125,0,1,0.0,6,6,1.0,1,0,1,1,2,0,0,2,2.8
 Aicha Coulibaly,2026,5/15/2026,Sky,Mercury,L,Bench,C,15:47,8,4,6,0.667,0,1,0.0,0,0,0.0,0,1,1,0,1,0,0,4,3.3
 Aicha Coulibaly,2026,5/9/2026,Sky,Fire,W,Bench,C,6:13,0,0,3,0.0,0,1,0.0,0,0,0.0,0,2,2,1,0,0,0,1,-0.3
 Aicha Coulibaly,2026,4/29/2026,Sky,Dream,L,Starter,F,14:50,2,1,3,0.333,0,1,0.0,0,1,0.0,1,1,2,1,1,2,0,3,3.6
 Aicha Coulibaly,2026,4/25/2026,Sky,Mercury,L,Starter,C,15:01,7,1,3,0.333,0,0,0.0,5,5,1.0,0,1,1,0,2,1,1,3,4.1
-Alanna Smith,2026,5/20/2026,Wings,Sky,W,Starter,C,16:27,7,3,6,.500,1,3,.333,0,0,.000,2,4,6,0,1,1,0,5,7.0
+Alanna Smith,2026,5/20/2026,Wings,Sky,W,Starter,C,16:27,7,3,6,0.5,1,3,0.333,0,0,0.0,2,4,6,0,1,1,0,5,7.0
 Alanna Smith,2026,5/18/2026,Wings,Mystics,W,Starter,C,7:16,3,1,3,0.333,1,1,1.0,0,0,0.0,1,0,1,1,2,0,2,4,0.8
 Alanna Smith,2026,5/14/2026,Wings,Lynx,L,Starter,C,26:52,6,3,6,0.5,0,1,0.0,0,1,0.0,2,2,4,5,2,1,2,3,9.1
 Alanna Smith,2026,5/12/2026,Wings,Dream,L,Starter,F,26:42,2,1,8,0.125,0,6,0.0,0,0,0.0,2,4,6,3,0,1,3,2,1.0
@@ -216,10 +216,11 @@ Alanna Smith,2025,5/23/2025,Lynx,Sun,W,Starter,C,14:38,2,1,2,0.5,0,0,0.0,0,2,0.0
 Alanna Smith,2025,5/21/2025,Lynx,Wings,W,Starter,C,29:27,13,5,9,0.556,3,7,0.429,0,2,0.0,1,5,6,2,0,2,2,1,11.8
 Alanna Smith,2025,5/18/2025,Lynx,Sparks,W,Starter,C,16:35,18,7,10,0.7,4,7,0.571,0,0,0.0,0,3,3,3,0,2,1,3,15.3
 Alanna Smith,2025,5/6/2025,Lynx,Sky,L,Starter,C,21:30,10,5,9,0.556,0,2,0.0,0,1,0.0,4,5,9,4,1,0,2,2,12.6
+Alexandra Fowler,2026,5/21/2026,Liberty,Valkyries,L,Bench,SF,14:41,0,0,3,.000,0,2,.000,0,0,.000,0,0,0,0,1,0,0,4,-3.3
 Alexandra Fowler,2026,5/14/2026,Liberty,Fire,W,Bench,SF,16:37,12,4,7,0.571,2,5,0.4,2,2,1.0,0,0,0,1,0,0,3,6,1.0
 Alexandra Fowler,2026,5/3/2026,Liberty,Sun,W,Bench,SF,14:32,0,0,3,0.0,0,2,0.0,0,0,0.0,0,2,2,0,3,0,1,4,-0.8
 Alexandra Fowler,2026,4/25/2026,Liberty,Fever,L,Bench,SF,22:46,8,3,8,0.375,0,2,0.0,2,6,0.333,1,4,5,1,2,0,2,4,2.8
-Aliyah Boston,2026,5/20/2026,Fever,Fire,W,Starter,C,21:23,24,8,11,.727,2,4,.500,6,6,1.000,0,8,8,3,2,1,5,2,19.5
+Aliyah Boston,2026,5/20/2026,Fever,Fire,W,Starter,C,21:23,24,8,11,0.727,2,4,0.5,6,6,1.0,0,8,8,3,2,1,5,2,19.5
 Aliyah Boston,2026,5/15/2026,Fever,Mystics,L,Starter,C,20:40,9,3,8,0.375,1,3,0.333,2,4,0.5,1,3,4,1,1,0,0,2,5.8
 Aliyah Boston,2026,5/13/2026,Fever,Sparks,W,Starter,C,22:39,4,0,3,0.0,0,1,0.0,4,4,1.0,3,4,7,2,0,2,2,6,5.3
 Aliyah Boston,2026,5/9/2026,Fever,Wings,L,Starter,C,26:09,23,9,14,0.643,1,2,0.5,4,6,0.667,2,2,4,3,3,1,1,2,18.8
@@ -386,6 +387,7 @@ Alysha Clark,2025,5/23/2025,Storm,Mercury,W,Starter,SF,12:57,2,0,3,0.0,0,2,0.0,2
 Alysha Clark,2025,5/19/2025,Storm,Wings,W,Starter,SF,35:52,6,2,6,0.333,2,3,0.667,0,0,0.0,0,1,1,2,1,0,1,4,2.3
 Alysha Clark,2025,5/17/2025,Storm,Mercury,L,Starter,SF,20:23,0,0,1,0.0,0,1,0.0,0,0,0.0,0,3,3,0,1,0,2,4,-1.5
 Alysha Clark,2025,5/4/2025,Storm,Sun,W,Starter,SF,21:06,7,3,8,0.375,1,3,0.333,0,1,0.0,1,2,3,2,3,0,1,1,6.6
+Alyssa Thomas,2026,5/21/2026,Mercury,Sparks,L,Starter,SF,35:27,23,7,13,.538,0,0,.000,9,11,.818,2,5,7,7,2,0,3,2,19.9
 Alyssa Thomas,2026,5/19/2026,Mercury,Tempo,L,Starter,SF,34:32,17,6,7,0.857,0,0,0.0,5,6,0.833,3,3,6,8,3,0,2,3,22.3
 Alyssa Thomas,2026,5/15/2026,Mercury,Sky,W,Starter,F,33:10,17,5,10,0.5,0,0,0.0,7,7,1.0,2,9,11,6,0,1,4,4,16.6
 Alyssa Thomas,2026,5/12/2026,Mercury,Lynx,L,Starter,F,34:28,10,2,10,0.2,0,0,0.0,6,13,0.462,0,4,4,8,2,0,4,2,5.6
@@ -457,6 +459,7 @@ Amy Okonkwo,2025,8/24/2025,Wings,Valkyries,L,Bench,,17:24,12,5,8,0.625,2,3,0.667
 Amy Okonkwo,2025,8/22/2025,Wings,Storm,L,Bench,,9:23,8,3,5,0.6,0,2,0.0,2,2,1.0,0,1,1,0,0,0,1,1,2.8
 Amy Okonkwo,2025,5/9/2025,Sun,Liberty,W,Bench,SF,11:34,4,2,4,0.5,0,1,0.0,0,0,0.0,1,3,4,0,1,0,0,0,5.3
 Amy Okonkwo,2025,5/4/2025,Sun,Storm,L,Bench,SF,15:45,10,3,10,0.3,0,3,0.0,4,4,1.0,2,2,4,1,0,0,0,1,5.0
+Anastasiia Olairi Kosu,2026,5/21/2026,Lynx,Tempo,W,Bench,SF,14:16,5,2,4,.500,0,0,.000,1,2,.500,2,2,4,0,2,1,2,1,5.3
 Anastasiia Olairi Kosu,2026,5/17/2026,Lynx,Sky,L,Bench,SF,6:13,2,1,1,1.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,0.8
 Anastasiia Olairi Kosu,2026,5/14/2026,Lynx,Wings,W,Bench,SF,4:32,2,1,2,0.5,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,1,1.0
 Anastasiia Olairi Kosu,2026,5/12/2026,Lynx,Mercury,W,Bench,SF,8:50,2,1,2,0.5,0,0,0.0,0,0,0.0,1,1,2,2,0,0,0,3,2.8
@@ -488,7 +491,7 @@ Anastasiia Olairi Kosu,2025,5/18/2025,Lynx,Sparks,W,Bench,SF,0:19,0,0,0,0.0,0,0,
 Anastasiia Olairi Kosu,2025,5/16/2025,Lynx,Wings,W,Bench,SF,2:51,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,1,0,-1.0
 Anastasiia Olairi Kosu,2025,5/10/2025,Lynx,Sky,W,Bench,SF,5:04,1,0,0,0.0,0,0,0.0,1,2,0.5,0,1,1,0,0,1,1,1,0.5
 Anastasiia Olairi Kosu,2025,5/6/2025,Lynx,Sky,L,Bench,SF,5:51,4,1,2,0.5,0,0,0.0,2,4,0.5,2,2,4,0,0,0,0,0,4.5
-Aneesah Morrow,2026,5/20/2026,Sun,Storm,W,Starter,SF,6:31,2,1,1,1.000,0,0,.000,0,0,.000,1,2,3,0,0,0,2,1,1.3
+Aneesah Morrow,2026,5/20/2026,Sun,Storm,W,Starter,SF,6:31,2,1,1,1.0,0,0,0.0,0,0,0.0,1,2,3,0,0,0,2,1,1.3
 Aneesah Morrow,2026,5/18/2026,Sun,Fire,L,Bench,SF,33:45,12,5,10,0.5,1,4,0.25,1,2,0.5,3,9,12,4,1,1,4,1,15.0
 Aneesah Morrow,2026,5/15/2026,Sun,Aces,L,Bench,SF,27:24,10,4,11,0.364,0,3,0.0,2,2,1.0,2,8,10,2,2,0,2,4,9.0
 Aneesah Morrow,2026,5/13/2026,Sun,Aces,L,Bench,SF,23:53,16,4,16,0.25,1,3,0.333,7,10,0.7,4,7,11,0,1,0,0,3,9.0
@@ -585,6 +588,7 @@ Anneli Maley,2026,5/10/2026,Mercury,Valkyries,L,Bench,SF,0:19,0,0,0,0.0,0,0,0.0,
 Anneli Maley,2026,5/9/2026,Mercury,Aces,W,Bench,SF,5:46,1,0,2,0.0,0,0,0.0,1,2,0.5,0,2,2,0,0,0,0,1,-0.3
 Anneli Maley,2026,5/3/2026,Liberty,Sun,W,Bench,SF,24:27,13,3,5,0.6,1,2,0.5,6,6,1.0,3,3,6,1,0,0,1,2,11.3
 Anneli Maley,2026,4/25/2026,Liberty,Fever,L,Bench,SF,29:41,13,4,11,0.364,0,1,0.0,5,5,1.0,1,6,7,3,0,0,5,4,4.4
+Antonia Delaere,2026,5/21/2026,Lynx,Tempo,W,Bench,PG,17:58,3,1,3,.333,1,3,.333,0,0,.000,1,0,1,4,0,0,1,3,3.3
 Antonia Delaere,2026,5/17/2026,Lynx,Sky,L,Bench,PG,5:47,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,1,0.5
 Antonia Delaere,2026,5/14/2026,Lynx,Wings,W,Bench,PG,12:34,0,0,0,0.0,0,0,0.0,0,0,0.0,0,1,1,1,0,0,1,0,0.8
 Antonia Delaere,2026,5/12/2026,Lynx,Mercury,W,Bench,PG,18:32,8,3,4,0.75,1,1,1.0,1,1,1.0,0,0,0,1,0,0,0,2,4.6
@@ -592,6 +596,7 @@ Antonia Delaere,2026,5/9/2026,Lynx,Dream,L,Bench,PG,13:31,2,1,2,0.5,0,1,0.0,0,0,
 Antonia Delaere,2026,5/1/2026,Lynx,Tempo,W,Bench,PG,17:00,2,0,2,0.0,0,0,0.0,2,2,1.0,0,1,1,2,0,0,0,1,2.0
 Antonia Delaere,2026,4/27/2026,Lynx,Nigeria National Team,W,Starter,F,21:37,3,1,2,0.5,1,2,0.5,0,0,0.0,0,1,1,3,1,0,0,2,5.3
 Antonia Delaere,2026,4/25/2026,Lynx,Mystics,W,Bench,PG,17:46,5,2,4,0.5,1,3,0.333,0,0,0.0,0,3,3,2,0,0,2,3,2.8
+Ariel Atkins,2026,5/21/2026,Sparks,Mercury,W,Starter,SF,24:03,11,4,8,.500,3,7,.429,0,1,.000,0,1,1,2,3,1,2,5,6.9
 Ariel Atkins,2026,5/13/2026,Sparks,Fever,L,Starter,G,15:45,2,0,4,0.0,0,1,0.0,2,2,1.0,1,1,2,2,1,0,2,3,-0.5
 Ariel Atkins,2026,5/10/2026,Sparks,Aces,L,Starter,G,31:45,8,3,12,0.25,0,6,0.0,2,2,1.0,2,2,4,3,3,0,3,2,3.8
 Ariel Atkins,2026,5/3/2026,Sparks,Fire,W,Starter,G,17:26,4,1,4,0.25,1,2,0.5,1,2,0.5,0,2,2,3,1,1,1,0,5.8
@@ -633,7 +638,7 @@ Ariel Atkins,2025,5/17/2025,Sky,Fever,L,Starter,SG,21:53,11,3,6,0.5,2,2,1.0,3,4,
 Ariel Atkins,2025,5/10/2025,Sky,Lynx,L,Starter,SG,28:34,7,3,13,0.231,1,8,0.125,0,0,0.0,2,5,7,6,1,2,3,1,8.5
 Ariel Atkins,2025,5/6/2025,Sky,Lynx,W,Starter,SG,21:36,10,4,10,0.4,2,6,0.333,0,1,0.0,0,1,1,4,1,0,2,0,5.9
 Ariel Atkins,2025,5/2/2025,Sky,Brazil National Team,W,Starter,SG,14:24,2,0,2,0.0,0,1,0.0,2,2,1.0,0,1,1,1,0,0,1,0,0.5
-Arike Ogunbowale,2026,5/20/2026,Wings,Sky,W,Starter,SF,32:22,23,7,16,.438,4,6,.667,5,5,1.000,0,2,2,5,0,0,1,2,13.6
+Arike Ogunbowale,2026,5/20/2026,Wings,Sky,W,Starter,SF,32:22,23,7,16,0.438,4,6,0.667,5,5,1.0,0,2,2,5,0,0,1,2,13.6
 Arike Ogunbowale,2026,5/18/2026,Wings,Mystics,W,Starter,SF,32:58,16,4,10,0.4,2,5,0.4,6,6,1.0,0,0,0,3,3,0,0,0,12.3
 Arike Ogunbowale,2026,5/14/2026,Wings,Lynx,L,Starter,F,30:02,6,2,11,0.182,1,4,0.25,1,1,1.0,3,1,4,1,0,0,1,3,-0.4
 Arike Ogunbowale,2026,5/12/2026,Wings,Dream,L,Starter,G,35:34,20,7,15,0.467,0,4,0.0,6,7,0.857,0,4,4,1,1,0,2,2,8.1
@@ -669,7 +674,7 @@ Arike Ogunbowale,2025,5/19/2025,Wings,Storm,L,Starter,PG,27:02,8,2,14,0.143,1,8,
 Arike Ogunbowale,2025,5/16/2025,Wings,Lynx,L,Starter,PG,28:19,16,4,12,0.333,0,3,0.0,8,8,1.0,1,1,2,4,1,0,3,1,7.3
 Arike Ogunbowale,2025,5/10/2025,Wings,Toyota Antelopes,W,Starter,PG,20:12,17,6,9,0.667,4,7,0.571,1,2,0.5,0,4,4,6,2,0,2,2,17.5
 Arike Ogunbowale,2025,5/2/2025,Wings,Aces,L,Starter,PG,22:37,5,2,6,0.333,1,3,0.333,0,0,0.0,0,2,2,3,0,0,1,1,3.5
-Ashlon Jackson,2026,5/20/2026,Sun,Storm,W,Bench,PG,15:15,4,2,3,.667,0,1,.000,0,0,.000,0,1,1,1,2,0,0,2,4.5
+Ashlon Jackson,2026,5/20/2026,Sun,Storm,W,Bench,PG,15:15,4,2,3,0.667,0,1,0.0,0,0,0.0,0,1,1,1,2,0,0,2,4.5
 Ashlon Jackson,2026,4/25/2026,Valkyries,Storm,W,Bench,SG,26:11,1,0,1,0.0,0,1,0.0,1,2,0.5,1,4,5,2,2,1,5,1,3.0
 Ashten Prechtel,2026,4/29/2026,Mercury,Japan National Team,W,Bench,C,9:26,0,0,4,0.0,0,3,0.0,0,0,0.0,2,1,3,1,0,2,1,0,1.8
 Ashten Prechtel,2026,4/25/2026,Mercury,Sky,W,Bench,C,16:14,9,2,5,0.4,2,5,0.4,3,6,0.5,1,4,5,1,0,1,1,6,5.0
@@ -681,12 +686,12 @@ Aubrey Griffin,2026,5/10/2026,Liberty,Mystics,W,Bench,SF,0:15,0,0,0,0.0,0,0,0.0,
 Aubrey Griffin,2026,5/8/2026,Liberty,Sun,W,Bench,SF,5:10,2,1,1,1.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,1,0,0.3
 Aubrey Griffin,2026,4/27/2026,Lynx,Nigeria National Team,W,Bench,SF,10:11,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,2,-1.0
 Aubrey Griffin,2026,4/25/2026,Lynx,Mystics,W,Bench,SF,14:50,6,2,4,0.5,0,0,0.0,2,2,1.0,0,2,2,0,1,1,1,0,4.8
-Awak Kuier,2026,5/20/2026,Wings,Sky,W,Bench,C,5:13,0,0,2,.000,0,1,.000,0,0,.000,0,1,1,0,0,0,0,1,-1.3
+Awak Kuier,2026,5/20/2026,Wings,Sky,W,Bench,C,5:13,0,0,2,0.0,0,1,0.0,0,0,0.0,0,1,1,0,0,0,0,1,-1.3
 Awak Kuier,2026,5/18/2026,Wings,Mystics,W,Bench,C,20:16,9,4,6,0.667,0,2,0.0,1,1,1.0,1,2,3,4,3,1,0,1,14.1
 Awak Kuier,2026,5/14/2026,Wings,Lynx,L,Bench,C,6:07,0,0,0,0.0,0,0,0.0,0,0,0.0,1,0,1,0,0,0,1,1,-0.5
 Awak Kuier,2026,5/12/2026,Wings,Dream,L,Bench,C,14:32,6,2,4,0.5,1,2,0.5,1,2,0.5,1,3,4,1,0,1,0,0,7.5
 Awak Kuier,2026,5/9/2026,Wings,Fever,W,Bench,C,2:11,0,0,0,0.0,0,0,0.0,0,0,0.0,0,1,1,1,1,0,0,0,2.8
-Aziaha James,2026,5/20/2026,Wings,Sky,W,Bench,PG,8:00,4,2,5,.400,0,0,.000,0,0,.000,2,2,4,0,1,0,1,2,2.8
+Aziaha James,2026,5/20/2026,Wings,Sky,W,Bench,PG,8:00,4,2,5,0.4,0,0,0.0,0,0,0.0,2,2,4,0,1,0,1,2,2.8
 Aziaha James,2026,5/18/2026,Wings,Mystics,W,Bench,PG,7:02,8,2,6,0.333,1,2,0.5,3,3,1.0,0,2,2,0,1,0,0,2,3.9
 Aziaha James,2026,5/14/2026,Wings,Lynx,L,Bench,PG,10:52,4,1,3,0.333,0,0,0.0,2,2,1.0,1,1,2,0,2,0,1,1,3.3
 Aziaha James,2026,5/12/2026,Wings,Dream,L,Bench,PG,15:29,6,2,10,0.2,0,5,0.0,2,2,1.0,1,1,2,0,2,1,0,4,0.5
@@ -778,7 +783,7 @@ Azura Stevens,2025,5/21/2025,Sparks,Mercury,L,Starter,C,29:59,23,7,12,0.583,2,4,
 Azura Stevens,2025,5/18/2025,Sparks,Lynx,L,Starter,C,34:12,21,7,12,0.583,4,7,0.571,3,3,1.0,0,6,6,1,2,1,0,2,18.4
 Azura Stevens,2025,5/16/2025,Sparks,Valkyries,W,Starter,C,32:24,11,4,7,0.571,0,2,0.0,3,4,0.75,0,5,5,0,4,2,0,2,13.0
 Azura Stevens,2025,5/6/2025,Sparks,Valkyries,W,Starter,C,22:42,9,4,8,0.5,1,4,0.25,0,0,0.0,1,10,11,0,0,1,0,0,12.5
-Azzi Fudd,2026,5/20/2026,Wings,Sky,W,Bench,PG,28:03,12,4,6,.667,2,2,1.000,2,2,1.000,0,0,0,1,0,0,1,1,6.3
+Azzi Fudd,2026,5/20/2026,Wings,Sky,W,Bench,PG,28:03,12,4,6,0.667,2,2,1.0,2,2,1.0,0,0,0,1,0,0,1,1,6.3
 Azzi Fudd,2026,5/18/2026,Wings,Mystics,W,Bench,PG,24:22,12,6,9,0.667,0,1,0.0,0,0,0.0,1,1,2,3,1,0,1,2,9.0
 Azzi Fudd,2026,5/14/2026,Wings,Lynx,L,Bench,PG,19:55,8,4,7,0.571,0,2,0.0,0,0,0.0,0,1,1,0,1,1,2,4,1.5
 Azzi Fudd,2026,5/9/2026,Wings,Fever,W,Bench,PG,17:31,3,1,2,0.5,1,2,0.5,0,0,0.0,1,0,1,0,1,0,0,0,3.5
@@ -789,6 +794,7 @@ Betnijah Laney-Hamilton,2026,5/12/2026,Liberty,Fire,W,Starter,F,24:31,10,3,7,0.4
 Betnijah Laney-Hamilton,2026,5/10/2026,Liberty,Mystics,W,Starter,F,25:14,3,0,0,0.0,0,0,0.0,3,4,0.75,1,1,2,0,0,1,0,2,3.3
 Betnijah Laney-Hamilton,2026,5/8/2026,Liberty,Sun,W,Starter,PF,28:29,12,4,7,0.571,0,3,0.0,4,4,1.0,0,2,2,4,0,0,2,0,8.8
 Betnijah Laney-Hamilton,2026,4/25/2026,Liberty,Fever,L,Starter,F,12:23,2,1,4,0.25,0,1,0.0,0,0,0.0,0,0,0,1,0,0,2,1,-2.5
+Breanna Stewart,2026,5/21/2026,Liberty,Valkyries,L,Starter,SF,30:12,18,7,13,.538,0,1,.000,4,6,.667,2,7,9,2,0,1,1,2,14.3
 Breanna Stewart,2026,5/14/2026,Liberty,Fire,W,Starter,F,28:28,22,8,14,0.571,1,4,0.25,5,6,0.833,1,6,7,1,0,0,2,3,12.3
 Breanna Stewart,2026,5/12/2026,Liberty,Fire,W,Starter,F,37:47,16,4,12,0.333,0,2,0.0,8,8,1.0,1,9,10,4,2,3,2,5,16.3
 Breanna Stewart,2026,5/10/2026,Liberty,Mystics,W,Starter,F,38:40,23,9,23,0.391,1,4,0.25,4,4,1.0,1,8,9,4,2,2,4,5,12.8
@@ -884,7 +890,7 @@ Brianna Turner,2025,5/17/2025,Fever,Sky,W,Bench,C,5:41,0,0,1,0.0,0,0,0.0,0,0,0.0
 Brianna Turner,2025,5/10/2025,Fever,Dream,W,Bench,C,20:59,2,1,2,0.5,0,0,0.0,0,0,0.0,1,7,8,4,0,0,2,2,7.8
 Brianna Turner,2025,5/4/2025,Fever,Brazil National Team,W,Bench,C,6:53,0,0,0,0.0,0,0,0.0,0,0,0.0,2,2,4,1,0,0,0,1,4.0
 Brianna Turner,2025,5/3/2025,Fever,Mystics,W,Bench,C,13:57,0,0,0,0.0,0,0,0.0,0,0,0.0,1,3,4,2,0,0,2,1,2.8
-Bridget Carleton,2026,5/20/2026,Fire,Fever,L,Starter,SG,25:02,16,6,13,.462,2,6,.333,2,2,1.000,0,3,3,0,3,0,0,3,9.3
+Bridget Carleton,2026,5/20/2026,Fire,Fever,L,Starter,SG,25:02,16,6,13,0.462,2,6,0.333,2,2,1.0,0,3,3,0,3,0,0,3,9.3
 Bridget Carleton,2026,5/18/2026,Fire,Sun,W,Starter,SG,33:25,18,5,12,0.417,2,7,0.286,6,6,1.0,0,5,5,3,3,1,2,2,14.5
 Bridget Carleton,2026,5/14/2026,Fire,Liberty,L,Starter,G,24:58,11,4,11,0.364,2,6,0.333,1,1,1.0,2,3,5,2,1,0,1,2,7.6
 Bridget Carleton,2026,5/12/2026,Fire,Liberty,L,Starter,G,33:02,26,9,16,0.563,5,11,0.455,3,3,1.0,0,1,1,0,4,0,0,2,16.6
@@ -1040,6 +1046,7 @@ Brittney Griner,2025,5/20/2025,Dream,Fever,W,Starter,C,30:49,21,8,13,0.615,0,1,0
 Brittney Griner,2025,5/16/2025,Dream,Mystics,L,Starter,C,28:19,18,7,16,0.438,0,2,0.0,4,5,0.8,2,6,8,1,0,1,2,2,9.6
 Brittney Griner,2025,5/10/2025,Dream,Fever,L,Starter,C,2:00,3,1,1,1.0,1,1,1.0,0,0,0.0,0,1,1,0,0,0,0,0,3.0
 Brittney Griner,2025,5/7/2025,Dream,Mystics,W,Starter,C,19:04,16,7,11,0.636,2,2,1.0,0,0,0.0,3,7,10,3,0,1,3,3,15.5
+Brittney Sykes,2026,5/21/2026,Tempo,Lynx,L,Starter,PG,20:28,6,2,7,.286,1,4,.250,1,1,1.000,1,2,3,4,0,0,1,2,4.9
 Brittney Sykes,2026,5/19/2026,Tempo,Mercury,W,Starter,PG,34:58,31,10,19,0.526,4,8,0.5,7,8,0.875,2,5,7,6,0,0,0,3,24.0
 Brittney Sykes,2026,5/17/2026,Tempo,Sparks,W,Starter,PG,37:56,38,10,21,0.476,3,8,0.375,15,15,1.0,0,1,1,3,3,1,3,3,19.9
 Brittney Sykes,2026,5/15/2026,Tempo,Sparks,L,Starter,G,34:56,27,7,19,0.368,2,7,0.286,11,11,1.0,0,4,4,7,4,0,3,4,17.6
@@ -1112,6 +1119,7 @@ Caitlin Clark,2025,5/20/2025,Fever,Dream,L,Starter,PG,38:02,27,9,20,0.45,5,11,0.
 Caitlin Clark,2025,5/17/2025,Fever,Sky,W,Starter,PG,31:57,20,6,13,0.462,4,8,0.5,4,4,1.0,0,10,10,10,2,4,3,3,27.8
 Caitlin Clark,2025,5/10/2025,Fever,Dream,W,Starter,PG,23:18,13,5,11,0.455,3,8,0.375,0,0,0.0,0,6,6,7,0,0,3,3,11.8
 Caitlin Clark,2025,5/4/2025,Fever,Brazil National Team,W,Starter,PG,18:43,16,6,10,0.6,4,6,0.667,0,0,0.0,1,5,6,5,0,1,3,1,15.8
+Cameron Brink,2026,5/21/2026,Sparks,Mercury,W,Bench,C,19:12,12,3,6,.500,1,2,.500,5,6,.833,1,4,5,1,1,3,6,4,6.3
 Cameron Brink,2026,5/17/2026,Sparks,Tempo,L,Bench,C,18:27,7,3,4,0.75,0,1,0.0,1,2,0.5,1,1,2,2,0,2,1,6,5.0
 Cameron Brink,2026,5/15/2026,Sparks,Tempo,W,Bench,C,16:24,10,3,6,0.5,0,1,0.0,4,6,0.667,0,3,3,1,1,1,1,3,6.0
 Cameron Brink,2026,5/13/2026,Sparks,Fever,L,Bench,C,18:51,11,4,6,0.667,0,2,0.0,3,4,0.75,1,4,5,1,1,3,3,3,9.5
@@ -1137,7 +1145,7 @@ Cameron Brink,2025,8/7/2025,Sparks,Sun,W,Bench,SF,16:36,11,3,4,0.75,2,2,1.0,3,3,
 Cameron Brink,2025,8/5/2025,Sparks,Fever,W,Bench,SF,15:58,0,0,6,0.0,0,2,0.0,0,0,0.0,1,2,3,0,0,5,2,2,0.0
 Cameron Brink,2025,8/1/2025,Sparks,Storm,W,Bench,SF,11:40,7,3,7,0.429,1,2,0.5,0,0,0.0,2,2,4,0,2,3,2,5,5.8
 Cameron Brink,2025,7/29/2025,Sparks,Aces,L,Bench,,13:55,5,1,3,0.333,1,3,0.333,2,2,1.0,1,2,3,1,1,1,1,2,5.5
-Carla Leite,2026,5/20/2026,Fire,Fever,L,Bench,PG,13:57,6,2,3,.667,0,0,.000,2,2,1.000,0,1,1,1,1,0,4,3,0.3
+Carla Leite,2026,5/20/2026,Fire,Fever,L,Bench,PG,13:57,6,2,3,0.667,0,0,0.0,2,2,1.0,0,1,1,1,1,0,4,3,0.3
 Carla Leite,2026,5/12/2026,Fire,Liberty,L,Starter,G,25:52,21,8,14,0.571,0,1,0.0,5,5,1.0,1,3,4,6,1,0,2,1,16.4
 Carla Leite,2026,5/9/2026,Fire,Sky,L,Starter,G,28:31,18,3,11,0.273,1,5,0.2,11,12,0.917,1,2,3,3,0,0,1,3,8.3
 Carla Leite,2026,5/3/2026,Fire,Sparks,L,Starter,G,21:52,11,4,6,0.667,1,1,1.0,2,2,1.0,0,1,1,3,1,0,4,4,4.5
@@ -1211,13 +1219,14 @@ Cecilia Zandalasini,2025,6/7/2025,Valkyries,Aces,W,Starter,SF,29:45,18,5,9,0.556
 Cecilia Zandalasini,2025,6/5/2025,Valkyries,Mercury,L,Starter,SG,30:20,10,4,8,0.5,2,4,0.5,0,0,0.0,1,4,5,1,4,1,1,5,10.5
 Cecilia Zandalasini,2025,6/1/2025,Valkyries,Lynx,L,Bench,SF,17:03,3,1,3,0.333,1,3,0.333,0,0,0.0,0,2,2,0,0,0,2,1,-0.3
 Cecilia Zandalasini,2025,5/29/2025,Valkyries,Liberty,L,Bench,SF,14:49,9,3,8,0.375,2,6,0.333,1,2,0.5,0,1,1,2,1,0,0,2,5.0
+Chance Gray,2026,5/21/2026,Sparks,Mercury,W,Bench,SG,2:19,0,0,1,.000,0,1,.000,0,0,.000,0,0,0,1,0,0,0,1,-0.3
 Chance Gray,2026,5/17/2026,Sparks,Tempo,L,Bench,SG,9:56,4,2,4,0.5,0,2,0.0,0,0,0.0,0,1,1,0,0,0,1,2,-0.3
 Chance Gray,2026,5/15/2026,Sparks,Tempo,W,Bench,SG,10:48,0,0,2,0.0,0,2,0.0,0,0,0.0,0,1,1,0,0,0,1,0,-1.8
 Chance Gray,2026,5/13/2026,Sparks,Fever,L,Bench,SG,15:53,2,1,2,0.5,0,0,0.0,0,0,0.0,0,1,1,0,0,0,0,3,-0.3
 Chance Gray,2026,5/10/2026,Sparks,Aces,L,Bench,SG,7:58,0,0,2,0.0,0,1,0.0,0,0,0.0,0,1,1,1,0,0,0,0,0.3
 Chance Gray,2026,5/3/2026,Sparks,Fire,W,Bench,SG,12:50,6,2,5,0.4,1,3,0.333,1,2,0.5,1,1,2,1,1,0,1,0,4.3
 Chance Gray,2026,4/25/2026,Sparks,Nigeria National Team,W,Bench,SG,16:39,14,5,10,0.5,4,8,0.5,0,0,0.0,0,1,1,1,0,0,1,0,7.3
-Charlisse Leger-Walker,2026,5/20/2026,Sun,Storm,W,Bench,PG,28:09,16,6,15,.400,1,6,.167,3,3,1.000,0,2,2,3,1,0,1,2,7.1
+Charlisse Leger-Walker,2026,5/20/2026,Sun,Storm,W,Bench,PG,28:09,16,6,15,0.4,1,6,0.167,3,3,1.0,0,2,2,3,1,0,1,2,7.1
 Charlisse Leger-Walker,2026,5/18/2026,Sun,Fire,L,Bench,PG,23:12,10,3,7,0.429,3,4,0.75,1,2,0.5,0,1,1,2,0,0,4,4,0.8
 Charlisse Leger-Walker,2026,5/15/2026,Sun,Aces,L,Bench,PG,18:25,10,3,5,0.6,1,1,1.0,3,4,0.75,0,1,1,4,1,0,0,0,10.5
 Charlisse Leger-Walker,2026,5/13/2026,Sun,Aces,L,Starter,G,16:21,2,1,2,0.5,0,0,0.0,0,0,0.0,0,2,2,2,0,0,2,2,1.0
@@ -1326,6 +1335,7 @@ Courtney Vandersloot,2025,5/22/2025,Sky,Liberty,L,Starter,PG,24:37,14,5,11,0.455
 Courtney Vandersloot,2025,5/17/2025,Sky,Fever,L,Starter,PG,28:32,4,2,9,0.222,0,3,0.0,0,0,0.0,1,3,4,5,1,0,2,1,4.0
 Courtney Vandersloot,2025,5/6/2025,Sky,Lynx,W,Starter,PG,19:33,11,5,7,0.714,1,2,0.5,0,0,0.0,0,3,3,5,4,0,5,2,11.0
 Courtney Vandersloot,2025,5/2/2025,Sky,Brazil National Team,W,Starter,PG,15:45,2,1,4,0.25,0,1,0.0,0,0,0.0,0,1,1,5,1,0,0,0,5.8
+Courtney Williams,2026,5/21/2026,Lynx,Tempo,W,Starter,PG,28:58,15,6,15,.400,3,8,.375,0,0,.000,0,8,8,3,0,0,0,2,11.8
 Courtney Williams,2026,5/17/2026,Lynx,Sky,L,Starter,PG,30:18,17,7,19,0.368,3,6,0.5,0,0,0.0,1,4,5,3,0,0,2,1,7.3
 Courtney Williams,2026,5/14/2026,Lynx,Wings,W,Starter,G,30:36,21,9,10,0.9,3,4,0.75,0,0,0.0,0,5,5,3,2,0,1,3,19.8
 Courtney Williams,2026,5/12/2026,Lynx,Mercury,W,Starter,G,30:10,11,4,13,0.308,1,4,0.25,2,3,0.667,0,3,3,5,2,2,1,2,9.4
@@ -1487,6 +1497,7 @@ Dana Evans,2025,5/20/2025,Aces,Sun,W,Bench,PG,22:49,5,2,7,0.286,0,1,0.0,1,2,0.5,
 Dana Evans,2025,5/17/2025,Aces,Liberty,L,Bench,,19:00,10,4,7,0.571,2,2,1.0,0,1,0.0,1,0,1,3,0,1,0,2,8.4
 Darianna Littlepage-Buggs,2026,5/3/2026,Mystics,Dream,W,Bench,SG,13:55,5,2,3,0.667,1,1,1.0,0,0,0.0,0,2,2,1,0,1,1,0,5.3
 Darianna Littlepage-Buggs,2026,4/25/2026,Mystics,Lynx,L,Bench,SG,10:27,5,1,3,0.333,0,1,0.0,3,4,0.75,1,2,3,0,0,0,1,0,2.8
+DeWanna Bonner,2026,5/21/2026,Mercury,Sparks,L,Starter,PF,29:42,9,3,7,.429,1,5,.200,2,2,1.000,2,3,5,1,3,1,1,1,10.8
 DeWanna Bonner,2026,5/19/2026,Mercury,Tempo,L,Starter,PF,30:09,13,4,11,0.364,0,4,0.0,5,5,1.0,0,4,4,1,1,0,1,2,5.9
 DeWanna Bonner,2026,5/15/2026,Mercury,Sky,W,Starter,F,32:45,8,3,7,0.429,0,2,0.0,2,2,1.0,1,6,7,0,1,1,2,2,6.5
 DeWanna Bonner,2026,5/12/2026,Mercury,Lynx,L,Starter,F,30:11,16,6,16,0.375,2,8,0.25,2,2,1.0,1,6,7,2,0,1,1,3,9.3
@@ -1541,6 +1552,7 @@ DeWanna Bonner,2025,5/17/2025,Fever,Sky,W,Starter,PF,26:30,7,2,9,0.222,0,2,0.0,3
 DeWanna Bonner,2025,5/10/2025,Fever,Dream,W,Bench,PF,18:20,8,3,8,0.375,1,2,0.5,1,2,0.5,1,2,3,0,1,1,2,1,3.3
 DeWanna Bonner,2025,5/4/2025,Fever,Brazil National Team,W,Starter,PF,12:48,7,3,4,0.75,1,2,0.5,0,0,0.0,0,2,2,0,1,0,0,1,6.0
 DeWanna Bonner,2025,5/3/2025,Fever,Mystics,W,Starter,PF,27:12,9,1,8,0.125,0,4,0.0,7,7,1.0,2,2,4,1,2,0,1,2,4.9
+Dearica Hamby,2026,5/21/2026,Sparks,Mercury,W,Starter,C,29:34,27,7,11,.636,2,3,.667,11,11,1.000,5,10,15,3,1,0,0,3,29.6
 Dearica Hamby,2026,5/17/2026,Sparks,Tempo,L,Starter,C,30:49,21,7,11,0.636,1,2,0.5,6,8,0.75,4,5,9,3,3,0,1,3,21.0
 Dearica Hamby,2026,5/15/2026,Sparks,Tempo,W,Starter,C,31:59,19,8,10,0.8,0,0,0.0,3,3,1.0,1,6,7,4,0,0,2,4,15.9
 Dearica Hamby,2026,5/13/2026,Sparks,Fever,L,Starter,C,29:24,16,6,8,0.75,0,1,0.0,4,5,0.8,1,7,8,1,2,0,4,4,11.4
@@ -1627,7 +1639,7 @@ DiJonai Carrington,2025,5/19/2025,Wings,Storm,L,Starter,SF,18:34,4,2,8,0.25,0,2,
 DiJonai Carrington,2025,5/16/2025,Wings,Lynx,L,Starter,SF,26:18,15,5,11,0.455,1,2,0.5,4,4,1.0,2,1,3,1,1,0,1,4,7.0
 DiJonai Carrington,2025,5/10/2025,Wings,Toyota Antelopes,W,Starter,SF,21:34,12,6,9,0.667,0,0,0.0,0,0,0.0,1,3,4,3,2,0,1,1,12.0
 DiJonai Carrington,2025,5/2/2025,Wings,Aces,L,Starter,SF,16:58,6,1,3,0.333,0,1,0.0,4,4,1.0,1,4,5,0,0,0,4,1,1.8
-Diamond Miller,2026,5/20/2026,Sun,Storm,W,Starter,PF,15:03,2,1,6,.167,0,3,.000,0,0,.000,1,1,2,0,0,1,0,0,0.3
+Diamond Miller,2026,5/20/2026,Sun,Storm,W,Starter,PF,15:03,2,1,6,0.167,0,3,0.0,0,0,0.0,1,1,2,0,0,1,0,0,0.3
 Diamond Miller,2026,5/18/2026,Sun,Fire,L,Starter,SG,13:08,3,1,2,0.5,1,2,0.5,0,0,0.0,0,0,0,1,0,0,0,4,0.5
 Diamond Miller,2026,5/15/2026,Sun,Aces,L,Starter,F,14:32,10,3,10,0.3,2,4,0.5,2,2,1.0,1,2,3,0,1,0,0,3,3.8
 Diamond Miller,2026,5/13/2026,Sun,Aces,L,Starter,F,24:25,5,1,9,0.111,1,3,0.333,2,2,1.0,0,2,2,1,0,0,1,4,-3.0
@@ -1728,12 +1740,13 @@ Dominique Malonga,2025,5/19/2025,Storm,Wings,W,Bench,C,1:21,2,1,1,1.0,0,0,0.0,0,
 Dominique Malonga,2025,5/17/2025,Storm,Mercury,L,Bench,C,9:38,2,1,2,0.5,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,0.0
 Dulcy Fankam Mendjiadeu,2026,5/3/2026,Wings,Aces,W,Bench,SF,9:43,0,0,0,0.0,0,0,0.0,0,0,0.0,1,0,1,0,0,0,1,2,-1.0
 Dulcy Fankam Mendjiadeu,2026,4/30/2026,Wings,Fever,W,Bench,SF,11:56,8,4,7,0.571,0,0,0.0,0,0,0.0,1,2,3,1,0,0,1,5,2.8
+Eliska Hamzova,2026,5/21/2026,Lynx,Tempo,W,Bench,PG,5:20,4,0,1,.000,0,0,.000,4,6,.667,2,4,6,2,0,0,2,0,6.0
 Eliska Hamzova,2026,5/17/2026,Lynx,Sky,L,Bench,PG,1:59,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0.0
 Eliska Hamzova,2026,5/12/2026,Lynx,Mercury,W,Bench,PG,4:59,2,0,1,0.0,0,1,0.0,2,2,1.0,0,1,1,0,0,0,2,1,-1.3
 Eliska Hamzova,2026,5/1/2026,Lynx,Tempo,W,Bench,PG,17:34,7,2,3,0.667,1,1,1.0,2,3,0.667,1,1,2,1,0,0,4,4,0.4
 Eliska Hamzova,2026,4/27/2026,Lynx,Nigeria National Team,W,Bench,PG,17:27,8,2,4,0.5,1,1,1.0,3,5,0.6,1,0,1,7,0,1,5,5,4.6
 Eliska Hamzova,2026,4/25/2026,Lynx,Mystics,W,Bench,PG,13:09,6,0,5,0.0,0,0,0.0,6,10,0.6,1,0,1,2,1,1,3,1,0.0
-Elizabeth Williams,2026,5/20/2026,Sky,Wings,L,Bench,C,18:13,5,2,4,.500,0,0,.000,1,2,.500,1,2,3,1,1,2,1,2,5.8
+Elizabeth Williams,2026,5/20/2026,Sky,Wings,L,Bench,C,18:13,5,2,4,0.5,0,0,0.0,1,2,0.5,1,2,3,1,1,2,1,2,5.8
 Elizabeth Williams,2026,5/17/2026,Sky,Lynx,W,Bench,C,13:36,2,1,3,0.333,0,0,0.0,0,0,0.0,2,6,8,0,0,0,2,1,3.8
 Elizabeth Williams,2026,5/15/2026,Sky,Mercury,L,Bench,C,17:22,1,0,2,0.0,0,0,0.0,1,2,0.5,1,3,4,1,0,1,1,3,1.5
 Elizabeth Williams,2026,5/13/2026,Sky,Valkyries,W,Bench,C,13:10,2,1,2,0.5,0,0,0.0,0,2,0.0,3,3,6,0,0,1,1,1,4.5
@@ -1786,7 +1799,7 @@ Elizabeth Williams,2025,5/6/2025,Sky,Lynx,W,Bench,C,16:29,6,3,3,1.0,0,0,0.0,0,0,
 Elizabeth Williams,2025,5/2/2025,Sky,Brazil National Team,W,Bench,C,10:37,6,3,4,0.75,0,0,0.0,0,2,0.0,1,3,4,0,1,0,0,1,6.0
 Emese Hof,2026,5/17/2026,Lynx,Sky,L,Bench,SF,10:39,3,1,3,0.333,0,0,0.0,1,2,0.5,1,2,3,2,0,0,2,2,1.5
 Emese Hof,2026,5/9/2026,Lynx,Dream,L,Bench,,4:08,2,1,2,0.5,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,0.0
-Emily Engstler,2026,5/20/2026,Fire,Fever,L,Starter,SF,20:46,5,2,10,.200,1,3,.333,0,0,.000,0,2,2,0,0,0,1,2,-3.0
+Emily Engstler,2026,5/20/2026,Fire,Fever,L,Starter,SF,20:46,5,2,10,0.2,1,3,0.333,0,0,0.0,0,2,2,0,0,0,1,2,-3.0
 Emily Engstler,2026,5/18/2026,Fire,Sun,W,Starter,SF,28:05,15,4,7,0.571,2,3,0.667,5,5,1.0,1,2,3,2,2,1,2,3,11.9
 Emily Engstler,2026,5/14/2026,Fire,Liberty,L,Starter,F,18:45,11,4,7,0.571,2,3,0.667,1,2,0.5,1,3,4,0,0,1,1,1,7.8
 Emily Engstler,2026,5/12/2026,Fire,Liberty,L,Starter,F,24:08,6,2,3,0.667,2,3,0.667,0,0,0.0,0,3,3,1,2,3,3,3,7.5
@@ -1863,6 +1876,7 @@ Emma Cechova,2026,5/14/2026,Lynx,Wings,W,Bench,C,11:07,2,1,3,0.333,0,0,0.0,0,0,0
 Emma Cechova,2026,5/12/2026,Lynx,Mercury,W,Bench,C,21:38,11,4,8,0.5,0,1,0.0,3,4,0.75,3,3,6,0,1,1,2,4,6.8
 Emma Cechova,2026,5/9/2026,Lynx,Dream,L,Bench,C,19:03,12,5,5,1.0,0,0,0.0,2,4,0.5,1,2,3,0,0,1,2,6,5.3
 Emma Cechova,2026,5/1/2026,Lynx,Tempo,W,Bench,C,24:23,16,5,7,0.714,0,0,0.0,6,10,0.6,2,4,6,0,0,4,2,3,12.5
+Erica Wheeler,2026,5/21/2026,Sparks,Mercury,W,Starter,PG,26:08,5,2,4,.500,1,2,.500,0,0,.000,0,1,1,4,0,0,2,5,2.3
 Erica Wheeler,2026,5/17/2026,Sparks,Tempo,L,Starter,PG,30:11,4,1,9,0.111,0,3,0.0,2,3,0.667,1,1,2,7,1,1,3,5,1.4
 Erica Wheeler,2026,5/15/2026,Sparks,Tempo,W,Starter,G,32:35,10,3,5,0.6,2,4,0.5,2,2,1.0,0,2,2,7,1,0,3,1,11.5
 Erica Wheeler,2026,5/13/2026,Sparks,Fever,L,Bench,PG,21:01,2,1,5,0.2,0,1,0.0,0,0,0.0,0,1,1,4,2,0,0,5,2.5
@@ -1964,7 +1978,7 @@ Ezi Magbegor,2025,5/25/2025,Storm,Aces,W,Starter,C,24:40,12,5,10,0.5,0,0,0.0,2,2
 Ezi Magbegor,2025,5/23/2025,Storm,Mercury,W,Starter,C,32:05,6,3,6,0.5,0,2,0.0,0,0,0.0,1,6,7,2,1,1,2,2,8.0
 Ezi Magbegor,2025,5/19/2025,Storm,Wings,W,Starter,C,27:59,7,3,6,0.5,0,1,0.0,1,4,0.25,2,6,8,5,1,1,1,3,12.0
 Ezi Magbegor,2025,5/17/2025,Storm,Mercury,L,Starter,C,22:29,2,1,9,0.111,0,3,0.0,0,2,0.0,3,5,8,0,0,2,0,2,2.3
-Flau'jae Johnson,2026,5/20/2026,Storm,Sun,L,Starter,SF,15:48,5,2,6,.333,0,2,.000,1,2,.500,0,3,3,0,1,1,0,0,4.0
+Flau'jae Johnson,2026,5/20/2026,Storm,Sun,L,Starter,SF,15:48,5,2,6,0.333,0,2,0.0,1,2,0.5,0,3,3,0,1,1,0,0,4.0
 Flau'jae Johnson,2026,5/17/2026,Storm,Fever,L,Starter,,28:15,14,3,14,0.214,0,4,0.0,8,9,0.889,2,4,6,0,1,4,2,2,7.1
 Flau'jae Johnson,2026,5/13/2026,Storm,Tempo,L,Starter,G,28:39,7,2,7,0.286,0,1,0.0,3,4,0.75,1,5,6,2,1,1,3,3,4.5
 Flau'jae Johnson,2026,5/10/2026,Storm,Sun,W,Starter,G,29:43,16,3,10,0.3,1,3,0.333,9,10,0.9,1,5,6,1,3,1,1,2,12.5
@@ -1975,6 +1989,7 @@ Frieda Buhner,2026,5/14/2026,Fire,Liberty,L,Bench,SF,14:01,0,0,3,0.0,0,3,0.0,0,0
 Frieda Buhner,2026,5/12/2026,Fire,Liberty,L,Bench,SF,7:41,2,0,0,0.0,0,0,0.0,2,2,1.0,2,0,2,0,0,0,0,2,2.3
 Frieda Buhner,2026,5/9/2026,Fire,Sky,L,Bench,SF,12:50,4,2,4,0.5,0,2,0.0,0,0,0.0,0,3,3,0,0,0,0,3,1.8
 Frieda Buhner,2026,5/3/2026,Fire,Sparks,L,Bench,SF,20:34,5,1,6,0.167,0,3,0.0,3,4,0.75,0,1,1,0,0,0,1,2,-2.3
+Gabby Williams,2026,5/21/2026,Valkyries,Liberty,W,Starter,SF,20:45,16,4,11,.364,4,6,.667,4,6,.667,0,2,2,2,0,0,0,3,7.5
 Gabby Williams,2026,5/13/2026,Valkyries,Sky,L,Starter,F,31:36,18,6,17,0.353,3,6,0.5,3,4,0.75,1,4,5,1,1,1,2,1,8.3
 Gabby Williams,2026,5/10/2026,Valkyries,Mercury,W,Starter,F,32:12,19,7,13,0.538,4,9,0.444,1,1,1.0,1,4,5,3,4,1,4,2,15.9
 Gabby Williams,2026,5/8/2026,Valkyries,Storm,W,Starter,SF,23:57,7,2,9,0.222,1,5,0.2,2,3,0.667,3,3,6,4,1,0,2,0,7.4
@@ -2025,7 +2040,7 @@ Gabby Williams,2025,5/25/2025,Storm,Aces,W,Starter,SG,29:47,12,5,8,0.625,2,4,0.5
 Gabby Williams,2025,5/23/2025,Storm,Mercury,W,Starter,SG,37:20,11,4,9,0.444,3,7,0.429,0,0,0.0,1,4,5,2,2,0,3,2,8.3
 Gabby Williams,2025,5/19/2025,Storm,Wings,W,Starter,SG,39:05,17,7,13,0.538,3,4,0.75,0,0,0.0,2,3,5,5,3,2,4,3,16.0
 Gabby Williams,2025,5/17/2025,Storm,Mercury,L,Starter,SG,31:42,4,1,9,0.111,0,1,0.0,2,2,1.0,0,0,0,4,2,2,1,0,3.5
-Gabriela Jaquez,2026,5/20/2026,Sky,Wings,L,Starter,PF,28:27,12,4,11,.364,0,2,.000,4,4,1.000,1,4,5,2,1,0,1,4,6.3
+Gabriela Jaquez,2026,5/20/2026,Sky,Wings,L,Starter,PF,28:27,12,4,11,0.364,0,2,0.0,4,4,1.0,1,4,5,2,1,0,1,4,6.3
 Gabriela Jaquez,2026,5/17/2026,Sky,Lynx,W,Starter,SF,31:41,20,6,11,0.545,1,2,0.5,7,7,1.0,1,7,8,1,1,0,2,2,14.4
 Gabriela Jaquez,2026,5/15/2026,Sky,Mercury,L,Starter,F,28:42,13,4,5,0.8,0,1,0.0,5,7,0.714,1,2,3,0,1,0,2,2,7.1
 Gabriela Jaquez,2026,5/13/2026,Sky,Valkyries,W,Starter,F,26:02,7,3,7,0.429,1,2,0.5,0,0,0.0,0,5,5,2,0,0,1,2,5.5
@@ -2038,7 +2053,7 @@ Georgia Amoore,2026,5/10/2026,Mystics,Liberty,L,Starter,G,21:22,7,3,8,0.375,1,4,
 Georgia Amoore,2026,5/8/2026,Mystics,Tempo,W,Starter,PG,20:26,6,2,9,0.222,2,7,0.286,0,0,0.0,0,3,3,3,2,0,5,1,1.0
 Georgia Amoore,2026,5/3/2026,Mystics,Dream,W,Starter,G,17:23,8,3,7,0.429,2,4,0.5,0,0,0.0,0,1,1,2,3,0,2,1,6.0
 Georgia Amoore,2026,4/25/2026,Mystics,Lynx,L,Starter,G,12:46,3,1,4,0.25,1,3,0.333,0,0,0.0,0,1,1,2,1,0,1,3,1.3
-Gianna Kneepkens,2026,5/20/2026,Sun,Storm,W,Starter,SG,4:13,2,0,2,.000,0,1,.000,2,2,1.000,0,1,1,0,0,0,0,0,0.5
+Gianna Kneepkens,2026,5/20/2026,Sun,Storm,W,Starter,SG,4:13,2,0,2,0.0,0,1,0.0,2,2,1.0,0,1,1,0,0,0,0,0,0.5
 Gianna Kneepkens,2026,5/18/2026,Sun,Fire,L,Bench,PG,4:17,3,1,2,0.5,1,1,1.0,0,0,0.0,0,0,0,0,0,0,0,1,1.0
 Gianna Kneepkens,2026,5/15/2026,Sun,Aces,L,Starter,G,17:34,3,1,5,0.2,0,2,0.0,1,1,1.0,2,1,3,1,0,0,2,2,-0.4
 Gianna Kneepkens,2026,5/13/2026,Sun,Aces,L,Bench,PG,15:59,4,2,4,0.5,0,1,0.0,0,0,0.0,2,1,3,0,1,0,0,1,4.3
@@ -2052,7 +2067,7 @@ Grace VanSlooten,2026,5/10/2026,Storm,Sun,W,Bench,PF,10:00,5,2,2,1.0,1,1,1.0,0,0
 Grace VanSlooten,2026,5/8/2026,Storm,Valkyries,L,Bench,PF,7:18,5,1,2,0.5,1,1,1.0,2,2,1.0,0,0,0,0,0,0,0,2,1.8
 Grace VanSlooten,2026,4/29/2026,Storm,Fire,W,Bench,PF,8:28,1,0,1,0.0,0,0,0.0,1,2,0.5,1,0,1,0,0,0,0,0,0.5
 Grace VanSlooten,2026,4/25/2026,Storm,Valkyries,L,Bench,PF,21:59,3,0,2,0.0,0,0,0.0,3,4,0.75,2,1,3,1,0,1,0,1,4.3
-Hailey Van Lith,2026,5/20/2026,Sun,Storm,W,Starter,PG,11:48,0,0,4,.000,0,1,.000,0,0,.000,0,0,0,1,0,0,0,0,-2.0
+Hailey Van Lith,2026,5/20/2026,Sun,Storm,W,Starter,PG,11:48,0,0,4,0.0,0,1,0.0,0,0,0.0,0,0,0,1,0,0,0,0,-2.0
 Hailey Van Lith,2026,5/18/2026,Sun,Fire,L,Starter,PG,24:45,12,5,9,0.556,1,3,0.333,1,2,0.5,0,1,1,3,0,1,2,4,5.3
 Hailey Van Lith,2026,5/15/2026,Sun,Aces,L,Starter,G,21:35,17,7,11,0.636,3,4,0.75,0,0,0.0,1,0,1,4,0,0,1,1,12.3
 Hailey Van Lith,2026,5/13/2026,Sun,Aces,L,Bench,PG,22:20,9,3,5,0.6,1,2,0.5,2,2,1.0,0,0,0,1,2,1,2,1,6.0
@@ -2092,7 +2107,7 @@ Hailey Van Lith,2025,5/17/2025,Sky,Fever,L,Bench,PG,4:24,4,2,2,1.0,0,0,0.0,0,0,0
 Hailey Van Lith,2025,5/10/2025,Sky,Lynx,L,Bench,PG,14:55,8,3,4,0.75,2,2,1.0,0,0,0.0,0,1,1,3,1,0,2,2,6.8
 Hailey Van Lith,2025,5/6/2025,Sky,Lynx,W,Bench,PG,17:00,3,1,3,0.333,1,2,0.5,0,0,0.0,1,0,1,5,0,1,0,2,6.8
 Hailey Van Lith,2025,5/2/2025,Sky,Brazil National Team,W,Bench,PG,13:06,7,1,2,0.5,0,1,0.0,5,5,1.0,0,3,3,5,1,0,0,1,11.4
-Haley Jones,2026,5/20/2026,Fire,Fever,L,Bench,SF,12:45,6,2,4,.500,0,1,.000,2,2,1.000,1,2,3,1,0,0,0,2,4.8
+Haley Jones,2026,5/20/2026,Fire,Fever,L,Bench,SF,12:45,6,2,4,0.5,0,1,0.0,2,2,1.0,1,2,3,1,0,0,0,2,4.8
 Haley Jones,2026,5/18/2026,Fire,Sun,W,Bench,SF,11:55,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,1,1,0,3,1,-1.5
 Haley Jones,2026,5/14/2026,Fire,Liberty,L,Bench,SF,14:32,10,3,6,0.5,0,1,0.0,4,6,0.667,1,2,3,2,1,0,2,2,5.8
 Haley Jones,2026,5/12/2026,Fire,Liberty,L,Bench,SF,10:54,6,3,4,0.75,0,1,0.0,0,0,0.0,0,5,5,1,0,0,1,2,5.8
@@ -2129,13 +2144,14 @@ Haley Jones,2025,6/3/2025,Mercury,Lynx,L,Bench,SF,15:29,2,1,4,0.25,0,1,0.0,0,0,0
 Haley Jones,2025,6/1/2025,Mercury,Sparks,W,Bench,SF,3:45,2,1,1,1.0,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,2,1.3
 Haley Jones,2025,5/10/2025,Dream,Fever,L,Bench,SF,10:44,7,2,5,0.4,1,2,0.5,2,2,1.0,0,1,1,1,0,1,0,0,5.3
 Haley Jones,2025,5/7/2025,Dream,Mystics,W,Bench,SF,7:23,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,2,0,-2.0
+Han Xu,2026,5/21/2026,Liberty,Valkyries,L,Bench,C,6:48,5,2,3,.667,1,2,.500,0,0,.000,0,0,0,0,0,0,0,0,2.8
 Han Xu,2026,5/14/2026,Liberty,Fire,W,Bench,C,7:18,3,1,2,0.5,0,0,0.0,1,2,0.5,1,1,2,2,0,0,1,0,3.5
 Han Xu,2026,5/12/2026,Liberty,Fire,W,Bench,C,5:32,0,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,-0.8
 Han Xu,2026,5/10/2026,Liberty,Mystics,W,Bench,C,25:31,4,2,5,0.4,0,2,0.0,0,0,0.0,1,4,5,0,1,1,0,6,3.3
 Han Xu,2026,5/8/2026,Liberty,Sun,W,Bench,C,21:31,8,3,8,0.375,2,6,0.333,0,0,0.0,0,2,2,1,0,1,1,2,3.5
 Han Xu,2026,5/3/2026,Liberty,Sun,W,Bench,C,14:40,4,2,9,0.222,0,2,0.0,0,0,0.0,1,0,1,1,1,1,0,0,1.3
 Han Xu,2026,4/25/2026,Liberty,Fever,L,Bench,C,22:29,20,6,10,0.6,1,3,0.333,7,7,1.0,1,1,2,1,1,2,2,0,13.6
-Holly Winterburn,2026,5/20/2026,Fire,Fever,L,Bench,PG,7:35,4,1,2,.500,0,1,.000,2,2,1.000,0,2,2,1,0,0,1,2,2.3
+Holly Winterburn,2026,5/20/2026,Fire,Fever,L,Bench,PG,7:35,4,1,2,0.5,0,1,0.0,2,2,1.0,0,2,2,1,0,0,1,2,2.3
 Holly Winterburn,2026,5/18/2026,Fire,Sun,W,Bench,PG,15:03,2,1,4,0.25,0,2,0.0,0,0,0.0,0,1,1,4,1,0,1,2,2.8
 Holly Winterburn,2026,5/3/2026,Dream,Mystics,L,Bench,SG,22:24,12,4,9,0.444,0,5,0.0,4,4,1.0,0,2,2,2,2,0,2,2,6.3
 Iliana Rupert,2025,9/17/2025,Valkyries,Lynx,L,Starter,C,31:52,8,3,5,0.6,2,4,0.5,0,0,0.0,0,2,2,5,0,1,4,2,6.8
@@ -2309,7 +2325,7 @@ Jackie Young,2025,5/20/2025,Aces,Sun,W,Starter,SF,23:52,16,5,9,0.556,2,2,1.0,4,5
 Jackie Young,2025,5/17/2025,Aces,Liberty,L,Starter,SF,32:36,16,5,19,0.263,4,12,0.333,2,3,0.667,2,3,5,5,0,0,3,1,6.4
 Jackie Young,2025,5/6/2025,Aces,Mercury,W,Starter,SF,21:03,10,3,6,0.5,2,3,0.667,2,2,1.0,0,1,1,2,0,0,2,0,5.5
 Jackie Young,2025,5/2/2025,Aces,Wings,W,Starter,SF,29:21,28,6,14,0.429,3,8,0.375,13,13,1.0,0,5,5,9,3,0,0,1,27.9
-Jacy Sheldon,2026,5/20/2026,Sky,Wings,L,Starter,PG,21:01,2,1,4,.250,0,2,.000,0,0,.000,0,0,0,1,0,0,0,2,-1.0
+Jacy Sheldon,2026,5/20/2026,Sky,Wings,L,Starter,PG,21:01,2,1,4,0.25,0,2,0.0,0,0,0.0,0,0,0,1,0,0,0,2,-1.0
 Jacy Sheldon,2026,5/18/2026,Wings,Mystics,W,Starter,PF,27:26,12,4,7,0.571,0,0,0.0,4,5,0.8,4,12,16,6,0,0,0,1,23.4
 Jacy Sheldon,2026,5/17/2026,Sky,Lynx,W,Starter,SG,31:41,10,3,7,0.429,1,3,0.333,3,3,1.0,0,1,1,2,4,0,1,1,8.9
 Jacy Sheldon,2026,5/15/2026,Sky,Mercury,L,Starter,G,25:34,8,3,6,0.5,1,2,0.5,1,1,1.0,0,0,0,3,0,0,2,5,1.6
@@ -2349,7 +2365,7 @@ Jacy Sheldon,2025,5/20/2025,Sun,Aces,L,Starter,SG,23:01,0,0,7,0.0,0,2,0.0,0,0,0.
 Jacy Sheldon,2025,5/18/2025,Sun,Mystics,L,Starter,SG,30:10,11,4,5,0.8,0,1,0.0,3,3,1.0,0,2,2,0,0,0,1,6,3.6
 Jacy Sheldon,2025,5/9/2025,Sun,Liberty,W,Starter,SG,17:20,16,5,6,0.833,3,4,0.75,3,4,0.75,0,0,0,1,0,0,0,3,9.5
 Jacy Sheldon,2025,5/4/2025,Sun,Storm,L,Bench,PG,22:50,5,2,7,0.286,1,5,0.2,0,0,0.0,1,0,1,1,1,0,1,1,1.3
-Jade Melbourne,2026,5/20/2026,Storm,Sun,L,Starter,SG,29:33,11,1,4,.250,0,1,.000,9,10,.900,0,2,2,3,0,1,5,1,4.3
+Jade Melbourne,2026,5/20/2026,Storm,Sun,L,Starter,SG,29:33,11,1,4,0.25,0,1,0.0,9,10,0.9,0,2,2,3,0,1,5,1,4.3
 Jade Melbourne,2026,5/17/2026,Storm,Fever,L,Starter,,29:12,12,3,7,0.429,0,2,0.0,6,6,1.0,0,1,1,3,0,0,2,4,4.3
 Jade Melbourne,2026,5/13/2026,Storm,Tempo,L,Bench,PG,28:26,14,5,9,0.556,1,3,0.333,3,3,1.0,1,0,1,6,3,0,4,4,10.1
 Jade Melbourne,2026,5/10/2026,Storm,Sun,W,Bench,PG,23:10,15,4,7,0.571,1,2,0.5,6,11,0.545,0,1,1,6,1,1,1,3,11.9
@@ -2401,6 +2417,7 @@ Jade Melbourne,2025,5/18/2025,Mystics,Sun,W,Bench,PG,24:41,15,5,8,0.625,3,4,0.75
 Jade Melbourne,2025,5/16/2025,Mystics,Dream,W,Bench,PG,21:46,11,4,6,0.667,2,3,0.667,1,2,0.5,1,4,5,1,2,0,0,2,11.8
 Jade Melbourne,2025,5/7/2025,Mystics,Dream,L,Starter,PG,21:48,6,1,3,0.333,0,0,0.0,4,4,1.0,0,2,2,1,2,0,4,2,1.8
 Jade Melbourne,2025,5/3/2025,Mystics,Fever,L,Bench,PG,22:03,3,1,3,0.333,0,0,0.0,1,2,0.5,0,1,1,3,2,1,2,2,3.8
+Janelle Salaun,2026,5/21/2026,Valkyries,Liberty,W,Bench,SF,26:15,12,3,11,.273,2,7,.286,4,5,.800,3,3,6,1,2,0,1,2,8.1
 Janelle Salaun,2026,5/13/2026,Valkyries,Sky,L,Bench,SF,16:39,6,1,5,0.2,1,4,0.25,3,4,0.75,0,1,1,0,0,0,0,1,1.0
 Janelle Salaun,2026,5/10/2026,Valkyries,Mercury,W,Bench,SF,26:02,21,7,10,0.7,4,5,0.8,3,3,1.0,1,2,3,2,1,0,0,1,17.4
 Janelle Salaun,2026,5/8/2026,Valkyries,Storm,W,Bench,SF,27:22,20,7,16,0.438,5,11,0.455,1,3,0.333,0,2,2,1,0,1,1,4,7.4
@@ -2443,7 +2460,7 @@ Janelle Salaun,2025,5/27/2025,Valkyries,Liberty,L,Starter,PF,28:14,9,3,12,0.25,3
 Janelle Salaun,2025,5/23/2025,Valkyries,Sparks,W,Starter,PF,30:26,18,5,11,0.455,4,8,0.5,4,4,1.0,0,8,8,1,2,1,2,1,15.8
 Janelle Salaun,2025,5/21/2025,Valkyries,Mystics,W,Starter,PF,28:25,10,4,11,0.364,1,4,0.25,1,1,1.0,0,4,4,0,1,0,3,2,1.4
 Janiah Barker,2026,4/26/2026,Aces,Japan National Team,W,Bench,PF,6:34,1,0,0,0.0,0,0,0.0,1,2,0.5,0,2,2,0,1,0,0,1,2.3
-Jessica Shepard,2026,5/20/2026,Wings,Sky,W,Starter,PF,31:27,18,6,7,.857,0,1,.000,6,9,.667,1,9,10,12,0,0,1,3,26.6
+Jessica Shepard,2026,5/20/2026,Wings,Sky,W,Starter,PF,31:27,18,6,7,0.857,0,1,0.0,6,9,0.667,1,9,10,12,0,0,1,3,26.6
 Jessica Shepard,2026,5/14/2026,Wings,Lynx,L,Starter,F,30:48,7,3,8,0.375,0,1,0.0,1,2,0.5,2,4,6,4,1,0,0,3,8.8
 Jessica Shepard,2026,5/12/2026,Wings,Dream,L,Starter,C,30:45,12,6,11,0.545,0,0,0.0,0,0,0.0,3,5,8,3,0,0,2,2,10.5
 Jessica Shepard,2026,5/9/2026,Wings,Fever,W,Starter,F,32:05,13,5,8,0.625,0,0,0.0,3,5,0.6,1,8,9,9,2,0,2,5,18.6
@@ -2560,9 +2577,11 @@ Jewell Loyd,2025,5/20/2025,Aces,Sun,W,Starter,PG,20:45,20,7,14,0.5,6,9,0.667,0,0
 Jewell Loyd,2025,5/17/2025,Aces,Liberty,L,Starter,PG,31:28,5,2,10,0.2,1,6,0.167,0,0,0.0,3,1,4,2,0,0,1,4,0.3
 Jewell Loyd,2025,5/6/2025,Aces,Mercury,W,Starter,PG,18:59,11,4,8,0.5,3,5,0.6,0,0,0.0,0,1,1,0,0,0,2,0,3.8
 Jewell Loyd,2025,5/2/2025,Aces,Wings,W,Starter,PG,21:08,10,3,7,0.429,1,3,0.333,3,4,0.75,0,1,1,2,1,0,0,1,6.5
+Jihyun Park,2026,5/21/2026,Sparks,Mercury,W,Bench,SF,10:56,2,0,0,.000,0,0,.000,2,2,1.000,0,1,1,1,1,0,0,3,2.5
 Jihyun Park,2026,5/17/2026,Sparks,Tempo,L,Bench,SF,7:33,2,1,3,0.333,0,2,0.0,0,0,0.0,1,0,1,2,0,0,0,3,1.3
 Jihyun Park,2026,5/10/2026,Sparks,Aces,L,Bench,SF,1:52,0,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,-0.8
 Jihyun Park,2026,5/3/2026,Sparks,Fire,W,Bench,SF,9:32,2,1,3,0.333,0,2,0.0,0,0,0.0,0,2,2,0,0,0,0,1,0.8
+Jonquel Jones,2026,5/21/2026,Liberty,Valkyries,L,Starter,C,28:24,16,6,12,.500,1,3,.333,3,4,.750,2,6,8,3,0,1,2,1,13.5
 Jonquel Jones,2026,5/14/2026,Liberty,Fire,W,Starter,C,26:22,6,2,4,0.5,0,0,0.0,2,2,1.0,1,8,9,3,1,0,2,1,10.8
 Jonquel Jones,2026,5/12/2026,Liberty,Fire,W,Starter,C,34:28,17,6,11,0.545,3,6,0.5,2,2,1.0,1,6,7,3,1,0,4,3,12.0
 Jonquel Jones,2026,5/10/2026,Liberty,Mystics,W,Starter,C,24:12,13,3,8,0.375,1,2,0.5,6,7,0.857,2,6,8,2,0,1,3,6,7.9
@@ -2608,7 +2627,7 @@ Jonquel Jones,2025,5/9/2025,Liberty,Sun,L,Starter,C,18:27,7,3,6,0.5,0,3,0.0,1,2,
 Jordan Harrison,2026,5/9/2026,Fire,Sky,L,Bench,PG,11:29,4,2,6,0.333,0,0,0.0,0,0,0.0,0,0,0,4,0,0,2,2,0.5
 Jordan Harrison,2026,5/3/2026,Fire,Sparks,L,Bench,PG,18:08,9,2,5,0.4,0,1,0.0,5,5,1.0,1,2,3,4,1,0,4,4,4.9
 Jordan Harrison,2026,4/29/2026,Fire,Storm,L,Bench,PG,20:59,5,2,8,0.25,0,3,0.0,1,1,1.0,0,2,2,3,0,1,0,5,1.6
-Jordan Horston,2026,5/20/2026,Storm,Sun,L,Starter,PF,17:07,0,0,2,.000,0,1,.000,0,0,.000,1,2,3,0,2,0,1,1,1.5
+Jordan Horston,2026,5/20/2026,Storm,Sun,L,Starter,PF,17:07,0,0,2,0.0,0,1,0.0,0,0,0.0,1,2,3,0,2,0,1,1,1.5
 Jordan Horston,2026,5/17/2026,Storm,Fever,L,Starter,,14:42,2,1,5,0.2,0,1,0.0,0,0,0.0,0,2,2,3,1,0,1,2,1.8
 Jordan Horston,2026,5/13/2026,Storm,Tempo,L,Starter,F,17:46,1,0,0,0.0,0,0,0.0,1,2,0.5,0,2,2,1,0,0,1,1,1.3
 Jordan Horston,2026,5/10/2026,Storm,Sun,W,Starter,F,15:17,4,1,4,0.25,0,1,0.0,2,2,1.0,1,2,3,1,1,1,3,0,2.8
@@ -2650,6 +2669,7 @@ Jordin Canada,2025,6/13/2025,Dream,Sky,W,Starter,PG,25:47,12,5,8,0.625,2,3,0.667
 Jordin Canada,2025,6/10/2025,Dream,Fever,W,Starter,PG,23:56,4,2,8,0.25,0,2,0.0,0,0,0.0,0,2,2,5,0,0,0,2,3.5
 Jordin Canada,2025,6/6/2025,Dream,Sun,L,Starter,PG,17:12,0,0,7,0.0,0,4,0.0,0,0,0.0,0,2,2,3,1,1,2,1,-1.3
 Jordin Canada,2025,5/7/2025,Dream,Mystics,W,Starter,PG,0:35,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,0,1.0
+Jovana Nogic,2026,5/21/2026,Mercury,Sparks,L,Starter,PG,29:42,15,5,11,.455,3,6,.500,2,3,.667,0,1,1,3,1,0,1,5,6.9
 Jovana Nogic,2026,5/19/2026,Mercury,Tempo,L,Starter,PG,29:27,13,4,15,0.267,2,9,0.222,3,3,1.0,0,0,0,3,0,0,2,4,-0.4
 Jovana Nogic,2026,5/15/2026,Mercury,Sky,W,Starter,G,31:02,27,6,11,0.545,5,8,0.625,10,11,0.909,2,2,4,0,0,0,1,2,16.1
 Jovana Nogic,2026,5/12/2026,Mercury,Lynx,L,Bench,PG,17:18,2,0,6,0.0,0,2,0.0,2,2,1.0,1,0,1,2,3,0,1,3,0.3
@@ -2693,6 +2713,7 @@ Julie Allemand,2025,5/27/2025,Sparks,Dream,L,Bench,PG,17:06,3,1,1,1.0,1,1,1.0,0,
 Julie Allemand,2025,5/25/2025,Sparks,Sky,W,Bench,PG,17:36,4,1,5,0.2,0,3,0.0,2,2,1.0,1,3,4,1,2,0,1,1,4.3
 Julie Allemand,2025,5/23/2025,Sparks,Valkyries,L,Bench,PG,16:25,3,1,2,0.5,1,2,0.5,0,0,0.0,0,2,2,2,0,0,3,1,1.5
 Julie Allemand,2025,5/21/2025,Sparks,Mercury,L,Bench,PG,8:43,3,1,3,0.333,1,3,0.333,0,0,0.0,0,1,1,1,1,0,2,0,1.5
+Julie Vanloo,2026,5/21/2026,Liberty,Valkyries,L,Bench,PG,15:54,2,1,3,.333,0,2,.000,0,0,.000,0,2,2,8,0,0,4,3,3.8
 Julie Vanloo,2026,5/14/2026,Liberty,Fire,W,Bench,PG,17:32,9,3,5,0.6,3,5,0.6,0,0,0.0,0,0,0,4,1,0,2,1,7.8
 Julie Vanloo,2026,5/12/2026,Liberty,Fire,W,Bench,PG,12:21,3,1,2,0.5,1,1,1.0,0,0,0.0,0,0,0,2,0,0,1,2,1.5
 Julie Vanloo,2026,5/10/2026,Liberty,Mystics,W,Bench,PG,13:20,3,1,3,0.333,1,3,0.333,0,0,0.0,0,1,1,2,0,0,2,3,0.0
@@ -2737,6 +2758,7 @@ Julie Vanloo,2025,5/16/2025,Valkyries,Sparks,L,Bench,PG,27:06,14,5,11,0.455,4,10
 Julie Vanloo,2025,5/11/2025,Valkyries,Mercury,W,Bench,PG,18:31,6,1,3,0.333,0,2,0.0,4,4,1.0,0,1,1,6,0,0,1,0,8.0
 Julie Vanloo,2025,5/6/2025,Valkyries,Sparks,L,Bench,PG,15:36,3,1,4,0.25,0,2,0.0,1,2,0.5,1,0,1,3,1,0,1,0,3.3
 Justine Pissott,2026,4/25/2026,Fever,Liberty,W,Bench,SG,10:24,8,2,4,0.5,2,3,0.667,2,2,1.0,0,1,1,1,0,0,0,3,4.5
+Kahleah Copper,2026,5/21/2026,Mercury,Sparks,L,Starter,SG,35:43,22,7,20,.350,1,7,.143,7,10,.700,0,5,5,2,0,0,4,2,4.0
 Kahleah Copper,2026,5/19/2026,Mercury,Tempo,L,Starter,SG,35:09,18,7,18,0.389,0,4,0.0,4,6,0.667,0,3,3,4,0,0,4,1,4.0
 Kahleah Copper,2026,5/15/2026,Mercury,Sky,W,Starter,G,33:56,17,3,16,0.188,1,6,0.167,10,10,1.0,0,5,5,1,3,0,1,2,7.0
 Kahleah Copper,2026,5/12/2026,Mercury,Lynx,L,Starter,G,34:40,30,9,21,0.429,2,7,0.286,10,13,0.769,1,0,1,2,2,0,3,2,10.4
@@ -2784,6 +2806,7 @@ Kahleah Copper,2025,6/21/2025,Mercury,Sky,W,Starter,SG,23:13,16,5,12,0.417,2,6,0
 Kahleah Copper,2025,6/18/2025,Mercury,Sun,W,Starter,SG,22:08,13,2,9,0.222,2,4,0.5,7,8,0.875,0,1,1,2,1,0,0,2,6.0
 Kahleah Copper,2025,6/15/2025,Mercury,Aces,W,Starter,SG,17:41,11,4,9,0.444,1,3,0.333,2,2,1.0,0,2,2,1,1,0,2,3,3.5
 Kahleah Copper,2025,5/6/2025,Mercury,Aces,L,Starter,SG,15:42,6,3,8,0.375,0,2,0.0,0,0,0.0,0,0,0,2,0,0,1,2,0.0
+Kaila Charles,2026,5/21/2026,Valkyries,Liberty,W,Starter,SG,24:27,13,5,10,.500,1,5,.200,2,3,.667,2,5,7,1,0,0,1,1,9.6
 Kaila Charles,2026,5/13/2026,Valkyries,Sky,L,Starter,G,27:48,9,4,9,0.444,1,4,0.25,0,0,0.0,5,4,9,2,0,0,1,4,9.3
 Kaila Charles,2026,5/10/2026,Valkyries,Mercury,W,Starter,G,32:38,7,2,8,0.25,1,5,0.2,2,2,1.0,0,4,4,1,1,0,1,4,2.3
 Kaila Charles,2026,5/8/2026,Valkyries,Storm,W,Bench,SG,17:05,3,1,2,0.5,1,1,1.0,0,0,0.0,3,3,6,2,0,1,2,5,5.3
@@ -2826,6 +2849,7 @@ Kaila Charles,2025,5/19/2025,Wings,Storm,L,Bench,SG,6:31,0,0,0,0.0,0,0,0.0,0,0,0
 Kaila Charles,2025,5/16/2025,Wings,Lynx,L,Bench,SG,11:51,8,3,4,0.75,1,1,1.0,1,2,0.5,1,3,4,0,3,0,1,0,9.5
 Kaila Charles,2025,5/10/2025,Wings,Toyota Antelopes,W,Bench,SG,12:42,10,4,6,0.667,1,1,1.0,1,1,1.0,2,2,4,1,0,0,1,0,8.6
 Kaila Charles,2025,5/2/2025,Wings,Aces,L,Bench,SG,14:34,6,2,5,0.4,2,2,1.0,0,0,0.0,1,3,4,0,0,0,4,3,0.0
+Kaitlyn Chen,2026,5/21/2026,Valkyries,Liberty,W,Bench,PG,14:38,2,0,2,.000,0,1,.000,2,2,1.000,0,0,0,1,0,0,1,1,-0.8
 Kaitlyn Chen,2026,5/13/2026,Valkyries,Sky,L,Bench,PG,17:49,4,2,8,0.25,0,1,0.0,0,0,0.0,2,4,6,0,0,0,2,1,0.5
 Kaitlyn Chen,2026,5/10/2026,Valkyries,Mercury,W,Bench,PG,9:08,2,1,4,0.25,0,0,0.0,0,0,0.0,1,2,3,2,0,0,1,1,2.0
 Kaitlyn Chen,2026,5/8/2026,Valkyries,Storm,W,Bench,PG,16:14,14,5,10,0.5,2,3,0.667,2,2,1.0,0,1,1,2,0,0,0,0,8.5
@@ -2857,7 +2881,7 @@ Kaitlyn Chen,2025,6/25/2025,Valkyries,Liberty,L,Bench,PG,8:54,0,0,2,0.0,0,1,0.0,
 Kaitlyn Chen,2025,6/22/2025,Valkyries,Sun,W,Bench,PG,20:55,5,2,3,0.667,0,0,0.0,1,1,1.0,0,1,1,1,0,0,1,0,3.1
 Kaitlyn Chen,2025,5/11/2025,Valkyries,Mercury,W,Bench,PG,5:03,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,1,0.5
 Kaitlyn Chen,2025,5/6/2025,Valkyries,Sparks,L,Bench,PG,7:34,2,1,3,0.333,0,0,0.0,0,0,0.0,1,2,3,0,0,0,1,1,0.8
-Kamilla Cardoso,2026,5/20/2026,Sky,Wings,L,Starter,C,32:34,24,10,14,.714,0,0,.000,4,6,.667,4,7,11,5,0,1,0,2,25.5
+Kamilla Cardoso,2026,5/20/2026,Sky,Wings,L,Starter,C,32:34,24,10,14,0.714,0,0,0.0,4,6,0.667,4,7,11,5,0,1,0,2,25.5
 Kamilla Cardoso,2026,5/17/2026,Sky,Lynx,W,Starter,C,26:25,11,5,8,0.625,0,0,0.0,1,3,0.333,4,8,12,4,0,3,1,3,18.4
 Kamilla Cardoso,2026,5/15/2026,Sky,Mercury,L,Starter,C,22:34,7,2,6,0.333,0,0,0.0,3,4,0.75,2,6,8,1,0,1,2,4,5.5
 Kamilla Cardoso,2026,5/13/2026,Sky,Valkyries,W,Starter,C,26:50,8,3,10,0.3,0,0,0.0,2,5,0.4,1,6,7,1,1,2,1,3,5.6
@@ -2925,6 +2949,7 @@ Karlie Samuelson,2025,5/18/2025,Lynx,Sparks,W,Starter,PG,28:23,6,1,4,0.25,1,4,0.
 Karlie Samuelson,2025,5/16/2025,Lynx,Wings,W,Starter,PG,25:09,5,2,5,0.4,1,3,0.333,0,0,0.0,0,3,3,3,0,0,0,0,6.5
 Karlie Samuelson,2025,5/10/2025,Lynx,Sky,W,Starter,PG,25:13,8,2,6,0.333,2,5,0.4,2,2,1.0,0,2,2,2,1,0,0,3,5.8
 Karlie Samuelson,2025,5/6/2025,Lynx,Sky,L,Bench,PG,17:02,5,0,3,0.0,0,2,0.0,5,6,0.833,0,1,1,2,1,0,2,5,-0.3
+Kate Martin,2026,5/21/2026,Sparks,Mercury,W,Bench,PG,1:18,0,0,0,.000,0,0,.000,0,0,.000,0,0,0,0,0,0,0,0,0.0
 Kate Martin,2026,5/17/2026,Sparks,Tempo,L,Bench,PG,18:05,11,4,7,0.571,3,6,0.5,0,0,0.0,0,0,0,0,1,0,1,0,5.8
 Kate Martin,2026,5/15/2026,Sparks,Tempo,W,Bench,,6:21,0,0,2,0.0,0,1,0.0,0,0,0.0,0,1,1,0,0,0,0,1,-1.3
 Kate Martin,2026,4/25/2026,Valkyries,Storm,W,Starter,F,22:34,8,2,6,0.333,2,5,0.4,2,4,0.5,2,5,7,2,0,0,1,2,7.8
@@ -2973,6 +2998,7 @@ Kate Martin,2025,5/23/2025,Valkyries,Sparks,W,Bench,PG,10:11,6,2,5,0.4,2,2,1.0,0
 Kate Martin,2025,5/21/2025,Valkyries,Mystics,W,Bench,PG,9:22,0,0,2,0.0,0,2,0.0,0,0,0.0,0,3,3,0,0,1,0,2,0.8
 Kate Martin,2025,5/16/2025,Valkyries,Sparks,L,Starter,SG,20:37,2,0,3,0.0,0,1,0.0,2,2,1.0,0,0,0,1,0,0,1,0,-1.0
 Kate Martin,2025,5/6/2025,Valkyries,Sparks,L,Bench,PG,18:13,8,2,8,0.25,1,7,0.143,3,3,1.0,0,3,3,0,2,0,1,0,4.1
+Kayla McBride,2026,5/21/2026,Lynx,Tempo,W,Starter,SF,22:57,13,5,8,.625,1,3,.333,2,3,.667,1,3,4,2,1,0,1,1,10.6
 Kayla McBride,2026,5/17/2026,Lynx,Sky,L,Starter,SF,39:56,20,8,17,0.471,2,6,0.333,2,2,1.0,2,5,7,1,4,1,2,4,14.3
 Kayla McBride,2026,5/14/2026,Lynx,Wings,W,Starter,F,34:01,11,1,7,0.143,0,2,0.0,9,11,0.818,1,7,8,1,1,1,2,3,7.4
 Kayla McBride,2026,5/12/2026,Lynx,Mercury,W,Starter,F,32:32,14,4,10,0.4,2,6,0.333,4,4,1.0,0,2,2,3,1,0,3,1,7.0
@@ -3023,6 +3049,7 @@ Kayla McBride,2025,6/3/2025,Lynx,Mercury,W,Starter,PG,25:13,13,5,8,0.625,3,5,0.6
 Kayla McBride,2025,6/1/2025,Lynx,Valkyries,W,Starter,PG,32:52,16,6,10,0.6,2,3,0.667,2,3,0.667,0,6,6,3,1,0,2,1,13.4
 Kayla McBride,2025,5/30/2025,Lynx,Mercury,W,Starter,PG,35:21,20,4,11,0.364,3,7,0.429,9,9,1.0,0,3,3,4,1,0,4,0,11.6
 Kayla McBride,2025,5/27/2025,Lynx,Storm,W,Starter,PG,30:33,15,4,8,0.5,3,6,0.5,4,4,1.0,0,1,1,3,2,0,3,0,10.3
+Kayla Thornton,2026,5/21/2026,Valkyries,Liberty,W,Starter,PF,28:23,11,5,9,.556,0,2,.000,1,2,.500,2,3,5,1,1,2,0,3,10.3
 Kayla Thornton,2026,5/13/2026,Valkyries,Sky,L,Starter,F,29:42,0,0,11,0.0,0,3,0.0,0,0,0.0,3,3,6,0,0,1,0,1,-2.5
 Kayla Thornton,2026,5/10/2026,Valkyries,Mercury,W,Starter,F,30:33,19,8,14,0.571,3,8,0.375,0,0,0.0,1,2,3,0,0,0,1,3,8.5
 Kayla Thornton,2026,5/8/2026,Valkyries,Storm,W,Starter,PF,29:57,13,4,9,0.444,3,6,0.5,2,2,1.0,3,5,8,1,0,0,2,2,10.3
@@ -3051,7 +3078,7 @@ Kayla Thornton,2025,5/21/2025,Valkyries,Mystics,W,Starter,SF,26:52,18,5,14,0.357
 Kayla Thornton,2025,5/16/2025,Valkyries,Sparks,L,Starter,PF,34:17,6,3,11,0.273,0,6,0.0,0,0,0.0,1,3,4,1,1,0,1,2,1.0
 Kayla Thornton,2025,5/11/2025,Valkyries,Mercury,W,Starter,SF,23:04,12,4,10,0.4,2,6,0.333,2,2,1.0,2,3,5,0,4,0,1,3,9.5
 Kayla Thornton,2025,5/6/2025,Valkyries,Sparks,L,Starter,SF,19:48,9,4,7,0.571,1,4,0.25,0,0,0.0,0,5,5,1,1,0,0,0,9.5
-Kelsey Mitchell,2026,5/20/2026,Fever,Fire,W,Starter,PG,28:10,21,6,11,.545,2,3,.667,7,9,.778,1,1,2,4,0,0,2,4,11.1
+Kelsey Mitchell,2026,5/20/2026,Fever,Fire,W,Starter,PG,28:10,21,6,11,0.545,2,3,0.667,7,9,0.778,1,1,2,4,0,0,2,4,11.1
 Kelsey Mitchell,2026,5/17/2026,Fever,Storm,W,Starter,,28:19,17,8,18,0.444,1,5,0.2,0,0,0.0,0,0,0,2,1,0,0,3,5.0
 Kelsey Mitchell,2026,5/15/2026,Fever,Mystics,L,Starter,G,38:33,24,10,25,0.4,4,8,0.5,0,2,0.0,0,0,0,0,1,0,3,2,1.5
 Kelsey Mitchell,2026,5/13/2026,Fever,Sparks,W,Starter,G,27:23,23,9,17,0.529,3,9,0.333,2,2,1.0,0,0,0,0,1,0,2,3,7.0
@@ -3114,6 +3141,7 @@ Kelsey Mitchell,2025,5/17/2025,Fever,Sky,W,Starter,SG,29:40,15,6,12,0.5,2,4,0.5,
 Kelsey Mitchell,2025,5/10/2025,Fever,Dream,W,Starter,SG,21:21,12,5,12,0.417,2,6,0.333,0,0,0.0,0,2,2,2,1,0,1,2,5.5
 Kelsey Mitchell,2025,5/4/2025,Fever,Brazil National Team,W,Starter,SG,18:28,17,5,8,0.625,4,6,0.667,3,3,1.0,1,2,3,1,3,0,0,1,15.9
 Kelsey Mitchell,2025,5/3/2025,Fever,Mystics,W,Starter,SG,27:38,12,4,17,0.235,2,10,0.2,2,2,1.0,0,2,2,3,0,0,2,2,0.0
+Kelsey Plum,2026,5/21/2026,Sparks,Mercury,W,Starter,SG,33:44,16,6,14,.429,4,10,.400,0,0,.000,0,1,1,7,1,0,4,2,9.3
 Kelsey Plum,2026,5/17/2026,Sparks,Tempo,L,Starter,SG,36:18,28,9,14,0.643,1,3,0.333,9,11,0.818,0,1,1,7,1,0,3,5,16.6
 Kelsey Plum,2026,5/15/2026,Sparks,Tempo,W,Starter,G,32:44,27,10,16,0.625,4,8,0.5,3,4,0.75,0,0,0,9,3,0,2,3,22.0
 Kelsey Plum,2026,5/13/2026,Sparks,Fever,L,Starter,G,36:44,25,9,16,0.563,1,5,0.2,6,8,0.75,0,1,1,4,1,0,5,3,9.3
@@ -3164,7 +3192,7 @@ Kelsey Plum,2025,5/21/2025,Sparks,Mercury,L,Starter,PG,40:00,25,7,19,0.368,4,9,0
 Kelsey Plum,2025,5/18/2025,Sparks,Lynx,L,Starter,PG,34:03,18,5,14,0.357,3,9,0.333,5,7,0.714,0,2,2,5,1,0,3,6,6.4
 Kelsey Plum,2025,5/16/2025,Sparks,Valkyries,W,Starter,PG,40:00,37,11,19,0.579,4,6,0.667,11,11,1.0,0,2,2,6,5,0,2,2,28.1
 Kelsey Plum,2025,5/6/2025,Sparks,Valkyries,W,Starter,PG,23:40,11,3,9,0.333,0,4,0.0,5,5,1.0,0,2,2,5,0,0,3,1,5.4
-Kennedy Burke,2026,5/20/2026,Sun,Storm,W,Bench,SF,22:54,15,5,8,.625,3,5,.600,2,3,.667,1,5,6,1,0,1,0,2,13.6
+Kennedy Burke,2026,5/20/2026,Sun,Storm,W,Bench,SF,22:54,15,5,8,0.625,3,5,0.6,2,3,0.667,1,5,6,1,0,1,0,2,13.6
 Kennedy Burke,2026,5/18/2026,Sun,Fire,L,Starter,SF,21:00,0,0,5,0.0,0,3,0.0,0,0,0.0,0,6,6,3,2,1,1,2,4.8
 Kennedy Burke,2026,5/15/2026,Sun,Aces,L,Starter,F,23:59,11,5,12,0.417,1,5,0.2,0,0,0.0,1,2,3,3,4,1,3,4,7.5
 Kennedy Burke,2026,5/13/2026,Sun,Aces,L,Starter,F,30:54,4,2,8,0.25,0,3,0.0,0,0,0.0,0,1,1,5,0,1,4,0,0.8
@@ -3213,6 +3241,7 @@ Kennedy Burke,2025,5/22/2025,Liberty,Sky,W,Bench,PF,21:01,17,5,6,0.833,4,4,1.0,3
 Kennedy Burke,2025,5/17/2025,Liberty,Aces,W,Bench,PF,17:22,10,4,7,0.571,2,3,0.667,0,0,0.0,0,1,1,1,1,1,0,2,7.5
 Kennedy Burke,2025,5/12/2025,Liberty,Toyota Antelopes,W,Bench,PF,14:15,4,2,4,0.5,0,1,0.0,0,0,0.0,0,3,3,0,1,0,2,0,2.3
 Kennedy Burke,2025,5/9/2025,Liberty,Sun,L,Starter,PF,22:36,10,4,6,0.667,1,3,0.333,1,1,1.0,0,1,1,0,0,0,1,3,3.4
+Kia Nurse,2026,5/21/2026,Tempo,Lynx,L,Bench,PG,26:41,23,6,13,.462,6,11,.545,5,6,.833,1,3,4,2,1,0,1,1,15.8
 Kia Nurse,2026,5/19/2026,Tempo,Mercury,W,Bench,PG,12:41,0,0,2,0.0,0,2,0.0,0,0,0.0,1,1,2,0,0,0,0,3,-1.3
 Kia Nurse,2026,5/17/2026,Tempo,Sparks,W,Bench,SG,12:19,10,2,4,0.5,2,3,0.667,4,4,1.0,0,0,0,0,0,0,1,1,4.0
 Kia Nurse,2026,5/15/2026,Tempo,Sparks,L,Bench,,9:15,4,2,4,0.5,0,2,0.0,0,0,0.0,0,1,1,1,1,0,0,0,3.8
@@ -3267,6 +3296,7 @@ Kia Nurse,2025,5/17/2025,Sky,Fever,L,Starter,SF,20:28,4,2,8,0.25,0,6,0.0,0,0,0.0
 Kia Nurse,2025,5/10/2025,Sky,Lynx,L,Starter,SF,25:10,14,4,11,0.364,2,5,0.4,4,4,1.0,1,1,2,1,0,0,2,1,4.5
 Kia Nurse,2025,5/6/2025,Sky,Lynx,W,Starter,SF,19:47,5,1,4,0.25,1,3,0.333,2,2,1.0,0,2,2,1,1,0,0,1,4.3
 Kia Nurse,2025,5/2/2025,Sky,Brazil National Team,W,Starter,SF,12:13,11,4,8,0.5,3,5,0.6,0,0,0.0,0,2,2,0,0,0,1,0,5.5
+Kiah Stokes,2026,5/21/2026,Valkyries,Liberty,W,Starter,C,25:46,6,2,3,.667,2,3,.667,0,0,.000,0,3,3,3,1,1,0,2,10.0
 Kiah Stokes,2026,5/13/2026,Valkyries,Sky,L,Starter,C,29:18,7,3,8,0.375,0,2,0.0,1,2,0.5,3,8,11,2,0,5,0,6,13.3
 Kiah Stokes,2026,5/10/2026,Valkyries,Mercury,W,Starter,C,12:48,1,0,2,0.0,0,1,0.0,1,2,0.5,0,3,3,0,1,0,0,3,0.5
 Kiah Stokes,2026,5/8/2026,Valkyries,Storm,W,Starter,C,24:05,6,3,5,0.6,0,1,0.0,0,0,0.0,0,4,4,3,1,3,0,3,10.8
@@ -3322,6 +3352,7 @@ Kiah Stokes,2025,5/20/2025,Aces,Sun,W,Starter,PF,22:41,0,0,2,0.0,0,1,0.0,0,0,0.0
 Kiah Stokes,2025,5/17/2025,Aces,Liberty,L,Starter,PF,18:15,0,0,1,0.0,0,1,0.0,0,0,0.0,3,4,7,1,0,0,0,3,4.8
 Kiah Stokes,2025,5/6/2025,Aces,Mercury,W,Starter,PF,15:44,3,1,1,1.0,0,0,0.0,1,1,1.0,0,0,0,0,0,1,0,0,2.9
 Kiah Stokes,2025,5/2/2025,Aces,Wings,W,Starter,PF,20:08,4,1,2,0.5,1,2,0.5,1,2,0.5,0,5,5,3,1,1,0,2,9.5
+Kiana Williams,2026,5/21/2026,Mercury,Sparks,L,Bench,PG,11:27,3,1,2,.500,1,1,1.000,0,0,.000,0,0,0,1,0,0,1,1,1.0
 Kiana Williams,2026,5/19/2026,Mercury,Tempo,L,Bench,PG,12:17,7,3,6,0.5,1,3,0.333,0,0,0.0,0,0,0,0,0,0,0,1,2.0
 Kiana Williams,2026,5/15/2026,Mercury,Sky,W,Bench,PG,8:12,2,0,1,0.0,0,1,0.0,2,2,1.0,0,0,0,0,0,0,2,0,-1.5
 Kiana Williams,2026,5/12/2026,Mercury,Lynx,L,Bench,PG,13:52,3,1,6,0.167,1,5,0.2,0,0,0.0,0,0,0,1,1,0,0,3,-1.0
@@ -3447,6 +3478,7 @@ Kiki Iriafen,2025,5/18/2025,Mystics,Sun,W,Starter,PF,31:20,17,7,10,0.7,0,0,0.0,3
 Kiki Iriafen,2025,5/16/2025,Mystics,Dream,W,Starter,PF,27:59,14,4,10,0.4,0,0,0.0,6,8,0.75,1,3,4,2,0,0,0,6,5.8
 Kiki Iriafen,2025,5/7/2025,Mystics,Dream,L,Bench,SF,20:11,12,5,8,0.625,0,0,0.0,2,2,1.0,1,5,6,1,0,0,0,0,11.0
 Kiki Iriafen,2025,5/3/2025,Mystics,Fever,L,Bench,SF,16:26,7,2,7,0.286,0,1,0.0,3,3,1.0,2,3,5,1,0,0,4,4,-0.1
+Kiki Rice,2026,5/21/2026,Tempo,Lynx,L,Starter,SG,22:50,11,3,7,.429,2,3,.667,3,4,.750,1,5,6,4,0,0,0,1,12.5
 Kiki Rice,2026,5/19/2026,Tempo,Mercury,W,Starter,SG,34:04,15,5,7,0.714,2,2,1.0,3,5,0.6,2,5,7,3,2,0,2,5,14.1
 Kiki Rice,2026,5/17/2026,Tempo,Sparks,W,Starter,SG,35:02,19,5,8,0.625,1,3,0.333,8,10,0.8,1,4,5,2,0,0,0,5,12.8
 Kiki Rice,2026,5/15/2026,Tempo,Sparks,L,Bench,,21:00,11,4,7,0.571,3,4,0.75,0,0,0.0,0,0,0,2,0,0,1,4,4.8
@@ -3465,6 +3497,7 @@ Kyara Linskens,2025,5/23/2025,Valkyries,Sparks,W,Bench,C,13:10,2,1,3,0.333,0,0,0
 Kyara Linskens,2025,5/16/2025,Valkyries,Sparks,L,Bench,C,3:40,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,1,0,1,1,-0.5
 Kyara Linskens,2025,5/11/2025,Valkyries,Mercury,W,Bench,C,9:14,1,0,1,0.0,0,1,0.0,1,2,0.5,0,3,3,2,0,2,0,2,4.8
 Kyara Linskens,2025,5/6/2025,Valkyries,Sparks,L,Bench,C,9:03,4,2,2,1.0,0,0,0.0,0,0,0.0,1,7,8,2,1,1,0,1,12.3
+Laeticia Amihere,2026,5/21/2026,Valkyries,Liberty,W,Bench,PF,13:12,5,2,3,.667,0,0,.000,1,2,.500,1,7,8,0,1,0,1,1,7.8
 Laeticia Amihere,2026,5/13/2026,Valkyries,Sky,L,Bench,PF,10:42,3,1,2,0.5,0,0,0.0,1,2,0.5,0,1,1,1,1,2,1,0,4.5
 Laeticia Amihere,2026,5/10/2026,Valkyries,Mercury,W,Bench,PF,24:23,13,5,7,0.714,0,0,0.0,3,4,0.75,1,5,6,5,0,3,2,4,15.0
 Laeticia Amihere,2026,5/8/2026,Valkyries,Storm,W,Bench,PF,15:55,3,1,3,0.333,0,1,0.0,1,3,0.333,3,1,4,1,0,0,1,4,1.4
@@ -3501,6 +3534,7 @@ Laeticia Amihere,2025,6/17/2025,Valkyries,Wings,L,Bench,SF,24:15,14,6,7,0.857,0,
 Laeticia Amihere,2025,6/14/2025,Valkyries,Storm,W,Bench,SF,14:39,2,1,2,0.5,0,0,0.0,0,0,0.0,0,1,1,0,0,0,2,2,-1.8
 Laeticia Amihere,2025,5/11/2025,Valkyries,Mercury,W,Bench,SF,15:39,5,2,4,0.5,0,0,0.0,1,2,0.5,1,0,1,2,2,0,0,3,4.8
 Laeticia Amihere,2025,5/6/2025,Valkyries,Sparks,L,Bench,SF,19:12,20,7,11,0.636,2,4,0.5,4,6,0.667,1,1,2,0,0,0,0,4,9.3
+Laura Juskaite,2026,5/21/2026,Tempo,Lynx,L,Starter,C,26:28,7,2,7,.286,1,6,.167,2,2,1.000,2,1,3,2,0,0,3,5,0.3
 Laura Juskaite,2026,5/19/2026,Tempo,Mercury,W,Starter,C,23:21,10,3,5,0.6,2,3,0.667,2,2,1.0,1,4,5,0,0,0,2,5,5.0
 Laura Juskaite,2026,5/17/2026,Tempo,Sparks,W,Starter,PF,20:43,7,3,5,0.6,0,1,0.0,1,2,0.5,2,3,5,1,2,0,2,4,5.8
 Laura Juskaite,2026,5/15/2026,Tempo,Sparks,L,Bench,PF,25:03,16,5,9,0.556,2,4,0.5,4,5,0.8,1,2,3,4,4,0,1,5,14.4
@@ -3516,6 +3550,7 @@ Lauren Betts,2026,5/10/2026,Mystics,Liberty,L,Bench,C,18:24,7,3,7,0.429,0,0,0.0,
 Lauren Betts,2026,5/8/2026,Mystics,Tempo,W,Bench,C,12:03,0,0,4,0.0,0,0,0.0,0,0,0.0,3,2,5,1,0,0,0,1,2.0
 Lauren Betts,2026,5/3/2026,Mystics,Dream,W,Starter,C,25:58,17,7,12,0.583,0,0,0.0,3,4,0.75,1,3,4,3,1,0,1,3,11.3
 Lauren Betts,2026,4/25/2026,Mystics,Lynx,L,Starter,C,23:05,13,2,7,0.286,0,0,0.0,9,10,0.9,2,3,5,1,1,1,1,1,9.8
+Lexi Held,2026,5/21/2026,Tempo,Lynx,L,Bench,PG,22:45,3,1,6,.167,1,3,.333,0,0,.000,0,1,1,3,0,0,1,3,-0.3
 Lexi Held,2026,5/19/2026,Tempo,Mercury,W,Bench,PG,8:32,3,1,2,0.5,0,0,0.0,1,1,1.0,0,1,1,1,0,0,1,1,1.4
 Lexi Held,2026,5/17/2026,Tempo,Sparks,W,Bench,PG,4:58,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0.0
 Lexi Held,2026,5/15/2026,Tempo,Sparks,L,Bench,,5:32,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,-0.5
@@ -3558,7 +3593,7 @@ Lexi Held,2025,5/23/2025,Mercury,Storm,L,Bench,PG,16:34,7,3,5,0.6,1,2,0.5,0,0,0.
 Lexi Held,2025,5/21/2025,Mercury,Sparks,W,Bench,PG,13:24,5,2,4,0.5,1,2,0.5,0,0,0.0,0,1,1,1,0,1,0,0,4.8
 Lexi Held,2025,5/17/2025,Mercury,Storm,W,Bench,PG,21:52,11,4,9,0.444,1,4,0.25,2,3,0.667,1,1,2,3,2,0,2,1,7.4
 Lexi Held,2025,5/6/2025,Mercury,Aces,L,Bench,PG,10:25,3,1,4,0.25,1,3,0.333,0,0,0.0,0,2,2,0,0,0,1,1,0.0
-Lexie Brown,2026,5/20/2026,Storm,Sun,L,Bench,PG,21:41,5,2,6,.333,0,1,.000,1,1,1.000,0,2,2,2,2,0,0,3,4.1
+Lexie Brown,2026,5/20/2026,Storm,Sun,L,Bench,PG,21:41,5,2,6,0.333,0,1,0.0,1,1,1.0,0,2,2,2,2,0,0,3,4.1
 Lexie Brown,2026,5/17/2026,Storm,Fever,L,Bench,,16:32,3,1,3,0.333,1,3,0.333,0,0,0.0,0,4,4,0,0,0,1,2,1.8
 Lexie Brown,2026,5/13/2026,Storm,Tempo,L,Bench,PG,15:50,0,0,1,0.0,0,1,0.0,0,0,0.0,0,3,3,1,0,0,3,3,-2.0
 Lexie Brown,2026,5/10/2026,Storm,Sun,W,Bench,PG,21:04,17,6,7,0.857,5,6,0.833,0,0,0.0,0,0,0,1,0,1,0,0,13.8
@@ -3591,7 +3626,7 @@ Lexie Brown,2025,5/25/2025,Storm,Aces,W,Bench,PG,5:41,0,0,1,0.0,0,0,0.0,0,0,0.0,
 Lexie Brown,2025,5/23/2025,Storm,Mercury,W,Bench,PG,1:02,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,-0.5
 Lexie Brown,2025,5/17/2025,Storm,Mercury,L,Bench,PG,10:34,0,0,2,0.0,0,2,0.0,0,0,0.0,0,1,1,2,1,0,1,2,0.3
 Lexie Brown,2025,5/4/2025,Storm,Sun,W,Bench,PG,13:08,3,0,4,0.0,0,2,0.0,3,4,0.75,0,1,1,5,0,0,0,1,3.8
-Lexie Hull,2026,5/20/2026,Fever,Fire,W,Starter,SF,21:54,16,4,4,1.000,4,4,1.000,4,4,1.000,0,8,8,1,0,1,1,2,17.5
+Lexie Hull,2026,5/20/2026,Fever,Fire,W,Starter,SF,21:54,16,4,4,1.0,4,4,1.0,4,4,1.0,0,8,8,1,0,1,1,2,17.5
 Lexie Hull,2026,5/17/2026,Fever,Storm,W,Starter,,18:39,9,3,8,0.375,0,3,0.0,3,3,1.0,0,4,4,2,0,0,1,4,3.9
 Lexie Hull,2026,5/15/2026,Fever,Mystics,L,Bench,PG,25:32,9,3,6,0.5,2,4,0.5,1,2,0.5,1,3,4,1,3,0,1,5,7.5
 Lexie Hull,2026,5/13/2026,Fever,Sparks,W,Bench,PG,12:45,1,0,1,0.0,0,1,0.0,1,2,0.5,0,1,1,0,1,0,1,3,-1.3
@@ -3651,7 +3686,7 @@ Lexie Hull,2025,5/17/2025,Fever,Sky,W,Bench,PG,22:32,9,4,10,0.4,0,4,0.0,1,2,0.5,
 Lexie Hull,2025,5/10/2025,Fever,Dream,W,Bench,PG,23:22,14,6,12,0.5,0,1,0.0,2,3,0.667,4,1,5,4,1,0,0,3,12.1
 Lexie Hull,2025,5/4/2025,Fever,Brazil National Team,W,Bench,PG,9:44,9,3,6,0.5,3,3,1.0,0,0,0.0,1,0,1,1,0,0,0,2,5.5
 Lexie Hull,2025,5/3/2025,Fever,Mystics,W,Bench,PG,32:51,13,3,11,0.273,1,3,0.333,6,6,1.0,1,4,5,4,4,0,3,3,10.0
-Li Yueru,2026,5/20/2026,Wings,Sky,W,Bench,C,19:57,7,1,4,.250,1,3,.333,4,6,.667,4,5,9,3,1,0,1,3,11.0
+Li Yueru,2026,5/20/2026,Wings,Sky,W,Bench,C,19:57,7,1,4,0.25,1,3,0.333,4,6,0.667,4,5,9,3,1,0,1,3,11.0
 Li Yueru,2026,5/18/2026,Wings,Mystics,W,Bench,C,4:57,1,0,3,0.0,0,1,0.0,1,2,0.5,3,0,3,0,0,0,0,0,1.0
 Li Yueru,2026,5/9/2026,Wings,Fever,W,Bench,C,4:03,3,0,1,0.0,0,0,0.0,3,4,0.75,0,1,1,0,0,0,0,0,1.5
 Li Yueru,2026,5/3/2026,Wings,Aces,W,Bench,C,5:24,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,1,1,-1.5
@@ -3688,6 +3723,7 @@ Li Yueru,2025,5/23/2025,Storm,Mercury,W,Bench,C,7:47,0,0,0,0.0,0,0,0.0,0,0,0.0,0
 Li Yueru,2025,5/19/2025,Storm,Wings,W,Bench,C,12:48,0,0,5,0.0,0,0,0.0,0,0,0.0,1,1,2,1,0,0,0,0,-1.0
 Li Yueru,2025,5/17/2025,Storm,Mercury,L,Bench,C,22:23,6,2,6,0.333,0,2,0.0,2,3,0.667,2,2,4,4,0,0,0,2,6.9
 Li Yueru,2025,5/4/2025,Storm,Sun,W,Starter,C,19:06,15,6,8,0.75,0,0,0.0,3,3,1.0,5,5,10,1,1,0,2,5,14.1
+Liatu King,2026,5/21/2026,Lynx,Tempo,W,Bench,SF,19:17,9,3,5,.600,1,2,.500,2,4,.500,2,5,7,0,1,0,1,0,9.5
 Liatu King,2026,5/1/2026,Lynx,Tempo,W,Bench,SF,10:13,3,1,3,0.333,0,0,0.0,1,4,0.25,2,1,3,0,1,0,2,2,0.0
 Liatu King,2026,4/27/2026,Lynx,Nigeria National Team,W,Bench,SF,16:04,5,1,1,1.0,0,0,0.0,3,4,0.75,2,2,4,4,1,0,2,6,6.3
 Liatu King,2026,4/25/2026,Lynx,Mystics,W,Bench,SF,18:14,6,3,8,0.375,0,2,0.0,0,0,0.0,0,4,4,1,1,2,2,2,4.0
@@ -3754,7 +3790,7 @@ Lucy Olsen,2025,5/18/2025,Mystics,Sun,W,Bench,PG,10:20,0,0,2,0.0,0,1,0.0,0,0,0.0
 Lucy Olsen,2025,5/16/2025,Mystics,Dream,W,Bench,PG,8:11,2,1,1,1.0,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,2,1.3
 Lucy Olsen,2025,5/7/2025,Mystics,Dream,L,Bench,PG,21:38,2,1,8,0.125,0,2,0.0,0,0,0.0,1,1,2,2,0,0,2,1,-2.8
 Lucy Olsen,2025,5/3/2025,Mystics,Fever,L,Bench,PG,14:32,2,1,6,0.167,0,2,0.0,0,0,0.0,0,0,0,0,0,0,1,1,-4.0
-Luisa Geiselsoder,2026,5/20/2026,Fire,Fever,L,Starter,C,21:40,4,1,3,.333,0,1,.000,2,2,1.000,0,1,1,1,0,0,2,5,-1.8
+Luisa Geiselsoder,2026,5/20/2026,Fire,Fever,L,Starter,C,21:40,4,1,3,0.333,0,1,0.0,2,2,1.0,0,1,1,1,0,0,2,5,-1.8
 Luisa Geiselsoder,2026,5/18/2026,Fire,Sun,W,Starter,C,24:39,2,1,5,0.2,0,2,0.0,0,0,0.0,0,2,2,4,0,0,2,4,-0.3
 Luisa Geiselsoder,2026,5/14/2026,Fire,Liberty,L,Starter,C,21:48,6,3,6,0.5,0,2,0.0,0,0,0.0,0,5,5,1,1,0,1,3,4.8
 Luisa Geiselsoder,2026,5/12/2026,Fire,Liberty,L,Starter,C,25:12,13,4,10,0.4,3,6,0.5,2,2,1.0,1,4,5,2,1,1,1,3,10.3
@@ -3789,7 +3825,7 @@ Luisa Geiselsoder,2025,6/6/2025,Wings,Sparks,L,Bench,C,32:13,11,5,9,0.556,1,3,0.
 Luisa Geiselsoder,2025,6/3/2025,Wings,Storm,L,Bench,C,21:44,6,2,5,0.4,2,4,0.5,0,0,0.0,0,3,3,2,0,3,1,3,7.0
 Luisa Geiselsoder,2025,5/31/2025,Wings,Sky,L,Bench,C,3:44,0,0,0,0.0,0,0,0.0,0,0,0.0,0,2,2,0,0,0,0,2,0.5
 Luisa Geiselsoder,2025,5/27/2025,Wings,Sun,W,Bench,C,3:16,2,1,1,1.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,2,0.3
-Mackenzie Holmes,2026,5/20/2026,Storm,Sun,L,Bench,SF,26:00,18,6,8,.750,1,1,1.000,5,5,1.000,1,5,6,1,1,2,0,2,17.9
+Mackenzie Holmes,2026,5/20/2026,Storm,Sun,L,Bench,SF,26:00,18,6,8,0.75,1,1,1.0,5,5,1.0,1,5,6,1,1,2,0,2,17.9
 Mackenzie Holmes,2026,5/17/2026,Storm,Fever,L,Bench,SF,9:41,4,2,3,0.667,0,0,0.0,0,0,0.0,0,1,1,0,2,0,1,2,2.5
 Mackenzie Holmes,2026,5/13/2026,Storm,Tempo,L,Bench,SF,4:57,0,0,0,0.0,0,0,0.0,0,0,0.0,0,1,1,0,0,0,0,0,0.8
 Mackenzie Holmes,2026,5/10/2026,Storm,Sun,W,Bench,SF,22:38,5,2,6,0.333,1,3,0.333,0,0,0.0,2,4,6,2,0,1,1,5,5.0
@@ -3808,7 +3844,7 @@ Mackenzie Holmes,2025,6/29/2025,Storm,Valkyries,L,Bench,SF,4:49,2,1,1,1.0,0,0,0.
 Mackenzie Holmes,2025,6/27/2025,Storm,Sun,W,Bench,SF,7:18,2,1,1,1.0,0,0,0.0,0,0,0.0,0,1,1,1,0,1,0,0,4.0
 Mackenzie Holmes,2025,6/17/2025,Storm,Sparks,W,Bench,SF,4:49,0,0,1,0.0,0,0,0.0,0,0,0.0,0,1,1,0,0,0,0,0,0.0
 Mackenzie Holmes,2025,5/4/2025,Storm,Sun,W,Bench,SF,20:54,9,4,5,0.8,0,0,0.0,1,2,0.5,2,6,8,0,0,3,1,2,12.0
-Maddy Siegrist,2026,5/20/2026,Wings,Sky,W,Bench,SF,6:34,0,0,1,.000,0,1,.000,0,0,.000,0,1,1,0,1,0,0,0,1.0
+Maddy Siegrist,2026,5/20/2026,Wings,Sky,W,Bench,SF,6:34,0,0,1,0.0,0,1,0.0,0,0,0.0,0,1,1,0,1,0,0,0,1.0
 Maddy Siegrist,2026,5/18/2026,Wings,Mystics,W,Bench,SF,20:05,10,4,9,0.444,2,4,0.5,0,0,0.0,0,0,0,2,0,0,0,3,3.8
 Maddy Siegrist,2026,5/14/2026,Wings,Lynx,L,Bench,SF,16:11,17,7,11,0.636,0,3,0.0,3,3,1.0,0,4,4,1,0,1,0,1,12.1
 Maddy Siegrist,2026,5/12/2026,Wings,Dream,L,Bench,SF,8:01,2,1,3,0.333,0,1,0.0,0,0,0.0,0,3,3,0,0,0,0,1,1.5
@@ -3878,7 +3914,7 @@ Madina Okot,2026,5/12/2026,Dream,Wings,W,Bench,C,9:09,0,0,1,0.0,0,0,0.0,0,0,0.0,
 Madina Okot,2026,5/9/2026,Dream,Lynx,W,Bench,C,9:50,8,3,6,0.5,0,1,0.0,2,2,1.0,2,2,4,0,1,0,1,2,5.3
 Madina Okot,2026,5/3/2026,Dream,Mystics,L,Bench,C,20:51,9,3,6,0.5,1,3,0.333,2,4,0.5,2,4,6,1,1,2,5,3,5.5
 Madina Okot,2026,4/29/2026,Dream,Sky,W,Bench,C,22:37,14,5,14,0.357,0,2,0.0,4,6,0.667,0,11,11,0,1,0,2,2,7.5
-Makayla Timpson,2026,5/20/2026,Fever,Fire,W,Bench,C,19:36,2,1,1,1.000,0,0,.000,0,2,.000,2,3,5,0,0,0,0,2,3.8
+Makayla Timpson,2026,5/20/2026,Fever,Fire,W,Bench,C,19:36,2,1,1,1.0,0,0,0.0,0,2,0.0,2,3,5,0,0,0,0,2,3.8
 Makayla Timpson,2026,5/17/2026,Fever,Storm,W,Bench,C,17:30,6,3,7,0.429,0,0,0.0,0,0,0.0,3,3,6,1,1,0,1,3,5.5
 Makayla Timpson,2026,5/15/2026,Fever,Mystics,L,Bench,C,4:12,0,0,1,0.0,0,0,0.0,0,0,0.0,1,0,1,0,0,0,0,1,-0.3
 Makayla Timpson,2026,5/13/2026,Fever,Sparks,W,Bench,C,9:17,2,1,2,0.5,0,0,0.0,0,0,0.0,0,1,1,1,0,0,0,0,2.3
@@ -3928,14 +3964,17 @@ Makayla Timpson,2025,5/17/2025,Fever,Sky,W,Bench,PF,3:03,4,1,1,1.0,0,0,0.0,2,2,1
 Makayla Timpson,2025,5/10/2025,Fever,Dream,W,Bench,PF,10:17,2,1,4,0.25,0,0,0.0,0,0,0.0,1,1,2,1,0,0,0,1,1.3
 Makayla Timpson,2025,5/4/2025,Fever,Brazil National Team,W,Bench,PF,9:41,9,2,4,0.5,0,0,0.0,5,6,0.833,0,1,1,0,1,1,0,0,6.5
 Makayla Timpson,2025,5/3/2025,Fever,Mystics,W,Bench,PF,8:46,4,1,2,0.5,0,0,0.0,2,2,1.0,1,1,2,0,0,0,0,0,3.5
+Maria Conde,2026,5/21/2026,Tempo,Lynx,L,Starter,PF,20:29,3,1,6,.167,1,4,.250,0,0,.000,0,1,1,1,0,0,1,3,-2.3
 Maria Conde,2026,5/19/2026,Tempo,Mercury,W,Starter,PF,33:17,2,1,9,0.111,0,4,0.0,0,0,0.0,1,3,4,2,0,1,1,3,-1.0
 Maria Conde,2026,5/17/2026,Tempo,Sparks,W,Bench,SF,23:06,5,2,6,0.333,1,4,0.25,0,0,0.0,0,0,0,3,0,0,1,3,1.0
 Maria Conde,2026,5/15/2026,Tempo,Sparks,L,Bench,SF,20:19,6,2,6,0.333,2,5,0.4,0,0,0.0,2,2,4,0,1,0,2,0,4.0
 Maria Conde,2026,5/13/2026,Tempo,Storm,W,Bench,SF,29:06,16,6,13,0.462,4,8,0.5,0,0,0.0,2,6,8,0,1,0,1,5,10.3
 Maria Conde,2026,5/8/2026,Tempo,Mystics,L,Bench,SF,15:27,2,0,5,0.0,0,1,0.0,2,2,1.0,2,1,3,0,0,0,1,0,-0.8
 Maria Conde,2025,5/8/2026,Tempo,Mystics,L,Bench,SF,15:27,2,0,5,0.0,0,1,0.0,2,2,1.0,2,1,3,0,0,0,1,0,-0.8
+Mariella Fasoula,2026,5/21/2026,Tempo,Lynx,L,Bench,C,11:05,4,2,5,.400,0,0,.000,0,0,.000,1,0,1,1,1,2,1,3,2.8
 Mariella Fasoula,2026,5/8/2026,Tempo,Mystics,L,Bench,C,1:20,0,0,0,0.0,0,0,0.0,0,0,0.0,0,1,1,0,0,0,0,2,-0.3
 Mariella Fasoula,2026,4/25/2026,Valkyries,Storm,W,Bench,C,5:39,5,2,3,0.667,1,1,1.0,0,0,0.0,0,1,1,0,0,1,0,2,3.5
+Marina Mabrey,2026,5/21/2026,Tempo,Lynx,L,Starter,SF,19:17,3,1,9,.111,0,8,.000,1,1,1.000,1,1,2,1,2,0,4,2,-4.4
 Marina Mabrey,2026,5/19/2026,Tempo,Mercury,W,Starter,SF,32:07,30,11,23,0.478,6,14,0.429,2,2,1.0,0,5,5,3,1,1,2,2,17.8
 Marina Mabrey,2026,5/17/2026,Tempo,Sparks,W,Starter,SF,25:56,14,2,7,0.286,2,4,0.5,8,8,1.0,1,2,3,4,1,0,3,5,7.8
 Marina Mabrey,2026,5/15/2026,Tempo,Sparks,L,Starter,F,21:25,7,3,10,0.3,1,6,0.167,0,0,0.0,0,2,2,0,0,1,3,3,-2.5
@@ -3977,6 +4016,7 @@ Marina Mabrey,2025,5/23/2025,Sun,Lynx,L,Starter,SF,31:09,22,7,19,0.368,4,12,0.33
 Marina Mabrey,2025,5/20/2025,Sun,Aces,L,Starter,SF,19:58,7,3,11,0.273,1,5,0.2,0,0,0.0,0,1,1,2,0,0,2,2,-1.5
 Marina Mabrey,2025,5/18/2025,Sun,Mystics,L,Starter,SF,35:26,11,5,21,0.238,1,8,0.125,0,1,0.0,0,4,4,3,0,1,3,5,-3.6
 Marina Mabrey,2025,5/9/2025,Sun,Liberty,W,Starter,SF,18:33,13,4,9,0.444,3,7,0.429,2,2,1.0,0,0,0,3,1,0,2,0,7.5
+Marine Johannes,2026,5/21/2026,Liberty,Valkyries,L,Starter,SG,26:13,0,0,5,.000,0,5,.000,0,0,.000,1,2,3,1,1,0,2,1,-1.8
 Marine Johannes,2026,5/14/2026,Liberty,Fire,W,Starter,G,28:08,3,1,7,0.143,1,7,0.143,0,0,0.0,0,3,3,11,2,0,1,1,11.5
 Marine Johannes,2026,5/12/2026,Liberty,Fire,W,Starter,G,33:10,18,6,11,0.545,3,7,0.429,3,3,1.0,2,2,4,4,2,0,2,1,15.6
 Marine Johannes,2026,5/10/2026,Liberty,Mystics,W,Starter,G,37:23,25,8,15,0.533,6,13,0.462,3,5,0.6,1,0,1,2,2,0,3,3,12.4
@@ -4029,7 +4069,9 @@ Marine Johannes,2025,5/22/2025,Liberty,Sky,W,Bench,PG,22:23,6,2,5,0.4,2,5,0.4,0,
 Marine Johannes,2025,5/17/2025,Liberty,Aces,W,Bench,PG,14:36,2,1,2,0.5,0,1,0.0,0,0,0.0,0,1,1,1,0,1,0,0,3.3
 Marine Johannes,2025,5/12/2025,Liberty,Toyota Antelopes,W,Bench,PG,19:13,10,4,8,0.5,2,6,0.333,0,0,0.0,0,2,2,2,0,1,0,0,8.5
 Marine Johannes,2025,5/9/2025,Liberty,Sun,L,Bench,PG,21:17,12,4,10,0.4,4,8,0.5,0,1,0.0,0,0,0,2,0,0,1,2,4.1
+Marta Suarez,2026,5/21/2026,Mercury,Sparks,L,Bench,SF,8:56,6,2,4,.500,2,4,.500,0,0,.000,0,1,1,0,1,0,0,6,1.8
 Marta Suarez,2026,4/25/2026,Valkyries,Storm,W,Bench,PF,14:05,5,2,5,0.4,1,3,0.333,0,0,0.0,0,3,3,1,1,0,0,0,5.5
+Maya Caldwell,2026,5/21/2026,Lynx,Tempo,W,Bench,PG,21:36,16,6,12,.500,4,7,.571,0,0,.000,2,1,3,3,1,1,0,3,13.3
 Maya Caldwell,2026,5/17/2026,Lynx,Sky,L,Bench,PG,16:07,5,2,4,0.5,1,2,0.5,0,0,0.0,0,2,2,2,0,1,0,0,6.5
 Maya Caldwell,2026,5/14/2026,Lynx,Wings,W,Bench,PG,11:16,0,0,4,0.0,0,3,0.0,0,0,0.0,0,0,0,3,2,0,1,0,1.0
 Maya Caldwell,2026,5/12/2026,Lynx,Mercury,W,Bench,PG,7:55,0,0,0,0.0,0,0,0.0,0,0,0.0,0,2,2,0,0,0,0,1,1.0
@@ -4081,7 +4123,7 @@ Maya Caldwell,2025,5/20/2025,Dream,Fever,W,Bench,PG,12:17,4,2,4,0.5,0,1,0.0,0,0,
 Maya Caldwell,2025,5/16/2025,Dream,Mystics,L,Bench,PG,6:56,0,0,1,0.0,0,1,0.0,0,0,0.0,0,2,2,0,1,0,1,2,-0.3
 Maya Caldwell,2025,5/10/2025,Dream,Fever,L,Bench,PG,10:10,0,0,4,0.0,0,4,0.0,0,0,0.0,1,3,4,0,0,0,1,0,-0.8
 Maya Caldwell,2025,5/7/2025,Dream,Mystics,W,Bench,PG,12:08,3,1,4,0.25,1,3,0.333,0,0,0.0,0,1,1,1,0,0,1,1,0.3
-Megan Gustafson,2026,5/20/2026,Fire,Fever,L,Bench,C,18:20,4,2,5,.400,0,2,.000,0,0,.000,1,5,6,0,1,2,0,4,6.0
+Megan Gustafson,2026,5/20/2026,Fire,Fever,L,Bench,C,18:20,4,2,5,0.4,0,2,0.0,0,0,0.0,1,5,6,0,1,2,0,4,6.0
 Megan Gustafson,2026,5/18/2026,Fire,Sun,W,Bench,C,7:42,3,1,2,0.5,0,1,0.0,1,1,1.0,0,2,2,1,0,0,0,1,3.1
 Megan Gustafson,2026,5/14/2026,Fire,Liberty,L,Bench,C,14:10,14,5,6,0.833,0,1,0.0,4,4,1.0,1,2,3,0,0,0,1,2,8.5
 Megan Gustafson,2026,5/12/2026,Fire,Liberty,L,Bench,C,14:48,6,2,4,0.5,0,2,0.0,2,2,1.0,1,0,1,0,0,0,1,2,1.3
@@ -4162,9 +4204,10 @@ Michaela Onyenwere,2025,5/17/2025,Sky,Fever,L,Bench,SF,17:10,0,0,7,0.0,0,2,0.0,0
 Michaela Onyenwere,2025,5/10/2025,Sky,Lynx,L,Bench,SF,16:49,6,2,7,0.286,1,2,0.5,1,1,1.0,1,2,3,0,0,0,3,4,-2.1
 Michaela Onyenwere,2025,5/6/2025,Sky,Lynx,W,Bench,SF,16:24,5,2,7,0.286,1,4,0.25,0,0,0.0,1,0,1,1,1,0,2,2,-0.3
 Michaela Onyenwere,2025,5/2/2025,Sky,Brazil National Team,W,Bench,SF,14:38,5,2,4,0.5,1,2,0.5,0,0,0.0,2,0,2,0,1,0,1,1,3.5
+Miela Sowah,2026,5/21/2026,Valkyries,Liberty,W,Bench,PG,3:10,0,0,1,.000,0,1,.000,0,0,.000,0,0,0,0,0,0,0,1,-1.3
 Miela Sowah,2026,5/8/2026,Valkyries,Storm,W,Bench,PG,2:37,0,0,1,0.0,0,1,0.0,0,0,0.0,0,0,0,0,0,0,0,0,-0.8
 Miela Sowah,2026,4/25/2026,Valkyries,Storm,W,Bench,PG,14:14,14,5,6,0.833,4,4,1.0,0,0,0.0,1,1,2,1,1,0,3,2,9.3
-Monique Billings,2026,5/20/2026,Fever,Fire,W,Starter,PF,20:43,9,2,7,.286,0,1,.000,5,5,1.000,1,3,4,1,1,1,1,0,7.1
+Monique Billings,2026,5/20/2026,Fever,Fire,W,Starter,PF,20:43,9,2,7,0.286,0,1,0.0,5,5,1.0,1,3,4,1,1,1,1,0,7.1
 Monique Billings,2026,5/17/2026,Fever,Storm,W,Starter,C,19:30,4,2,5,0.4,0,1,0.0,0,0,0.0,1,4,5,1,1,0,1,1,4.8
 Monique Billings,2026,5/15/2026,Fever,Mystics,L,Starter,F,35:41,10,4,11,0.364,1,2,0.5,1,2,0.5,6,3,9,3,3,2,0,4,15.3
 Monique Billings,2026,5/13/2026,Fever,Sparks,W,Starter,F,26:31,9,2,4,0.5,1,1,1.0,4,6,0.667,2,6,8,2,1,0,3,3,8.8
@@ -4201,7 +4244,7 @@ Monique Billings,2025,5/21/2025,Valkyries,Mystics,W,Bench,PF,23:33,7,3,7,0.429,0
 Monique Billings,2025,5/16/2025,Valkyries,Sparks,L,Bench,PF,23:18,7,2,7,0.286,1,4,0.25,2,2,1.0,1,7,8,0,0,1,2,1,5.8
 Monique Billings,2025,5/11/2025,Valkyries,Mercury,W,Starter,PF,20:55,2,1,6,0.167,0,2,0.0,0,0,0.0,2,5,7,0,0,1,0,0,4.3
 Monique Billings,2025,5/6/2025,Valkyries,Sparks,L,Starter,PF,18:43,9,4,8,0.5,1,2,0.5,0,0,0.0,1,7,8,1,0,0,1,3,7.8
-Myisha Hines-Allen,2026,5/20/2026,Fever,Fire,W,Bench,SF,18:10,7,3,5,.600,0,0,.000,1,1,1.000,1,2,3,3,1,1,2,2,7.4
+Myisha Hines-Allen,2026,5/20/2026,Fever,Fire,W,Bench,SF,18:10,7,3,5,0.6,0,0,0.0,1,1,1.0,1,2,3,3,1,1,2,2,7.4
 Myisha Hines-Allen,2026,5/17/2026,Fever,Storm,W,Starter,,27:24,8,3,3,1.0,0,0,0.0,2,2,1.0,2,4,6,4,1,0,1,3,12.5
 Myisha Hines-Allen,2026,5/15/2026,Fever,Mystics,L,Bench,,21:25,6,2,4,0.5,0,2,0.0,2,2,1.0,0,2,2,5,2,1,2,4,7.8
 Myisha Hines-Allen,2026,5/13/2026,Fever,Sparks,W,Bench,SF,10:56,2,1,1,1.0,0,0,0.0,0,0,0.0,1,1,2,3,1,0,0,2,6.0
@@ -4357,7 +4400,7 @@ Napheesa Collier,2025,5/18/2025,Lynx,Sparks,W,Starter,SF,33:10,23,10,18,0.556,2,
 Napheesa Collier,2025,5/16/2025,Lynx,Wings,W,Starter,SF,31:52,34,12,21,0.571,2,3,0.667,8,8,1.0,1,3,4,4,0,0,2,4,18.5
 Napheesa Collier,2025,5/10/2025,Lynx,Sky,W,Starter,SF,25:54,26,8,13,0.615,2,3,0.667,8,9,0.889,1,4,5,0,1,1,2,0,16.9
 Napheesa Collier,2025,5/6/2025,Lynx,Sky,L,Starter,SF,20:00,8,3,12,0.25,0,6,0.0,2,3,0.667,0,3,3,1,0,0,2,1,-1.4
-Natasha Cloud,2026,5/20/2026,Sky,Wings,L,Starter,SF,35:03,21,6,12,.500,1,5,.200,8,8,1.000,0,8,8,5,1,1,4,4,16.0
+Natasha Cloud,2026,5/20/2026,Sky,Wings,L,Starter,SF,35:03,21,6,12,0.5,1,5,0.2,8,8,1.0,0,8,8,5,1,1,4,4,16.0
 Natasha Cloud,2026,5/17/2026,Sky,Lynx,W,Starter,PG,31:44,11,5,9,0.556,1,3,0.333,0,2,0.0,0,6,6,7,0,0,4,4,9.0
 Natasha Cloud,2026,5/15/2026,Sky,Mercury,L,Bench,PG,23:02,7,3,8,0.375,0,2,0.0,1,3,0.333,0,3,3,7,2,0,1,5,7.6
 Natasha Cloud,2026,5/13/2026,Sky,Valkyries,W,Bench,PG,17:56,7,3,7,0.429,1,3,0.333,0,0,0.0,1,3,4,0,0,0,3,4,0.0
@@ -4407,6 +4450,7 @@ Natasha Cloud,2025,5/22/2025,Liberty,Sky,W,Starter,PG,26:55,18,6,10,0.6,4,5,0.8,
 Natasha Cloud,2025,5/17/2025,Liberty,Aces,W,Starter,PG,32:57,22,8,17,0.471,1,4,0.25,5,6,0.833,0,6,6,9,3,2,2,4,21.5
 Natasha Cloud,2025,5/12/2025,Liberty,Toyota Antelopes,W,Starter,PG,22:05,1,0,2,0.0,0,1,0.0,1,2,0.5,0,1,1,6,0,0,0,2,4.5
 Natasha Cloud,2025,5/9/2025,Liberty,Sun,L,Starter,PG,13:34,2,1,1,1.0,0,0,0.0,0,0,0.0,0,0,0,3,1,0,4,2,0.3
+Natasha Howard,2026,5/21/2026,Lynx,Tempo,W,Starter,C,21:45,13,5,7,.714,0,0,.000,3,4,.750,4,2,6,3,0,0,4,3,9.3
 Natasha Howard,2026,5/17/2026,Lynx,Sky,L,Starter,C,29:21,17,8,15,0.533,0,1,0.0,1,4,0.25,3,6,9,7,2,0,4,3,15.3
 Natasha Howard,2026,5/14/2026,Lynx,Wings,W,Starter,C,34:43,26,11,14,0.786,0,0,0.0,4,6,0.667,4,1,5,4,0,3,7,4,16.0
 Natasha Howard,2026,5/12/2026,Lynx,Mercury,W,Starter,C,28:44,14,6,9,0.667,0,0,0.0,2,6,0.333,4,7,11,2,1,0,4,4,11.3
@@ -4467,6 +4511,7 @@ Natasha Howard,2025,5/17/2025,Fever,Sky,W,Starter,SF,29:09,15,6,12,0.5,0,1,0.0,3
 Natasha Howard,2025,5/10/2025,Fever,Dream,W,Starter,PF,16:08,8,3,5,0.6,0,0,0.0,2,2,1.0,2,2,4,0,1,1,1,1,7.5
 Natasha Howard,2025,5/4/2025,Fever,Brazil National Team,W,Starter,SF,17:31,10,4,5,0.8,0,1,0.0,2,2,1.0,2,3,5,0,0,0,2,1,7.3
 Natasha Howard,2025,5/3/2025,Fever,Mystics,W,Starter,SF,19:44,11,4,11,0.364,0,1,0.0,3,3,1.0,2,6,8,1,0,0,2,1,6.6
+Natasha Mack,2026,5/21/2026,Mercury,Sparks,L,Starter,C,27:59,10,4,6,.667,0,0,.000,2,3,.667,6,3,9,2,2,0,1,4,13.6
 Natasha Mack,2026,5/19/2026,Mercury,Tempo,L,Starter,C,17:47,12,6,7,0.857,0,0,0.0,0,0,0.0,2,8,10,3,0,0,0,1,17.3
 Natasha Mack,2026,5/15/2026,Mercury,Sky,W,Starter,C,29:57,10,3,8,0.375,0,0,0.0,4,6,0.667,2,4,6,3,1,4,3,6,8.8
 Natasha Mack,2026,5/12/2026,Mercury,Lynx,L,Starter,C,27:43,9,4,5,0.8,0,1,0.0,1,1,1.0,3,7,10,0,1,3,0,2,16.1
@@ -4521,7 +4566,7 @@ Natasha Mack,2025,6/15/2025,Mercury,Aces,W,Bench,C,14:38,3,1,2,0.5,0,0,0.0,1,1,1
 Natasha Mack,2025,6/11/2025,Mercury,Wings,W,Bench,C,12:56,2,1,2,0.5,0,0,0.0,0,0,0.0,1,1,2,1,2,2,1,2,5.3
 Natasha Mack,2025,5/11/2025,Mercury,Valkyries,L,Starter,C,17:20,12,4,7,0.571,0,0,0.0,4,6,0.667,0,7,7,1,0,2,0,3,11.3
 Natasha Mack,2025,5/6/2025,Mercury,Aces,L,Starter,C,15:22,7,3,4,0.75,0,0,0.0,1,2,0.5,1,2,3,2,1,0,2,1,6.3
-Natisha Hiedeman,2026,5/20/2026,Storm,Sun,L,Starter,PG,30:20,20,8,18,.444,3,9,.333,1,1,1.000,0,1,1,5,1,0,1,1,11.4
+Natisha Hiedeman,2026,5/20/2026,Storm,Sun,L,Starter,PG,30:20,20,8,18,0.444,3,9,0.333,1,1,1.0,0,1,1,5,1,0,1,1,11.4
 Natisha Hiedeman,2026,5/17/2026,Storm,Fever,L,Starter,,30:36,19,7,18,0.389,3,6,0.5,2,2,1.0,0,2,2,2,1,1,1,3,7.8
 Natisha Hiedeman,2026,5/13/2026,Storm,Tempo,L,Starter,G,22:28,5,2,6,0.333,1,4,0.25,0,0,0.0,0,0,0,5,0,0,2,3,2.0
 Natisha Hiedeman,2026,5/10/2026,Storm,Sun,W,Starter,G,25:30,11,5,10,0.5,0,1,0.0,1,2,0.5,0,2,2,3,1,0,4,2,3.3
@@ -4632,7 +4677,9 @@ Naz Hillmon,2025,5/20/2025,Dream,Fever,W,Bench,SF,5:27,3,1,1,1.0,1,1,1.0,0,0,0.0
 Naz Hillmon,2025,5/16/2025,Dream,Mystics,L,Bench,SF,1:58,0,0,1,0.0,0,1,0.0,0,0,0.0,0,0,0,0,0,0,0,0,-0.8
 Naz Hillmon,2025,5/10/2025,Dream,Fever,L,Bench,SF,18:56,7,2,4,0.5,1,3,0.333,2,2,1.0,1,3,4,2,0,0,1,0,7.5
 Naz Hillmon,2025,5/7/2025,Dream,Mystics,W,Bench,SF,15:07,2,0,5,0.0,0,2,0.0,2,2,1.0,1,0,1,1,1,1,1,0,0.5
+Ndjakalenga Mwenentanda,2026,5/21/2026,Valkyries,Liberty,W,Bench,PG,1:29,0,0,0,.000,0,0,.000,0,0,.000,0,0,0,0,0,0,0,0,0.0
 Ndjakalenga Mwenentanda,2026,4/25/2026,Valkyries,Storm,W,Bench,PG,6:30,0,0,1,0.0,0,1,0.0,0,0,0.0,0,1,1,1,0,0,0,1,0.5
+Nia Coffey,2026,5/21/2026,Lynx,Tempo,W,Starter,PF,24:42,8,4,4,1.000,0,0,.000,0,0,.000,1,2,3,2,1,0,1,1,9.0
 Nia Coffey,2026,5/17/2026,Lynx,Sky,L,Starter,PF,25:06,2,1,4,0.25,0,3,0.0,0,0,0.0,0,3,3,2,0,0,1,5,-0.3
 Nia Coffey,2026,5/14/2026,Lynx,Wings,W,Starter,F,29:38,13,5,6,0.833,3,3,1.0,0,0,0.0,0,8,8,1,1,2,1,4,15.5
 Nia Coffey,2026,5/12/2026,Lynx,Mercury,W,Starter,F,20:48,13,5,7,0.714,3,4,0.75,0,0,0.0,1,9,10,0,0,1,1,6,12.5
@@ -4689,9 +4736,11 @@ Nia Coffey,2025,5/20/2025,Dream,Fever,W,Bench,SF,11:10,0,0,0,0.0,0,0,0.0,0,0,0.0
 Nia Coffey,2025,5/16/2025,Dream,Mystics,L,Bench,SF,14:26,10,2,6,0.333,2,3,0.667,4,4,1.0,2,2,4,0,0,0,1,0,6.5
 Nia Coffey,2025,5/10/2025,Dream,Fever,L,Bench,SF,19:09,2,0,4,0.0,0,3,0.0,2,2,1.0,1,4,5,3,2,0,1,3,4.8
 Nia Coffey,2025,5/7/2025,Dream,Mystics,W,Bench,SF,18:23,14,4,7,0.571,3,4,0.75,3,3,1.0,2,5,7,0,1,1,0,0,15.4
+Nikolina Milic,2026,5/21/2026,Tempo,Lynx,L,Bench,SF,14:07,8,4,6,.667,0,1,.000,0,0,.000,0,1,1,1,0,0,0,2,4.3
 Nikolina Milic,2026,5/19/2026,Tempo,Mercury,W,Bench,SF,10:22,4,2,4,0.5,0,0,0.0,0,0,0.0,1,1,2,0,0,0,1,1,1.3
 Nikolina Milic,2026,5/15/2026,Tempo,Sparks,L,Starter,C,5:05,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,2,1,-2.5
 Nikolina Milic,2026,5/13/2026,Tempo,Storm,W,Bench,SF,10:06,2,1,1,1.0,0,0,0.0,0,0,0.0,0,1,1,1,0,0,1,2,1.0
+Nneka Ogwumike,2026,5/21/2026,Sparks,Mercury,W,Starter,PF,31:14,12,5,11,.455,2,2,1.000,0,0,.000,1,5,6,2,1,0,1,0,10.5
 Nneka Ogwumike,2026,5/17/2026,Sparks,Tempo,L,Starter,PF,30:44,17,6,10,0.6,2,3,0.667,3,4,0.75,0,7,7,3,0,0,2,2,13.3
 Nneka Ogwumike,2026,5/15/2026,Sparks,Tempo,W,Starter,F,31:37,20,8,11,0.727,1,2,0.5,3,3,1.0,0,5,5,3,1,0,2,4,14.4
 Nneka Ogwumike,2026,5/13/2026,Sparks,Fever,L,Starter,F,31:45,10,3,5,0.6,1,2,0.5,3,4,0.75,0,5,5,0,3,1,3,2,8.5
@@ -4745,12 +4794,13 @@ Nneka Ogwumike,2025,5/23/2025,Storm,Mercury,W,Starter,PF,35:05,24,11,15,0.733,1,
 Nneka Ogwumike,2025,5/19/2025,Storm,Wings,W,Starter,PF,35:25,23,10,21,0.476,1,2,0.5,2,3,0.667,2,16,18,3,2,0,3,4,20.1
 Nneka Ogwumike,2025,5/17/2025,Storm,Mercury,L,Starter,PF,23:51,12,5,10,0.5,0,2,0.0,2,2,1.0,1,6,7,0,2,0,2,4,7.3
 Nneka Ogwumike,2025,5/4/2025,Storm,Sun,W,Starter,PF,20:36,18,6,9,0.667,4,5,0.8,2,2,1.0,0,5,5,4,1,1,0,1,19.8
+Noemie Brochant,2026,5/21/2026,Mercury,Sparks,L,Bench,SG,14:41,0,0,4,.000,0,2,.000,0,0,.000,1,2,3,1,0,1,2,1,-1.0
 Noemie Brochant,2026,5/19/2026,Mercury,Tempo,L,Bench,SG,25:26,5,2,4,0.5,1,2,0.5,0,0,0.0,1,3,4,0,0,1,0,1,5.8
 Noemie Brochant,2026,5/15/2026,Mercury,Sky,W,Bench,SG,10:52,2,1,1,1.0,0,0,0.0,0,0,0.0,1,1,2,0,0,0,0,3,1.5
 Noemie Brochant,2026,5/12/2026,Mercury,Lynx,L,Bench,SG,12:06,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,1,1,0,0,1,1.5
 Noemie Brochant,2026,5/10/2026,Mercury,Valkyries,L,Bench,SG,15:42,9,3,5,0.6,3,5,0.6,0,0,0.0,0,1,1,0,0,0,1,2,4.0
 Noemie Brochant,2026,5/9/2026,Mercury,Aces,W,Bench,SG,18:28,8,3,6,0.5,1,1,1.0,1,1,1.0,0,3,3,0,0,0,0,0,5.4
-Nyadiew Puoch,2026,5/20/2026,Fire,Fever,L,Starter,PF,20:13,0,0,1,.000,0,0,.000,0,0,.000,1,0,1,0,0,1,1,2,-0.8
+Nyadiew Puoch,2026,5/20/2026,Fire,Fever,L,Starter,PF,20:13,0,0,1,0.0,0,0,0.0,0,0,0.0,1,0,1,0,0,1,1,2,-0.8
 Nyadiew Puoch,2026,5/18/2026,Fire,Sun,W,Starter,PF,21:12,10,4,8,0.5,0,2,0.0,2,2,1.0,1,3,4,0,1,0,1,2,5.5
 Nyadiew Puoch,2026,5/14/2026,Fire,Liberty,L,Starter,F,30:34,13,5,9,0.556,2,5,0.4,1,1,1.0,1,1,2,2,2,0,1,5,8.1
 Nyadiew Puoch,2026,5/12/2026,Fire,Liberty,L,Starter,F,22:28,0,0,5,0.0,0,2,0.0,0,0,0.0,2,1,3,0,0,0,1,4,-4.0
@@ -4782,7 +4832,7 @@ Nyara Sabally,2025,5/22/2025,Liberty,Sky,W,Bench,C,9:30,2,0,0,0.0,0,0,0.0,2,2,1.
 Nyara Sabally,2025,5/17/2025,Liberty,Aces,W,Bench,C,10:55,6,2,4,0.5,0,0,0.0,2,2,1.0,4,1,5,1,0,0,0,2,7.0
 Nyara Sabally,2025,5/12/2025,Liberty,Toyota Antelopes,W,Starter,PF,17:34,7,2,7,0.286,0,1,0.0,3,6,0.5,3,2,5,1,2,0,0,1,6.5
 Nyara Sabally,2025,5/9/2025,Liberty,Sun,L,Bench,C,18:56,5,2,4,0.5,1,1,1.0,0,3,0.0,0,1,1,3,1,1,3,1,3.1
-Odyssey Sims,2026,5/20/2026,Wings,Sky,W,Starter,PG,19:19,4,2,6,.333,0,1,.000,0,0,.000,0,0,0,3,1,0,0,0,3.5
+Odyssey Sims,2026,5/20/2026,Wings,Sky,W,Starter,PG,19:19,4,2,6,0.333,0,1,0.0,0,0,0.0,0,0,0,3,1,0,0,0,3.5
 Odyssey Sims,2026,5/18/2026,Wings,Mystics,W,Starter,PG,16:05,0,0,3,0.0,0,1,0.0,0,0,0.0,0,0,0,4,0,0,4,4,-4.3
 Odyssey Sims,2026,5/14/2026,Wings,Lynx,L,Starter,G,24:36,11,4,8,0.5,1,2,0.5,2,2,1.0,0,1,1,3,2,0,1,0,9.0
 Odyssey Sims,2026,5/12/2026,Wings,Dream,L,Starter,G,22:57,7,3,8,0.375,1,3,0.333,0,0,0.0,0,1,1,4,0,0,1,2,3.8
@@ -4822,6 +4872,7 @@ Odyssey Sims,2025,5/21/2025,Sparks,Mercury,L,Starter,SG,30:13,8,2,7,0.286,1,2,0.
 Odyssey Sims,2025,5/18/2025,Sparks,Lynx,L,Starter,SG,34:54,2,1,9,0.111,0,2,0.0,0,0,0.0,2,2,4,3,0,0,1,2,-0.3
 Odyssey Sims,2025,5/16/2025,Sparks,Valkyries,W,Starter,SG,30:33,7,2,6,0.333,0,2,0.0,3,3,1.0,1,0,1,6,2,1,0,3,9.9
 Odyssey Sims,2025,5/6/2025,Sparks,Valkyries,W,Bench,PG,20:28,11,5,12,0.417,1,4,0.25,0,1,0.0,1,1,2,3,1,0,1,2,5.4
+Olivia Miles,2026,5/21/2026,Lynx,Tempo,W,Starter,SG,23:11,14,6,10,.600,0,1,.000,2,2,1.000,0,4,4,5,1,1,2,0,13.8
 Olivia Miles,2026,5/17/2026,Lynx,Sky,L,Starter,SG,34:34,13,4,10,0.4,1,4,0.25,4,4,1.0,1,5,6,2,4,1,4,4,9.8
 Olivia Miles,2026,5/14/2026,Lynx,Wings,W,Starter,G,31:33,15,7,12,0.583,0,1,0.0,1,1,1.0,1,1,2,6,0,1,3,2,10.4
 Olivia Miles,2026,5/12/2026,Lynx,Mercury,W,Starter,G,25:53,13,5,10,0.5,0,2,0.0,3,4,0.75,0,6,6,7,0,0,2,4,11.5
@@ -4873,7 +4924,7 @@ Olivia Nelson-Ododa,2025,5/20/2025,Sun,Aces,L,Starter,C,20:18,8,3,7,0.429,0,1,0.
 Olivia Nelson-Ododa,2025,5/18/2025,Sun,Mystics,L,Starter,C,24:51,18,5,8,0.625,0,0,0.0,8,8,1.0,3,5,8,0,0,0,0,4,13.8
 Olivia Nelson-Ododa,2025,5/9/2025,Sun,Liberty,W,Starter,C,17:29,15,4,6,0.667,0,0,0.0,7,8,0.875,4,3,7,0,1,2,0,2,15.8
 Olivia Nelson-Ododa,2025,5/4/2025,Sun,Storm,L,Starter,C,12:18,4,1,2,0.5,0,0,0.0,2,4,0.5,0,0,0,0,2,0,1,3,0.5
-Paige Bueckers,2026,5/20/2026,Wings,Sky,W,Starter,SG,32:38,24,11,19,.579,1,3,.333,1,1,1.000,0,3,3,4,0,0,3,3,11.1
+Paige Bueckers,2026,5/20/2026,Wings,Sky,W,Starter,SG,32:38,24,11,19,0.579,1,3,0.333,1,1,1.0,0,3,3,4,0,0,3,3,11.1
 Paige Bueckers,2026,5/18/2026,Wings,Mystics,W,Starter,SG,32:58,18,7,12,0.583,4,5,0.8,0,0,0.0,0,3,3,7,0,0,1,3,15.8
 Paige Bueckers,2026,5/14/2026,Wings,Lynx,L,Starter,G,31:22,27,7,13,0.538,3,4,0.75,10,11,0.909,0,3,3,8,0,0,3,2,19.4
 Paige Bueckers,2026,5/12/2026,Wings,Dream,L,Starter,F,31:50,15,5,12,0.417,2,4,0.5,3,3,1.0,0,2,2,3,0,1,0,2,9.4
@@ -4918,6 +4969,7 @@ Paige Bueckers,2025,5/19/2025,Wings,Storm,L,Starter,SG,36:48,19,7,14,0.5,1,2,0.5
 Paige Bueckers,2025,5/16/2025,Wings,Lynx,L,Starter,SG,29:52,10,3,10,0.3,0,2,0.0,4,4,1.0,1,6,7,2,0,1,2,3,6.0
 Paige Bueckers,2025,5/10/2025,Wings,Toyota Antelopes,W,Starter,SG,22:38,15,6,8,0.75,1,2,0.5,2,3,0.667,2,3,5,6,0,1,2,0,17.1
 Paige Bueckers,2025,5/2/2025,Wings,Aces,L,Starter,SG,22:37,10,4,7,0.571,2,3,0.667,0,0,0.0,1,3,4,1,0,0,1,3,6.5
+Pauline Astier,2026,5/21/2026,Liberty,Valkyries,L,Starter,PG,24:55,7,3,5,.600,1,1,1.000,0,0,.000,0,5,5,2,0,0,0,4,7.0
 Pauline Astier,2026,5/14/2026,Liberty,Fire,W,Starter,G,22:28,20,7,12,0.583,3,6,0.5,3,4,0.75,0,3,3,2,1,0,0,2,13.8
 Pauline Astier,2026,5/12/2026,Liberty,Fire,W,Starter,G,29:37,24,10,14,0.714,2,3,0.667,2,3,0.667,3,2,5,3,2,0,5,3,15.4
 Pauline Astier,2026,5/10/2026,Liberty,Mystics,W,Starter,G,34:59,18,6,10,0.6,0,2,0.0,6,7,0.857,1,4,5,7,2,0,2,5,16.4
@@ -4925,7 +4977,7 @@ Pauline Astier,2026,5/8/2026,Liberty,Sun,W,Starter,PG,19:44,5,2,4,0.5,0,0,0.0,1,
 Pauline Astier,2026,5/3/2026,Liberty,Sun,W,Bench,PG,21:51,12,4,5,0.8,0,0,0.0,4,4,1.0,0,1,1,4,1,1,2,3,10.0
 Peyton Williams,2026,5/9/2026,Mercury,Aces,W,Bench,PF,5:46,0,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,2,0,1,0,0,2.3
 Peyton Williams,2026,4/29/2026,Fire,Storm,L,Bench,PF,7:05,3,1,1,1.0,1,1,1.0,0,1,0.0,0,0,0,0,0,1,0,0,2.9
-Rachel Banham,2026,5/20/2026,Sky,Wings,L,Bench,PG,14:38,10,3,8,.375,2,6,.333,2,2,1.000,0,0,0,1,0,0,1,3,1.8
+Rachel Banham,2026,5/20/2026,Sky,Wings,L,Bench,PG,14:38,10,3,8,0.375,2,6,0.333,2,2,1.0,0,0,0,1,0,0,1,3,1.8
 Rachel Banham,2026,5/17/2026,Sky,Lynx,W,Bench,PG,22:52,13,5,12,0.417,2,6,0.333,1,2,0.5,0,1,1,0,0,0,1,1,2.5
 Rachel Banham,2026,5/15/2026,Sky,Mercury,L,Bench,PG,16:09,5,2,5,0.4,1,3,0.333,0,0,0.0,0,0,0,1,0,1,1,3,0.8
 Rachel Banham,2026,5/13/2026,Sky,Valkyries,W,Bench,PG,11:42,0,0,1,0.0,0,1,0.0,0,0,0.0,0,0,0,0,1,0,0,1,-0.3
@@ -4979,6 +5031,7 @@ Rachel Banham,2025,5/17/2025,Sky,Fever,L,Bench,PG,19:03,8,3,8,0.375,2,6,0.333,0,
 Rachel Banham,2025,5/10/2025,Sky,Lynx,L,Starter,PG,21:41,14,5,9,0.556,4,7,0.571,0,0,0.0,1,2,3,3,2,0,0,1,14.3
 Rachel Banham,2025,5/6/2025,Sky,Lynx,W,Bench,PG,11:51,3,1,4,0.25,1,3,0.333,0,0,0.0,0,3,3,2,1,0,2,1,2.8
 Rachel Banham,2025,5/2/2025,Sky,Brazil National Team,W,Bench,PG,11:15,4,2,6,0.333,0,3,0.0,0,0,0.0,0,1,1,1,1,1,0,1,2.8
+Rae Burrell,2026,5/21/2026,Sparks,Mercury,W,Bench,SG,21:33,12,4,9,.444,2,5,.400,2,2,1.000,0,1,1,2,0,0,2,2,4.3
 Rae Burrell,2026,5/17/2026,Sparks,Tempo,L,Starter,SF,17:57,2,0,2,0.0,0,1,0.0,2,2,1.0,2,1,3,2,0,0,1,6,0.5
 Rae Burrell,2026,5/15/2026,Sparks,Tempo,W,Starter,F,35:18,13,5,6,0.833,2,3,0.667,1,2,0.5,1,4,5,2,0,0,5,2,7.8
 Rae Burrell,2026,5/13/2026,Sparks,Fever,L,Starter,F,28:56,10,4,10,0.4,0,2,0.0,2,2,1.0,1,0,1,1,2,0,1,1,4.3
@@ -5013,14 +5066,14 @@ Rae Burrell,2025,7/5/2025,Sparks,Fever,W,Bench,SG,10:56,2,1,4,0.25,0,1,0.0,0,0,0
 Rae Burrell,2025,7/3/2025,Sparks,Liberty,L,Bench,SG,11:42,5,2,3,0.667,1,1,1.0,0,0,0.0,1,1,2,0,0,0,1,2,2.5
 Rae Burrell,2025,5/16/2025,Sparks,Valkyries,W,Bench,SG,0:41,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,-0.5
 Rae Burrell,2025,5/6/2025,Sparks,Valkyries,W,Starter,SG,13:13,0,0,4,0.0,0,2,0.0,0,1,0.0,1,0,1,0,2,0,1,3,-2.9
-Raegan Beers,2026,5/20/2026,Sun,Storm,W,Bench,C,27:22,10,4,8,.500,1,1,1.000,1,3,.333,4,4,8,2,2,0,2,4,9.9
+Raegan Beers,2026,5/20/2026,Sun,Storm,W,Bench,C,27:22,10,4,8,0.5,1,1,1.0,1,3,0.333,4,4,8,2,2,0,2,4,9.9
 Raegan Beers,2026,5/18/2026,Sun,Fire,L,Bench,C,4:46,4,2,2,1.0,0,0,0.0,0,0,0.0,2,0,2,0,0,0,1,1,3.0
 Raegan Beers,2026,5/15/2026,Sun,Aces,L,Bench,C,17:21,6,2,4,0.5,0,0,0.0,2,2,1.0,2,2,4,2,0,0,1,3,5.3
 Raegan Beers,2026,5/13/2026,Sun,Aces,L,Bench,C,14:06,7,3,8,0.375,0,0,0.0,1,2,0.5,2,1,3,0,1,0,0,4,2.0
 Raegan Beers,2026,5/8/2026,Sun,Liberty,L,Bench,C,11:13,1,0,1,0.0,0,0,0.0,1,4,0.25,0,2,2,0,0,0,0,2,-0.8
 Raegan Beers,2026,5/3/2026,Sun,Liberty,L,Bench,C,14:27,5,2,5,0.4,1,2,0.5,0,0,0.0,0,0,0,1,1,0,2,3,-0.3
 Raegan Beers,2026,4/29/2026,Sun,Tempo,W,Bench,C,11:06,4,2,2,1.0,0,0,0.0,0,0,0.0,3,2,5,2,1,1,2,2,8.0
-Raven Johnson,2026,5/20/2026,Fever,Fire,W,Bench,PG,22:19,9,3,12,.250,1,8,.125,2,2,1.000,0,3,3,1,0,1,3,4,-1.5
+Raven Johnson,2026,5/20/2026,Fever,Fire,W,Bench,PG,22:19,9,3,12,0.25,1,8,0.125,2,2,1.0,0,3,3,1,0,1,3,4,-1.5
 Raven Johnson,2026,5/17/2026,Fever,Storm,W,Bench,PG,17:00,0,0,1,0.0,0,1,0.0,0,0,0.0,1,2,3,1,0,1,3,2,-0.3
 Raven Johnson,2026,5/15/2026,Fever,Mystics,L,Bench,PG,4:16,0,0,0,0.0,0,0,0.0,0,0,0.0,1,1,2,0,0,0,0,0,1.8
 Raven Johnson,2026,5/13/2026,Fever,Sparks,W,Bench,PG,5:28,0,0,1,0.0,0,0,0.0,0,0,0.0,1,0,1,2,0,0,0,1,1.8
@@ -5028,6 +5081,7 @@ Raven Johnson,2026,5/9/2026,Fever,Wings,L,Bench,PG,11:38,4,1,1,1.0,0,0,0.0,2,2,1
 Raven Johnson,2026,5/2/2026,Fever,Nigeria National Team,W,Bench,PG,16:20,9,3,6,0.5,1,4,0.25,2,2,1.0,1,6,7,1,1,1,1,4,9.3
 Raven Johnson,2026,4/30/2026,Fever,Wings,L,Bench,PG,21:23,3,1,3,0.333,0,1,0.0,1,3,0.333,0,1,1,5,5,0,3,3,5.9
 Raven Johnson,2026,4/25/2026,Fever,Liberty,W,Bench,PG,17:32,6,3,3,1.0,0,0,0.0,0,0,0.0,0,3,3,8,1,2,0,3,15.5
+Rebecca Allen,2026,5/21/2026,Liberty,Valkyries,L,Bench,SF,17:03,5,1,5,.200,1,3,.333,2,2,1.000,1,3,4,2,0,0,2,3,2.3
 Rebecca Allen,2026,5/14/2026,Liberty,Fire,W,Bench,SF,14:06,3,1,3,0.333,1,2,0.5,0,0,0.0,0,0,0,1,1,0,0,2,1.8
 Rebecca Allen,2025,9/11/2025,Sky,Liberty,L,Starter,F,22:06,6,2,6,0.333,2,4,0.5,0,0,0.0,0,2,2,3,2,1,1,3,6.5
 Rebecca Allen,2025,9/9/2025,Sky,Aces,L,Starter,G,23:08,7,3,9,0.333,1,5,0.2,0,0,0.0,0,2,2,1,1,1,1,1,3.3
@@ -5076,6 +5130,7 @@ Rebecca Allen,2025,5/17/2025,Sky,Fever,L,Bench,SF,19:10,7,3,9,0.333,1,5,0.2,0,0,
 Rebecca Allen,2025,5/10/2025,Sky,Lynx,L,Bench,SF,17:33,5,2,3,0.667,0,1,0.0,1,1,1.0,0,3,3,1,0,0,1,0,4.6
 Rebecca Allen,2025,5/6/2025,Sky,Lynx,W,Bench,SF,11:22,3,1,3,0.333,1,2,0.5,0,0,0.0,0,1,1,0,1,1,2,3,0.0
 Rebecca Allen,2025,5/2/2025,Sky,Brazil National Team,W,Bench,SF,12:08,5,2,7,0.286,1,4,0.25,0,0,0.0,0,5,5,0,1,0,1,1,3.0
+Rebekah Gardner,2026,5/21/2026,Liberty,Valkyries,L,Bench,PG,19:28,12,4,5,.800,1,2,.500,3,4,.750,0,2,2,0,0,1,1,1,7.8
 Rebekah Gardner,2026,5/14/2026,Liberty,Fire,W,Bench,PG,19:54,14,4,7,0.571,2,4,0.5,4,4,1.0,1,4,5,5,0,0,1,1,14.8
 Rebekah Gardner,2026,5/12/2026,Liberty,Fire,W,Bench,PG,22:19,8,3,4,0.75,2,3,0.667,0,0,0.0,1,1,2,4,0,0,0,1,10.3
 Rebekah Gardner,2026,5/10/2026,Liberty,Mystics,W,Bench,PG,25:26,9,4,5,0.8,0,1,0.0,1,1,1.0,1,2,3,2,0,0,1,1,7.9
@@ -5344,7 +5399,7 @@ Sania Feagin,2025,6/14/2025,Sparks,Lynx,L,Bench,SF,3:17,2,1,2,0.5,0,0,0.0,0,0,0.
 Sania Feagin,2025,6/6/2025,Sparks,Wings,W,Bench,SF,2:43,0,0,1,0.0,0,1,0.0,0,0,0.0,0,0,0,0,0,0,1,1,-2.3
 Sania Feagin,2025,5/21/2025,Sparks,Mercury,L,Bench,SF,1:09,0,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,1,-1.3
 Sania Feagin,2025,5/6/2025,Sparks,Valkyries,W,Bench,SF,7:38,3,0,0,0.0,0,0,0.0,3,4,0.75,0,0,0,1,0,0,0,0,2.5
-Saniya Rivers,2026,5/20/2026,Sun,Storm,W,Bench,PG,13:05,2,1,1,1.000,0,0,.000,0,0,.000,1,3,4,3,1,0,1,1,7.0
+Saniya Rivers,2026,5/20/2026,Sun,Storm,W,Bench,PG,13:05,2,1,1,1.0,0,0,0.0,0,0,0.0,1,3,4,3,1,0,1,1,7.0
 Saniya Rivers,2026,5/18/2026,Sun,Fire,L,Bench,PG,28:28,9,4,8,0.5,0,3,0.0,1,2,0.5,1,2,3,6,4,0,1,3,12.3
 Saniya Rivers,2026,5/15/2026,Sun,Aces,L,Bench,,28:09,14,5,12,0.417,2,6,0.333,2,2,1.0,0,3,3,7,2,1,1,3,14.0
 Saniya Rivers,2026,5/13/2026,Sun,Aces,L,Starter,G,29:56,8,2,11,0.182,0,1,0.0,4,4,1.0,0,1,1,4,0,1,2,1,1.5
@@ -5394,7 +5449,7 @@ Saniya Rivers,2025,5/27/2025,Sun,Wings,L,Starter,SG,21:52,8,3,9,0.333,0,3,0.0,2,
 Saniya Rivers,2025,5/25/2025,Sun,Dream,L,Starter,SG,28:13,2,1,5,0.2,0,0,0.0,0,0,0.0,1,1,2,3,0,0,2,2,0.0
 Saniya Rivers,2025,5/23/2025,Sun,Lynx,L,Starter,SG,28:08,11,5,11,0.455,1,5,0.2,0,0,0.0,3,3,6,3,3,2,2,1,13.5
 Saniya Rivers,2025,5/20/2025,Sun,Aces,L,Bench,,25:22,11,3,7,0.429,1,2,0.5,4,4,1.0,0,4,4,2,2,1,3,0,9.3
-Sarah Ashlee Barker,2026,5/20/2026,Fire,Fever,L,Bench,PG,19:00,8,2,8,.250,0,1,.000,4,4,1.000,0,6,6,1,1,0,0,1,6.5
+Sarah Ashlee Barker,2026,5/20/2026,Fire,Fever,L,Bench,PG,19:00,8,2,8,0.25,0,1,0.0,4,4,1.0,0,6,6,1,1,0,0,1,6.5
 Sarah Ashlee Barker,2026,5/18/2026,Fire,Sun,W,Bench,PG,20:58,18,7,13,0.538,2,3,0.667,2,4,0.5,3,1,4,3,2,0,2,4,11.5
 Sarah Ashlee Barker,2026,5/14/2026,Fire,Liberty,L,Bench,PG,21:23,6,2,4,0.5,2,3,0.667,0,0,0.0,1,2,3,2,1,0,3,1,5.0
 Sarah Ashlee Barker,2026,5/12/2026,Fire,Liberty,L,Bench,PG,21:47,5,2,5,0.4,1,2,0.5,0,0,0.0,1,1,2,3,0,0,2,1,3.5
@@ -5435,6 +5490,7 @@ Sarah Ashlee Barker,2025,5/21/2025,Sparks,Mercury,L,Starter,SF,27:43,2,1,7,0.143
 Sarah Ashlee Barker,2025,5/18/2025,Sparks,Lynx,L,Bench,PG,24:29,6,1,3,0.333,1,3,0.333,3,4,0.75,0,3,3,1,1,1,2,5,3.0
 Sarah Ashlee Barker,2025,5/16/2025,Sparks,Valkyries,W,Bench,PG,13:32,2,1,3,0.333,0,2,0.0,0,0,0.0,0,2,2,1,0,0,2,0,0.3
 Sarah Ashlee Barker,2025,5/6/2025,Sparks,Valkyries,W,Bench,PG,13:00,5,1,2,0.5,1,1,1.0,2,2,1.0,0,3,3,3,0,0,0,2,7.0
+Satou Sabally,2026,5/21/2026,Liberty,Valkyries,L,Starter,PF,16:22,5,2,8,.250,1,3,.333,0,0,.000,0,4,4,2,0,1,2,3,1.5
 Satou Sabally,2025,10/8/2025,Mercury,Aces,L,Starter,F,31:38,24,8,15,0.533,2,6,0.333,6,8,0.75,1,4,5,3,0,1,5,3,11.3
 Satou Sabally,2025,10/5/2025,Mercury,Aces,L,Starter,F,26:33,22,7,19,0.368,2,9,0.222,6,7,0.857,0,9,9,2,0,0,2,0,11.9
 Satou Sabally,2025,10/3/2025,Mercury,Aces,L,Starter,F,30:50,19,6,12,0.5,3,7,0.429,4,4,1.0,2,2,4,4,0,0,2,5,11.5
@@ -5486,12 +5542,13 @@ Satou Sabally,2025,5/21/2025,Mercury,Sparks,W,Starter,PF,28:31,25,6,16,0.375,1,4
 Satou Sabally,2025,5/17/2025,Mercury,Storm,W,Starter,C,26:15,27,9,17,0.529,3,9,0.333,6,7,0.857,0,6,6,1,1,2,2,3,16.6
 Satou Sabally,2025,5/11/2025,Mercury,Valkyries,L,Starter,PF,21:23,15,4,10,0.4,4,6,0.667,3,3,1.0,1,5,6,3,0,1,5,5,7.6
 Satou Sabally,2025,5/6/2025,Mercury,Aces,L,Starter,PF,15:04,14,5,9,0.556,2,5,0.4,2,2,1.0,2,3,5,2,1,0,2,3,10.3
-Serah Williams,2026,5/20/2026,Fire,Fever,L,Bench,PF,16:32,6,3,5,.600,0,0,.000,0,1,.000,0,2,2,0,1,0,0,1,3.9
+Serah Williams,2026,5/20/2026,Fire,Fever,L,Bench,PF,16:32,6,3,5,0.6,0,0,0.0,0,1,0.0,0,2,2,0,1,0,0,1,3.9
 Serah Williams,2026,5/18/2026,Fire,Sun,W,Bench,PF,12:26,3,1,1,1.0,0,0,0.0,1,4,0.25,1,4,5,0,0,1,0,3,4.3
 Serah Williams,2026,5/14/2026,Fire,Liberty,L,Bench,PF,4:02,1,0,0,0.0,0,0,0.0,1,2,0.5,0,2,2,1,1,1,0,0,4.8
 Serah Williams,2026,5/9/2026,Fire,Sky,L,Bench,PF,7:59,0,0,3,0.0,0,0,0.0,0,0,0.0,0,2,2,1,0,0,0,0,0.3
 Serah Williams,2026,5/3/2026,Fire,Sparks,L,Bench,PF,18:36,12,3,6,0.5,0,0,0.0,6,8,0.75,3,5,8,1,2,1,3,4,10.3
 Serah Williams,2026,4/29/2026,Fire,Storm,L,Bench,PF,14:27,9,3,3,1.0,0,0,0.0,3,4,0.75,1,2,3,0,1,1,0,2,8.8
+Sha Carter,2026,5/21/2026,Mercury,Sparks,L,Bench,SG,0:24,0,0,0,.000,0,0,.000,0,0,.000,0,0,0,0,0,0,0,0,0.0
 Sha Carter,2026,5/10/2026,Mercury,Valkyries,L,Bench,SG,5:38,0,0,1,0.0,0,1,0.0,0,0,0.0,0,1,1,0,0,0,0,0,0.0
 Sha Carter,2026,5/9/2026,Mercury,Aces,W,Bench,SG,12:18,2,1,2,0.5,0,1,0.0,0,0,0.0,0,1,1,1,0,0,0,1,1.8
 Sha Carter,2026,4/29/2026,Mercury,Japan National Team,W,Bench,SG,10:57,6,2,3,0.667,0,0,0.0,2,4,0.5,0,1,1,0,0,0,0,1,2.5
@@ -5538,7 +5595,7 @@ Shakira Austin,2025,5/30/2025,Mystics,Liberty,L,Bench,C,12:31,0,0,6,0.0,0,1,0.0,
 Shakira Austin,2025,5/28/2025,Mystics,Fever,W,Bench,C,14:58,13,5,9,0.556,0,0,0.0,3,4,0.75,1,2,3,0,2,1,1,3,7.8
 Shakira Austin,2025,5/21/2025,Mystics,Valkyries,L,Bench,C,10:06,2,1,1,1.0,0,0,0.0,0,1,0.0,1,3,4,0,1,0,5,1,-0.4
 Shakira Austin,2025,5/18/2025,Mystics,Sun,W,Bench,,7:29,4,2,5,0.4,0,0,0.0,0,0,0.0,1,2,3,0,0,0,0,3,1.3
-Shatori Walker-Kimbrough,2026,5/20/2026,Fever,Fire,W,Bench,PG,3:18,0,0,0,.000,0,0,.000,0,0,.000,0,0,0,0,0,0,0,0,0.0
+Shatori Walker-Kimbrough,2026,5/20/2026,Fever,Fire,W,Bench,PG,3:18,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0.0
 Shatori Walker-Kimbrough,2026,5/17/2026,Fever,Storm,W,Bench,PG,3:14,0,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,1,0,-1.8
 Shatori Walker-Kimbrough,2026,5/2/2026,Fever,Nigeria National Team,W,Bench,PG,19:04,5,2,3,0.667,1,2,0.5,0,0,0.0,1,3,4,0,0,1,2,3,3.5
 Shatori Walker-Kimbrough,2026,4/30/2026,Fever,Wings,L,Bench,PG,20:17,7,3,7,0.429,0,0,0.0,1,4,0.25,0,2,2,4,2,1,0,0,8.8
@@ -5639,7 +5696,7 @@ Sika Kone,2025,5/23/2025,Mystics,Aces,L,Bench,SF,10:12,0,0,1,0.0,0,0,0.0,0,0,0.0
 Sika Kone,2025,5/21/2025,Mystics,Valkyries,L,Bench,SF,13:45,3,1,5,0.2,0,1,0.0,1,1,1.0,0,0,0,2,0,0,2,2,-2.1
 Sika Kone,2025,5/18/2025,Mystics,Sun,W,Bench,SF,4:16,0,0,2,0.0,0,0,0.0,0,0,0.0,0,2,2,0,0,0,0,0,0.0
 Sika Kone,2025,5/16/2025,Mystics,Dream,W,Bench,,11:41,2,1,1,1.0,0,0,0.0,0,0,0.0,0,3,3,1,0,0,2,2,1.5
-Skylar Diggins,2026,5/20/2026,Sky,Wings,L,Starter,SG,34:09,15,6,14,.429,2,6,.333,1,2,.500,0,1,1,4,1,1,2,3,7.0
+Skylar Diggins,2026,5/20/2026,Sky,Wings,L,Starter,SG,34:09,15,6,14,0.429,2,6,0.333,1,2,0.5,0,1,1,4,1,1,2,3,7.0
 Skylar Diggins,2026,5/15/2026,Sky,Mercury,L,Starter,G,11:32,0,0,5,0.0,0,2,0.0,0,0,0.0,1,1,2,3,1,0,0,3,0.5
 Skylar Diggins,2026,5/13/2026,Sky,Valkyries,W,Starter,G,34:21,15,5,16,0.313,1,4,0.25,4,6,0.667,0,5,5,7,1,2,0,2,13.5
 Skylar Diggins,2026,5/9/2026,Sky,Fire,W,Starter,G,32:47,21,8,12,0.667,2,3,0.667,3,5,0.6,2,9,11,7,1,2,2,2,25.9
@@ -5743,7 +5800,7 @@ Sonia Citron,2025,5/18/2025,Mystics,Sun,W,Starter,SF,23:34,15,5,10,0.5,0,3,0.0,5
 Sonia Citron,2025,5/16/2025,Mystics,Dream,W,Starter,SF,23:44,19,6,7,0.857,2,2,1.0,5,6,0.833,0,2,2,2,0,0,1,4,12.0
 Sonia Citron,2025,5/7/2025,Mystics,Dream,L,Starter,SF,18:22,5,2,5,0.4,1,1,1.0,0,0,0.0,0,1,1,1,2,0,4,0,1.0
 Sonia Citron,2025,5/3/2025,Mystics,Fever,L,Starter,SF,22:26,15,5,6,0.833,2,3,0.667,3,3,1.0,1,3,4,2,1,1,3,2,12.6
-Sophie Cunningham,2026,5/20/2026,Fever,Fire,W,Bench,PG,15:12,2,1,5,.200,0,4,.000,0,0,.000,0,2,2,1,0,0,0,1,0.3
+Sophie Cunningham,2026,5/20/2026,Fever,Fire,W,Bench,PG,15:12,2,1,5,0.2,0,4,0.0,0,0,0.0,0,2,2,1,0,0,0,1,0.3
 Sophie Cunningham,2026,5/17/2026,Fever,Storm,W,Bench,,24:59,17,5,9,0.556,1,5,0.2,6,6,1.0,0,3,3,0,1,1,3,2,8.3
 Sophie Cunningham,2026,5/15/2026,Fever,Mystics,L,Starter,F,20:12,7,2,5,0.4,1,3,0.333,2,2,1.0,0,1,1,2,0,0,0,3,3.8
 Sophie Cunningham,2026,5/13/2026,Fever,Sparks,W,Starter,F,27:15,12,5,9,0.556,2,5,0.4,0,0,0.0,1,6,7,1,1,0,0,0,12.8
@@ -5784,7 +5841,7 @@ Sophie Cunningham,2025,5/22/2025,Fever,Dream,W,Bench,PG,20:17,9,3,6,0.5,2,4,0.5,
 Sophie Cunningham,2025,5/10/2025,Fever,Dream,W,Starter,SF,15:16,5,2,3,0.667,1,2,0.5,0,0,0.0,0,2,2,1,0,0,0,1,4.8
 Sophie Cunningham,2025,5/4/2025,Fever,Brazil National Team,W,Bench,PG,10:59,6,2,6,0.333,1,4,0.25,1,1,1.0,0,3,3,1,0,0,1,0,3.4
 Sophie Cunningham,2025,5/3/2025,Fever,Mystics,W,Bench,PG,34:05,21,6,11,0.545,2,6,0.333,7,8,0.875,0,8,8,2,1,0,4,2,13.8
-Stefanie Dolson,2026,5/20/2026,Storm,Sun,L,Starter,C,27:48,3,0,4,.000,0,2,.000,3,4,.750,1,2,3,2,0,2,2,2,2.0
+Stefanie Dolson,2026,5/20/2026,Storm,Sun,L,Starter,C,27:48,3,0,4,0.0,0,2,0.0,3,4,0.75,1,2,3,2,0,2,2,2,2.0
 Stefanie Dolson,2026,5/17/2026,Storm,Fever,L,Starter,C,30:19,6,3,6,0.5,0,2,0.0,0,0,0.0,0,5,5,2,2,1,0,3,8.8
 Stefanie Dolson,2026,5/13/2026,Storm,Tempo,L,Starter,C,22:02,16,6,8,0.75,2,3,0.667,2,2,1.0,0,3,3,0,0,2,3,5,8.0
 Stefanie Dolson,2026,5/10/2026,Storm,Sun,W,Starter,C,20:53,6,1,3,0.333,0,2,0.0,4,4,1.0,1,3,4,0,0,0,1,5,2.0
@@ -5882,7 +5939,7 @@ Stephanie Talbot,2025,5/29/2025,Valkyries,Liberty,L,Starter,SF,19:50,9,2,5,0.4,2
 Stephanie Talbot,2025,5/27/2025,Valkyries,Liberty,L,Starter,SF,23:47,2,1,2,0.5,0,0,0.0,0,0,0.0,0,6,6,2,0,0,4,1,2.5
 Stephanie Talbot,2025,5/23/2025,Valkyries,Sparks,W,Bench,SF,15:54,3,1,3,0.333,0,1,0.0,1,2,0.5,0,2,2,1,1,0,1,0,2.5
 Stephanie Talbot,2025,5/21/2025,Valkyries,Mystics,W,Bench,,8:18,1,0,2,0.0,0,2,0.0,1,2,0.5,1,0,1,0,0,0,1,0,-1.3
-Sug Sutton,2026,5/20/2026,Fire,Fever,L,Starter,PG,24:10,14,6,8,.750,0,1,.000,2,2,1.000,0,1,1,4,1,0,3,1,9.5
+Sug Sutton,2026,5/20/2026,Fire,Fever,L,Starter,PG,24:10,14,6,8,0.75,0,1,0.0,2,2,1.0,0,1,1,4,1,0,3,1,9.5
 Sug Sutton,2026,5/18/2026,Fire,Sun,W,Starter,PG,24:34,12,4,10,0.4,1,2,0.5,3,4,0.75,1,0,1,5,1,0,2,1,7.5
 Sug Sutton,2026,5/14/2026,Fire,Liberty,L,Bench,PG,19:44,8,3,13,0.231,1,5,0.2,1,4,0.25,0,3,3,8,0,0,1,3,4.5
 Sug Sutton,2025,9/9/2025,Mystics,Liberty,L,Starter,G,26:32,5,2,7,0.286,1,3,0.333,0,0,0.0,0,3,3,3,0,0,3,1,1.5
@@ -5940,10 +5997,10 @@ Ta'Niya Latson,2026,5/13/2026,Sparks,Fever,L,Bench,PG,1:41,0,0,1,0.0,0,1,0.0,0,0
 Ta'Niya Latson,2026,5/10/2026,Sparks,Aces,L,Bench,PG,4:42,2,1,1,1.0,0,0,0.0,0,0,0.0,0,1,1,0,0,0,1,0,1.0
 Ta'Niya Latson,2026,5/3/2026,Sparks,Fire,W,Bench,PG,14:11,7,2,5,0.4,0,2,0.0,3,6,0.5,0,1,1,2,0,0,4,2,-1.3
 Ta'Niya Latson,2026,4/25/2026,Sparks,Nigeria National Team,W,Bench,PG,21:38,7,3,9,0.333,0,3,0.0,1,1,1.0,2,3,5,6,0,1,2,3,7.6
-Taina Mair,2026,5/20/2026,Storm,Sun,L,Bench,PG,3:12,0,0,1,.000,0,0,.000,0,0,.000,0,0,0,1,0,0,0,0,0.3
+Taina Mair,2026,5/20/2026,Storm,Sun,L,Bench,PG,3:12,0,0,1,0.0,0,0,0.0,0,0,0.0,0,0,0,1,0,0,0,0,0.3
 Taina Mair,2026,4/29/2026,Storm,Fire,W,Bench,PG,12:14,2,0,2,0.0,0,0,0.0,2,2,1.0,1,2,3,5,0,0,2,2,4.3
 Taina Mair,2026,4/25/2026,Storm,Valkyries,L,Bench,PG,17:12,2,1,4,0.25,0,3,0.0,0,0,0.0,2,0,2,4,1,0,2,3,2.5
-Taylor Thierry,2026,5/20/2026,Storm,Sun,L,Bench,SF,9:12,6,2,4,.500,2,3,.667,0,0,.000,1,1,2,0,0,0,0,5,2.3
+Taylor Thierry,2026,5/20/2026,Storm,Sun,L,Bench,SF,9:12,6,2,4,0.5,2,3,0.667,0,0,0.0,1,1,2,0,0,0,0,5,2.3
 Taylor Thierry,2026,5/3/2026,Dream,Mystics,L,Bench,SF,13:27,7,2,5,0.4,2,4,0.5,1,2,0.5,1,3,4,1,0,0,1,3,4.3
 Taylor Thierry,2026,4/29/2026,Dream,Sky,W,Bench,SF,14:24,0,0,1,0.0,0,1,0.0,0,0,0.0,2,2,4,0,1,1,1,0,3.8
 Taylor Thierry,2025,9/16/2025,Dream,Fever,L,Bench,SG,1:30,0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0.0
@@ -6064,6 +6121,7 @@ Temi Fagbenle,2025,5/21/2025,Valkyries,Mystics,W,Starter,C,27:02,6,3,10,0.3,0,2,
 Temi Fagbenle,2025,5/16/2025,Valkyries,Sparks,L,Starter,C,31:38,15,6,8,0.75,2,4,0.5,1,1,1.0,2,3,5,4,2,0,1,3,16.4
 Temi Fagbenle,2025,5/11/2025,Valkyries,Mercury,W,Starter,C,21:48,6,2,4,0.5,2,3,0.667,0,0,0.0,1,2,3,4,2,0,1,4,8.5
 Temi Fagbenle,2025,5/6/2025,Valkyries,Sparks,L,Starter,C,19:35,2,1,3,0.333,0,2,0.0,0,0,0.0,1,2,3,1,1,1,1,2,3.3
+Teonni Key,2026,5/21/2026,Tempo,Lynx,L,Bench,SF,15:50,4,2,5,.400,0,1,.000,0,0,.000,2,1,3,0,1,1,1,1,3.5
 Teonni Key,2026,5/19/2026,Tempo,Mercury,W,Bench,SF,10:38,3,1,3,0.333,1,3,0.333,0,0,0.0,0,2,2,0,1,0,2,3,-0.3
 Teonni Key,2026,5/17/2026,Tempo,Sparks,W,Bench,SF,19:53,6,2,6,0.333,0,1,0.0,2,2,1.0,3,4,7,0,1,1,0,5,6.3
 Teonni Key,2026,5/15/2026,Tempo,Sparks,L,Bench,SF,8:53,5,1,1,1.0,1,1,1.0,2,2,1.0,2,0,2,1,0,1,0,2,6.5
@@ -6071,6 +6129,7 @@ Teonni Key,2026,5/13/2026,Tempo,Storm,W,Starter,C,8:05,2,1,1,1.0,0,0,0.0,0,0,0.0
 Teonni Key,2026,5/8/2026,Tempo,Mystics,L,Bench,SF,9:20,0,0,1,0.0,0,1,0.0,0,2,0.0,1,2,3,1,0,1,1,0,2.0
 Teonni Key,2026,5/1/2026,Tempo,Lynx,L,Bench,SF,22:18,4,1,6,0.167,0,1,0.0,2,4,0.5,2,4,6,2,0,1,1,6,2.0
 Teonni Key,2026,4/29/2026,Tempo,Sun,L,Bench,SF,17:36,0,0,1,0.0,0,1,0.0,0,0,0.0,0,1,1,0,1,0,2,6,-4.0
+Tiffany Hayes,2026,5/21/2026,Valkyries,Liberty,W,Bench,PG,14:27,9,2,7,.286,1,4,.250,4,4,1.000,0,1,1,2,0,0,0,1,4.5
 Tiffany Hayes,2026,5/8/2026,Valkyries,Storm,W,Starter,SG,4:21,1,0,1,0.0,0,1,0.0,1,2,0.5,0,0,0,1,0,0,0,1,0.0
 Tiffany Hayes,2026,4/25/2026,Valkyries,Storm,W,Starter,G,10:10,5,2,4,0.5,1,2,0.5,0,0,0.0,0,0,0,1,1,0,1,1,2.5
 Tiffany Hayes,2025,8/22/2025,Valkyries,Mercury,L,Starter,G,20:57,5,2,5,0.4,1,3,0.333,0,0,0.0,0,1,1,3,0,0,1,4,2.0
@@ -6101,7 +6160,7 @@ Tiffany Hayes,2025,5/21/2025,Valkyries,Mystics,W,Starter,SG,13:24,2,0,4,0.0,0,2,
 Tiffany Hayes,2025,5/16/2025,Valkyries,Sparks,L,Starter,SF,30:21,19,7,16,0.438,2,5,0.4,3,3,1.0,2,7,9,1,1,1,4,4,10.1
 Tiffany Hayes,2025,5/11/2025,Valkyries,Mercury,W,Starter,SG,21:29,8,1,11,0.091,1,7,0.143,5,6,0.833,1,4,5,1,1,0,2,4,-0.5
 Tiffany Hayes,2025,5/6/2025,Valkyries,Sparks,L,Starter,SG,18:43,6,1,7,0.143,0,2,0.0,4,5,0.8,0,3,3,3,1,0,2,1,2.6
-Tyasha Harris,2026,5/20/2026,Fever,Fire,W,Starter,SG,29:16,0,0,6,.000,0,4,.000,0,0,.000,0,1,1,7,2,0,0,4,3.3
+Tyasha Harris,2026,5/20/2026,Fever,Fire,W,Starter,SG,29:16,0,0,6,0.0,0,4,0.0,0,0,0.0,0,1,1,7,2,0,0,4,3.3
 Tyasha Harris,2026,5/17/2026,Fever,Storm,W,Bench,PG,13:25,4,1,4,0.25,0,1,0.0,2,2,1.0,0,4,4,1,0,1,1,1,3.8
 Tyasha Harris,2026,5/15/2026,Fever,Mystics,L,Bench,PG,9:44,2,1,2,0.5,0,1,0.0,0,0,0.0,0,0,0,1,0,0,1,0,0.5
 Tyasha Harris,2026,5/13/2026,Fever,Sparks,W,Bench,PG,16:03,7,3,4,0.75,1,2,0.5,0,0,0.0,0,1,1,3,0,0,1,0,6.8
@@ -6112,6 +6171,7 @@ Tyasha Harris,2025,5/24/2025,Wings,Dream,L,Bench,PG,24:07,10,3,7,0.429,2,5,0.4,2
 Tyasha Harris,2025,5/21/2025,Wings,Lynx,L,Bench,PG,14:05,6,2,3,0.667,2,3,0.667,0,0,0.0,0,0,0,2,1,0,0,2,5.8
 Tyasha Harris,2025,5/19/2025,Wings,Storm,L,Bench,PG,21:50,2,1,4,0.25,0,2,0.0,0,0,0.0,0,1,1,3,0,1,3,1,0.3
 Tyasha Harris,2025,5/16/2025,Wings,Lynx,L,Bench,,14:20,5,2,3,0.667,1,1,1.0,0,0,0.0,1,1,2,3,0,0,0,1,7.0
+Veronica Burton,2026,5/21/2026,Valkyries,Liberty,W,Starter,PG,27:29,13,5,14,.357,3,6,.500,0,1,.000,1,3,4,7,0,0,1,2,10.4
 Veronica Burton,2026,5/13/2026,Valkyries,Sky,L,Starter,G,36:26,16,5,15,0.333,2,6,0.333,4,4,1.0,0,3,3,4,1,0,5,5,3.0
 Veronica Burton,2026,5/10/2026,Valkyries,Mercury,W,Starter,G,32:16,13,3,9,0.333,1,5,0.2,6,6,1.0,1,2,3,12,3,0,0,3,20.0
 Veronica Burton,2026,5/8/2026,Valkyries,Storm,W,Starter,PG,30:50,16,5,13,0.385,2,4,0.5,4,5,0.8,1,1,2,6,2,0,1,4,11.1
@@ -6164,7 +6224,7 @@ Veronica Burton,2025,5/21/2025,Valkyries,Mystics,W,Starter,PG,29:15,22,6,11,0.54
 Veronica Burton,2025,5/16/2025,Valkyries,Sparks,L,Starter,PG,17:13,2,0,4,0.0,0,2,0.0,2,2,1.0,2,0,2,3,2,0,1,0,4.3
 Veronica Burton,2025,5/11/2025,Valkyries,Mercury,W,Starter,PG,20:55,5,1,8,0.125,1,7,0.143,2,2,1.0,1,3,4,4,0,0,1,2,3.5
 Veronica Burton,2025,5/6/2025,Valkyries,Sparks,L,Starter,PG,18:51,6,2,5,0.4,0,2,0.0,2,2,1.0,0,0,0,4,0,0,4,3,0.0
-Zia Cooke,2026,5/20/2026,Storm,Sun,L,Bench,PG,19:20,10,4,10,.400,0,3,.000,2,2,1.000,1,3,4,1,1,0,5,0,2.0
+Zia Cooke,2026,5/20/2026,Storm,Sun,L,Bench,PG,19:20,10,4,10,0.4,0,3,0.0,2,2,1.0,1,3,4,1,1,0,5,0,2.0
 Zia Cooke,2026,5/17/2026,Storm,Fever,L,Bench,PG,22:22,13,3,11,0.273,2,4,0.5,5,6,0.833,1,0,1,4,0,0,0,4,5.5
 Zia Cooke,2026,5/13/2026,Storm,Tempo,L,Bench,PG,16:17,7,3,8,0.375,1,5,0.2,0,0,0.0,0,3,3,2,0,0,1,1,3.8
 Zia Cooke,2026,5/10/2026,Storm,Sun,W,Bench,PG,12:09,4,1,6,0.167,1,3,0.333,1,2,0.5,1,0,1,0,1,0,1,1,-0.8
