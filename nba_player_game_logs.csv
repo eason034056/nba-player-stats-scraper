@@ -887,7 +887,7 @@ Alex Caruso,2025-2026,10/21/2025,Thunder,Rockets,W,Bench,SF,30:11,8,3,9,0.333,2,
 Alex Caruso,2025-2026,10/17/2025,Thunder,Nuggets,W,Starter,SF,10:35,3,1,3,0.333,1,3,0.333,0,0,0.0,0,1,1,0,0,0,3,0,-1.5
 Alex Caruso,2025-2026,10/14/2025,Thunder,Bucks,W,Starter,PF,17:26,9,4,6,0.667,1,3,0.333,0,0,0.0,0,0,0,2,0,0,0,1,6.0
 Alex Caruso,2025-2026,10/9/2025,Thunder,Hornets,W,Starter,PF,17:45,11,4,8,0.5,1,4,0.25,2,2,1.0,0,1,1,1,1,1,0,2,7.0
-Alex Karaban,2025-2026,7/17/2026,Kings,Hornets,W,Starter,SF,35:11,14,6,12,.500,2,8,.250,0,0,.000,1,1,2,3,0,0,2,0,7.8
+Alex Karaban,2025-2026,7/17/2026,Kings,Hornets,W,Starter,SF,35:11,14,6,12,0.5,2,8,0.25,0,0,0.0,1,1,2,3,0,0,2,0,7.8
 Alex Karaban,2025-2026,7/15/2026,Kings,Celtics,L,Starter,SF,26:19,21,7,15,0.467,5,7,0.714,1,1,1.0,4,4,8,0,1,0,1,0,16.4
 Alex Karaban,2025-2026,7/14/2026,Kings,Nets,L,Starter,SF,24:03,4,2,6,0.333,0,3,0.0,0,0,0.0,3,2,5,2,1,0,2,1,4.5
 Alex Karaban,2025-2026,7/12/2026,Kings,Wizards,L,Starter,SF,22:39,3,1,3,0.333,1,2,0.5,0,0,0.0,0,2,2,0,0,0,1,3,-0.3
@@ -2272,7 +2272,7 @@ Ayo Dosunmu,2025-2026,10/14/2025,Bulls,Nuggets,L,Starter,SG,28:16,11,5,7,0.714,0
 Ayo Dosunmu,2025-2026,10/12/2025,Bulls,Bucks,L,Bench,SG,24:47,22,8,12,0.667,1,3,0.333,5,5,1.0,0,3,3,2,0,0,0,2,14.4
 Ayo Dosunmu,2025-2026,10/9/2025,Bulls,Cavaliers,W,Bench,PG,22:15,16,6,14,0.429,1,4,0.25,3,3,1.0,0,4,4,1,0,0,3,3,3.9
 Ayo Dosunmu,2025-2026,10/7/2025,Bulls,Cavaliers,W,Bench,SG,19:14,12,5,6,0.833,2,2,1.0,0,0,0.0,0,3,3,1,0,0,0,1,10.3
-Baba Miller,2025-2026,7/17/2026,Clippers,Timberwolves,W,Starter,C,20:29,15,7,13,.538,1,3,.333,0,0,.000,2,2,4,6,0,1,0,3,14.3
+Baba Miller,2025-2026,7/17/2026,Clippers,Timberwolves,W,Starter,C,20:29,15,7,13,0.538,1,3,0.333,0,0,0.0,2,2,4,6,0,1,0,3,14.3
 Baba Miller,2025-2026,7/15/2026,Clippers,Wizards,W,Starter,C,20:32,12,5,7,0.714,0,0,0.0,1,2,0.5,1,3,4,0,2,2,1,1,11.8
 Baba Miller,2025-2026,7/14/2026,Clippers,Lakers,L,Starter,C,22:14,6,1,3,0.333,0,1,0.0,2,3,0.667,1,0,1,1,0,1,2,4,1.6
 Baba Miller,2025-2026,7/12/2026,Clippers,Jazz,W,Starter,C,26:05,15,5,7,0.714,2,3,0.667,2,2,1.0,1,4,5,2,0,0,1,5,11.5
@@ -3381,6 +3381,7 @@ Brandon Williams,2025-2026,10/29/2025,Mavericks,Pacers,W,Bench,PG,22:15,20,9,14,
 Brandon Williams,2025-2026,10/24/2025,Mavericks,Wizards,L,Bench,PG,6:56,0,0,2,0.0,0,0,0.0,0,0,0.0,0,0,0,1,1,0,0,1,0.0
 Brandon Williams,2025-2026,10/22/2025,Mavericks,Spurs,L,Bench,PG,11:34,0,0,1,0.0,0,0,0.0,0,2,0.0,0,0,0,2,1,0,1,0,0.5
 Brandon Williams,2025-2026,10/15/2025,Mavericks,Lakers,W,Bench,PG,2:37,5,2,3,0.667,1,1,1.0,0,0,0.0,0,1,1,0,0,0,0,0,3.5
+Brayden Burries,2025-2026,7/18/2026,Bucks,Sixers,W,Starter,SG,27:39,27,9,18,.500,0,4,.000,5,7,.714,3,1,4,5,1,1,2,5,17.1
 Brayden Burries,2025-2026,7/13/2026,Bucks,Suns,L,Starter,PG,29:07,23,8,15,0.533,3,8,0.375,3,7,0.429,2,6,8,6,4,1,1,3,24.1
 Brayden Burries,2025-2026,7/12/2026,Bucks,Spurs,L,Starter,SG,29:46,26,9,16,0.563,4,5,0.8,3,4,0.75,0,3,3,3,3,2,0,7,19.3
 Brayden Burries,2025-2026,7/10/2026,Bucks,Heat,L,Starter,SG,21:50,18,6,15,0.4,1,5,0.2,3,3,1.0,0,3,3,3,0,0,0,1,10.4
@@ -4448,12 +4449,14 @@ Cam Whitmore,2025-2026,10/24/2025,Wizards,Mavericks,W,Bench,PF,16:10,8,3,9,0.333
 Cam Whitmore,2025-2026,10/22/2025,Wizards,Bucks,L,Bench,PF,19:27,14,6,12,0.5,1,5,0.2,1,1,1.0,2,3,5,1,0,0,0,1,9.4
 Cam Whitmore,2025-2026,10/13/2025,Wizards,Knicks,W,Bench,PF,9:54,7,3,4,0.75,1,2,0.5,0,0,0.0,0,2,2,2,0,0,1,3,5.0
 Cam Whitmore,2025-2026,10/12/2025,Wizards,Raptors,L,Bench,PF,16:43,10,4,7,0.571,1,1,1.0,1,1,1.0,0,0,0,0,1,1,0,0,6.4
+Cameron Boozer,2025-2026,7/18/2026,Grizzlies,Rockets,W,Starter,C,31:07,12,3,13,.231,0,4,.000,4,4,1.000,7,5,12,5,1,1,3,2,14.5
 Cameron Boozer,2025-2026,7/16/2026,Grizzlies,Hawks,W,Starter,C,29:10,24,10,13,0.769,1,1,1.0,2,3,0.667,3,4,7,3,1,0,4,1,18.6
 Cameron Boozer,2025-2026,7/14/2026,Grizzlies,Warriors,W,Starter,PF,25:59,12,4,12,0.333,1,3,0.333,2,2,1.0,2,5,7,3,3,0,2,1,11.5
 Cameron Boozer,2025-2026,7/13/2026,Grizzlies,Mavericks,L,Starter,PF,29:03,21,7,17,0.412,2,8,0.25,3,5,0.6,3,5,8,3,3,0,3,4,14.1
 Cameron Boozer,2025-2026,7/10/2026,Grizzlies,Bulls,W,Starter,C,27:10,23,7,12,0.583,1,1,1.0,5,5,1.0,1,5,6,4,1,1,4,7,15.4
 Cameron Boozer,2025-2026,7/6/2026,Grizzlies,Jazz,L,Starter,PF,27:23,18,6,9,0.667,4,5,0.8,2,2,1.0,2,5,7,4,1,0,4,3,15.8
 Cameron Boozer,2025-2026,7/4/2026,Grizzlies,Thunder,W,Starter,PF,24:12,15,7,11,0.636,1,3,0.333,0,1,0.0,2,2,4,4,0,0,2,1,11.4
+Cameron Carr,2025-2026,7/18/2026,Lakers,Warriors,L,Starter,SF,27:31,17,5,16,.313,1,8,.125,4,5,.800,0,3,3,1,0,0,1,2,4.4
 Cameron Carr,2025-2026,7/16/2026,Lakers,Bulls,W,Starter,SF,22:08,14,5,12,0.417,0,3,0.0,2,2,1.0,0,3,3,0,1,0,0,1,7.0
 Cameron Carr,2025-2026,7/14/2026,Lakers,Clippers,W,Starter,SF,29:12,23,8,18,0.444,3,10,0.3,3,5,0.6,0,1,1,2,0,1,0,4,9.4
 Cameron Carr,2025-2026,7/10/2026,Lakers,Thunder,W,Starter,SF,28:51,18,7,13,0.538,1,5,0.2,2,3,0.667,0,2,2,1,1,2,2,3,9.1
@@ -5299,7 +5302,7 @@ Chris Youngblood,2025-2026,7/10/2025,Thunder,Nets,W,Starter,SG,25:33,19,7,10,0.7
 Chris Youngblood,2025-2026,7/8/2025,Thunder,Jazz,L,Bench,SG,24:10,6,2,8,0.25,2,7,0.286,0,0,0.0,1,1,2,1,0,0,1,4,-0.3
 Chris Youngblood,2025-2026,7/7/2025,Thunder,Sixers,W,Bench,SG,22:10,15,4,7,0.571,4,7,0.571,3,3,1.0,1,1,2,1,1,0,0,5,9.9
 Chris Youngblood,2025-2026,7/5/2025,Thunder,Grizzlies,L,Bench,SG,21:06,5,2,8,0.25,1,4,0.25,0,1,0.0,2,1,3,1,3,0,2,3,1.9
-"Christian Anderson, Jr.",2025-2026,7/17/2026,Hornets,Kings,L,Starter,PG,28:35,18,4,11,.364,1,6,.167,4,4,1.000,0,4,4,8,3,0,2,3,18.8
+"Christian Anderson, Jr.",2025-2026,7/17/2026,Hornets,Kings,L,Starter,PG,28:35,18,4,11,0.364,1,6,0.167,4,4,1.0,0,4,4,8,3,0,2,3,18.8
 "Christian Anderson, Jr.",2025-2026,7/15/2026,Hornets,Bucks,L,Starter,PG,24:16,3,1,8,0.125,1,6,0.167,0,0,0.0,1,0,1,10,0,0,3,1,4.5
 "Christian Anderson, Jr.",2025-2026,7/12/2026,Hornets,Celtics,L,Starter,PG,28:00,13,5,10,0.5,3,8,0.375,0,1,0.0,0,4,4,1,2,0,4,3,5.6
 "Christian Anderson, Jr.",2025-2026,7/11/2026,Hornets,Pelicans,L,Starter,PG,27:34,12,5,14,0.357,2,8,0.25,0,0,0.0,1,2,3,0,1,1,3,3,1.5
@@ -9133,6 +9136,7 @@ Dru Smith,2025-2026,10/13/2025,Heat,Hawks,L,Starter,PG,17:11,3,1,5,0.2,0,2,0.0,1
 Dru Smith,2025-2026,10/8/2025,Heat,Spurs,L,Starter,PG,13:05,6,2,2,1.0,2,2,1.0,0,0,0.0,0,0,0,1,0,0,0,2,4.5
 Dru Smith,2025-2026,10/6/2025,Heat,Bucks,L,Bench,SG,8:00,2,1,3,0.333,0,2,0.0,0,0,0.0,0,3,3,1,0,0,1,2,1.0
 Dru Smith,2025-2026,10/4/2025,Heat,Magic,L,Bench,SG,10:18,7,3,5,0.6,1,1,1.0,0,0,0.0,0,1,1,0,1,2,2,0,5.0
+Duke Miles,2025-2026,7/18/2026,Sixers,Bucks,L,Starter,PG,11:45,9,3,6,.500,3,4,.750,0,0,.000,0,0,0,2,0,0,1,2,4.5
 Duke Miles,2025-2026,7/15/2026,Sixers,Magic,L,Bench,PG,24:30,15,6,9,0.667,3,6,0.5,0,0,0.0,0,3,3,3,1,1,1,2,13.5
 Duke Miles,2025-2026,7/14/2026,Sixers,Rockets,L,Bench,PG,14:25,5,2,9,0.222,1,6,0.167,0,0,0.0,2,1,3,3,1,0,1,2,3.0
 Duke Miles,2025-2026,7/11/2026,Sixers,Pacers,W,Bench,PG,8:24,0,0,2,0.0,0,2,0.0,0,0,0.0,0,1,1,0,1,0,1,0,-0.8
@@ -9664,7 +9668,7 @@ E.J. Liddell,2025-2026,7/17/2025,Nuggets,Clippers,W,Starter,PF,26:28,8,3,6,0.5,0
 E.J. Liddell,2025-2026,7/15/2025,Nuggets,Raptors,L,Bench,PF,19:34,8,2,5,0.4,0,1,0.0,4,8,0.5,0,1,1,0,0,4,2,3,2.5
 E.J. Liddell,2025-2026,7/12/2025,Nuggets,Timberwolves,L,Bench,PF,19:58,3,1,5,0.2,1,3,0.333,0,0,0.0,1,6,7,1,0,1,5,2,0.8
 E.J. Liddell,2025-2026,7/10/2025,Nuggets,Bucks,L,Bench,PF,27:34,12,4,10,0.4,1,4,0.25,3,4,0.75,7,4,11,0,0,0,2,5,8.5
-Ebuka Okorie,2025-2026,7/17/2026,Pistons,Heat,L,Starter,PG,28:16,27,8,19,.421,1,5,.200,5,5,1.000,1,3,4,3,1,0,1,2,16.1
+Ebuka Okorie,2025-2026,7/17/2026,Pistons,Heat,L,Starter,PG,28:16,27,8,19,0.421,1,5,0.2,5,5,1.0,1,3,4,3,1,0,1,2,16.1
 Ebuka Okorie,2025-2026,7/15/2026,Pistons,Suns,L,Starter,PG,30:38,16,5,17,0.294,1,6,0.167,3,3,1.0,1,2,3,5,1,0,4,4,4.6
 Ebuka Okorie,2025-2026,7/13/2026,Pistons,Knicks,L,Starter,PG,31:47,14,5,18,0.278,0,5,0.0,3,3,1.0,2,4,6,4,1,1,4,5,3.9
 Ebuka Okorie,2025-2026,7/12/2026,Pistons,Cavaliers,W,Starter,PG,31:01,14,5,17,0.294,0,2,0.0,3,5,0.6,0,3,3,6,7,0,3,3,10.1
@@ -11760,7 +11764,7 @@ Isaiah Crawford,2025-2026,7/16/2025,Kings,Cavaliers,W,Starter,SF,18:59,0,0,0,0.0
 Isaiah Crawford,2025-2026,7/14/2025,Kings,Suns,W,Starter,PF,18:59,3,1,6,0.167,1,4,0.25,0,0,0.0,1,0,1,1,3,1,0,3,3.0
 Isaiah Crawford,2025-2026,7/12/2025,Kings,Bulls,W,Bench,SF,17:12,13,5,8,0.625,2,4,0.5,1,2,0.5,1,2,3,1,1,1,2,0,9.8
 Isaiah Crawford,2025-2026,7/10/2025,Kings,Magic,W,Bench,SF,15:10,3,1,2,0.5,1,1,1.0,0,0,0.0,1,5,6,1,0,1,1,1,6.8
-Isaiah Evans,2025-2026,7/17/2026,Timberwolves,Clippers,L,Starter,SG,27:19,14,4,10,.400,4,9,.444,1,1,1.000,0,2,2,3,0,0,4,4,4.6
+Isaiah Evans,2025-2026,7/17/2026,Timberwolves,Clippers,L,Starter,SG,27:19,14,4,10,0.4,4,9,0.444,1,1,1.0,0,2,2,3,0,0,4,4,4.6
 Isaiah Evans,2025-2026,7/15/2026,Timberwolves,Pacers,W,Starter,SG,25:48,22,9,22,0.409,4,15,0.267,0,1,0.0,1,1,2,1,0,0,1,3,5.4
 Isaiah Evans,2025-2026,7/13/2026,Timberwolves,Trail Blazers,L,Starter,SF,23:21,2,0,8,0.0,0,6,0.0,1,1,1.0,0,1,1,0,1,0,2,3,-6.1
 Isaiah Evans,2025-2026,7/11/2026,Timberwolves,Nuggets,L,Starter,SF,26:25,4,2,15,0.133,0,9,0.0,0,0,0.0,4,1,5,1,0,1,2,1,-3.0
@@ -20500,7 +20504,7 @@ Kristaps Porzingis,2025-2026,10/22/2025,Hawks,Raptors,L,Starter,C,25:34,20,5,12,
 Kristaps Porzingis,2025-2026,10/16/2025,Hawks,Rockets,L,Starter,C,27:31,23,8,14,0.571,1,3,0.333,6,8,0.75,3,10,13,2,0,1,4,1,18.5
 Kristaps Porzingis,2025-2026,10/11/2025,Hawks,Grizzlies,W,Starter,C,23:53,13,4,7,0.571,2,4,0.5,3,3,1.0,2,5,7,2,0,1,1,3,12.9
 Kristaps Porzingis,2025-2026,10/6/2025,Hawks,Rockets,L,Starter,C,15:19,5,2,6,0.333,0,3,0.0,1,4,0.25,0,0,0,1,1,0,1,5,-2.5
-Kylan Boswell,2025-2026,7/17/2026,Hornets,Kings,L,Starter,SG,10:43,2,1,2,.500,0,1,.000,0,1,.000,2,0,2,1,1,0,1,1,2.6
+Kylan Boswell,2025-2026,7/17/2026,Hornets,Kings,L,Starter,SG,10:43,2,1,2,0.5,0,1,0.0,0,1,0.0,2,0,2,1,1,0,1,1,2.6
 Kylan Boswell,2025-2026,7/15/2026,Hornets,Bucks,L,Starter,SG,25:27,11,4,7,0.571,3,5,0.6,0,0,0.0,0,7,7,1,1,0,4,1,8.5
 Kylan Boswell,2025-2026,7/12/2026,Hornets,Celtics,L,Bench,PG,11:03,4,2,3,0.667,0,0,0.0,0,1,0.0,0,2,2,4,0,0,1,1,5.4
 Kylan Boswell,2025-2026,7/11/2026,Hornets,Pelicans,L,Bench,PG,14:49,8,3,3,1.0,2,2,1.0,0,1,0.0,4,0,4,7,1,0,0,0,17.4
@@ -22999,7 +23003,7 @@ Micah Potter,2025-2026,10/13/2025,Spurs,Pacers,W,Bench,C,3:22,0,0,3,0.0,0,1,0.0,
 Micah Potter,2025-2026,10/10/2025,Spurs,Jazz,W,Bench,C,6:28,0,0,1,0.0,0,1,0.0,0,0,0.0,0,1,1,0,0,0,0,0,0.0
 Micah Potter,2025-2026,10/8/2025,Spurs,Heat,W,Bench,PF,6:45,0,0,2,0.0,0,2,0.0,0,0,0.0,0,2,2,0,1,1,1,0,1.0
 Micah Potter,2025-2026,10/6/2025,Spurs,Guangzhou Loong Lions,W,Bench,C,15:15,3,1,5,0.2,1,4,0.25,0,0,0.0,1,3,4,1,0,1,3,1,1.0
-Michael Ajayi,2025-2026,7/17/2026,Hornets,Kings,L,Starter,SF,29:45,9,4,10,.400,0,4,.000,1,2,.500,2,7,9,4,2,0,4,4,8.0
+Michael Ajayi,2025-2026,7/17/2026,Hornets,Kings,L,Starter,SF,29:45,9,4,10,0.4,0,4,0.0,1,2,0.5,2,7,9,4,2,0,4,4,8.0
 Michael Ajayi,2025-2026,7/15/2026,Hornets,Bucks,L,Starter,SF,24:47,8,4,7,0.571,0,2,0.0,0,0,0.0,2,3,5,1,1,1,0,3,8.5
 Michael Ajayi,2025-2026,7/12/2026,Hornets,Celtics,L,Bench,PF,15:42,5,1,3,0.333,1,3,0.333,1,2,0.5,1,5,6,1,0,0,0,1,7.3
 Michael Ajayi,2025-2026,7/11/2026,Hornets,Pelicans,L,Bench,PF,20:42,12,4,7,0.571,1,2,0.5,2,3,0.667,3,6,9,0,1,1,3,2,11.1
@@ -24281,6 +24285,7 @@ Naji Marshall,2025-2026,10/15/2025,Mavericks,Lakers,W,Bench,SF,21:51,6,3,8,0.375
 Naji Marshall,2025-2026,10/13/2025,Mavericks,Jazz,W,Bench,SF,21:10,17,4,7,0.571,1,3,0.333,8,10,0.8,1,1,2,1,0,1,1,2,9.8
 Naji Marshall,2025-2026,10/11/2025,Mavericks,Hornets,L,Bench,SF,18:47,13,5,8,0.625,1,1,1.0,2,4,0.5,1,2,3,4,3,0,3,2,11.0
 Naji Marshall,2025-2026,10/6/2025,Mavericks,Thunder,W,Bench,SF,14:49,2,0,3,0.0,0,1,0.0,2,2,1.0,0,3,3,2,0,0,2,2,0.3
+Nate Ament,2025-2026,7/18/2026,Bucks,Sixers,W,Starter,SF,26:32,12,5,10,.500,2,3,.667,0,3,.000,0,7,7,3,1,1,5,3,7.1
 Nate Ament,2025-2026,7/15/2026,Bucks,Hornets,W,Starter,SF,25:09,23,7,13,0.538,2,7,0.286,5,6,0.833,1,5,6,1,2,0,2,1,16.3
 Nate Ament,2025-2026,7/13/2026,Bucks,Suns,L,Starter,SF,22:56,8,2,3,0.667,2,3,0.667,1,1,1.0,0,3,3,1,0,1,3,3,5.1
 Nate Ament,2025-2026,7/12/2026,Bucks,Spurs,L,Starter,SF,25:02,7,3,7,0.429,1,2,0.5,0,0,0.0,0,5,5,0,0,0,3,4,0.5
@@ -24547,7 +24552,7 @@ Neemias Queta,2025-2026,10/22/2025,Celtics,Sixers,L,Starter,C,25:07,17,7,8,0.875
 Neemias Queta,2025-2026,10/15/2025,Celtics,Raptors,W,Starter,C,20:58,8,4,7,0.571,0,0,0.0,0,0,0.0,5,7,12,2,1,4,1,1,18.5
 Neemias Queta,2025-2026,10/12/2025,Celtics,Cavaliers,W,Bench,C,7:15,4,2,2,1.0,0,0,0.0,0,0,0.0,2,2,4,0,0,0,2,1,3.5
 Neemias Queta,2025-2026,10/10/2025,Celtics,Raptors,L,Starter,C,17:18,4,2,3,0.667,0,0,0.0,0,0,0.0,3,2,5,0,1,1,5,3,1.8
-Nick Martinelli,2025-2026,7/17/2026,Clippers,Timberwolves,W,Starter,PF,29:07,18,7,8,.875,0,0,.000,3,4,.750,1,5,6,2,1,0,1,6,14.3
+Nick Martinelli,2025-2026,7/17/2026,Clippers,Timberwolves,W,Starter,PF,29:07,18,7,8,0.875,0,0,0.0,3,4,0.75,1,5,6,2,1,0,1,6,14.3
 Nick Martinelli,2025-2026,7/15/2026,Clippers,Wizards,W,Starter,PF,25:39,19,8,9,0.889,3,3,1.0,0,0,0.0,1,4,5,2,2,0,0,4,18.3
 Nick Martinelli,2025-2026,7/14/2026,Clippers,Lakers,L,Bench,PF,26:01,12,5,13,0.385,0,1,0.0,1,1,1.0,4,6,10,0,0,0,1,3,7.9
 Nick Martinelli,2025-2026,7/12/2026,Clippers,Jazz,W,Bench,PF,18:13,14,7,11,0.636,0,1,0.0,0,0,0.0,2,4,6,2,1,0,0,4,11.8
@@ -27101,6 +27106,7 @@ Precious Achiuwa,2025-2026,10/13/2025,Heat,Hawks,L,Bench,C,8:57,4,2,4,0.5,0,0,0.
 Precious Achiuwa,2025-2026,10/12/2025,Heat,Magic,L,Bench,PF,18:34,7,3,9,0.333,0,1,0.0,1,2,0.5,2,6,8,1,1,1,1,2,7.0
 Precious Achiuwa,2025-2026,10/6/2025,Heat,Bucks,L,Bench,PF,8:35,3,1,2,0.5,0,0,0.0,1,2,0.5,0,3,3,0,1,1,1,1,3.5
 Precious Achiuwa,2025-2026,10/4/2025,Heat,Magic,L,Bench,PF,10:40,5,1,2,0.5,0,0,0.0,3,3,1.0,0,4,4,0,0,1,2,1,3.9
+Quadir Copeland,2025-2026,7/18/2026,Rockets,Grizzlies,L,Starter,PF,27:22,24,9,13,.692,2,4,.500,2,2,1.000,0,2,2,3,2,0,2,5,15.5
 Quadir Copeland,2025-2026,7/16/2026,Rockets,Nets,W,Starter,PF,29:42,13,3,8,0.375,1,1,1.0,4,6,0.667,2,1,3,2,3,0,2,4,8.5
 Quadir Copeland,2025-2026,7/14/2026,Rockets,Sixers,W,Starter,PF,24:59,6,3,6,0.5,0,0,0.0,0,0,0.0,2,2,4,3,2,0,2,3,6.5
 Quadir Copeland,2025-2026,7/11/2026,Rockets,Raptors,L,Starter,PF,31:50,9,3,5,0.6,1,3,0.333,1,2,0.5,0,2,2,5,4,0,0,8,11.0
@@ -30847,7 +30853,7 @@ Tim Hardaway Jr.,2025-2026,10/14/2025,Nuggets,Bulls,W,Bench,SG,20:36,10,2,8,0.25
 Tim Hardaway Jr.,2025-2026,10/12/2025,Nuggets,Clippers,W,Bench,SG,17:59,1,0,4,0.0,0,4,0.0,1,2,0.5,0,1,1,2,1,0,0,1,0.5
 Tim Hardaway Jr.,2025-2026,10/6/2025,Nuggets,Raptors,W,Bench,SG,15:32,7,2,7,0.286,1,5,0.2,2,3,0.667,1,1,2,0,0,0,0,0,2.4
 Tim Hardaway Jr.,2025-2026,10/4/2025,Nuggets,Timberwolves,L,Bench,SG,14:58,3,0,3,0.0,0,2,0.0,3,4,0.75,0,2,2,3,0,0,1,3,1.3
-Tobe Awaka,2025-2026,7/17/2026,Bulls,Cavaliers,L,Starter,C,21:25,6,2,2,1.000,0,0,.000,1,2,.500,2,6,8,1,0,0,1,2,9.3
+Tobe Awaka,2025-2026,7/17/2026,Bulls,Cavaliers,L,Starter,C,21:25,6,2,2,1.0,0,0,0.0,1,2,0.5,2,6,8,1,0,0,1,2,9.3
 Tobe Awaka,2025-2026,7/16/2026,Bulls,Lakers,L,Starter,C,19:26,12,5,5,1.0,0,0,0.0,1,2,0.5,2,1,3,0,0,1,2,5,6.8
 Tobe Awaka,2025-2026,7/14/2026,Bulls,Wizards,W,Starter,C,29:06,14,6,8,0.75,0,0,0.0,1,2,0.5,6,4,10,1,3,2,2,6,17.3
 Tobe Awaka,2025-2026,7/13/2026,Bulls,Jazz,L,Starter,C,17:27,2,1,1,1.0,0,0,0.0,0,0,0.0,6,3,9,0,0,1,6,4,2.5
@@ -30891,7 +30897,7 @@ Tobe Awaka,2025-2026,11/14/2025,Arizona,UCLA,W,Bench,C,26:00,8,4,8,0.5,0,0,0.0,0
 Tobe Awaka,2025-2026,11/11/2025,Arizona,Northern Arizona,W,Bench,C,22:00,10,4,5,0.8,0,0,0.0,2,4,0.5,3,6,9,1,0,1,2,2,11.3
 Tobe Awaka,2025-2026,11/7/2025,Arizona,Utah Tech,W,Bench,C,20:00,12,5,10,0.5,0,0,0.0,2,4,0.5,8,10,18,0,0,1,2,4,15.5
 Tobe Awaka,2025-2026,11/3/2025,Arizona,Florida,W,Bench,C,16:00,7,2,3,0.667,0,0,0.0,3,4,0.75,2,3,5,0,0,0,4,4,1.5
-Tobi Lawal,2025-2026,7/17/2026,Mavericks,Knicks,W,Starter,PF,20:15,0,0,4,.000,0,3,.000,0,0,.000,2,1,3,1,0,3,0,2,2.8
+Tobi Lawal,2025-2026,7/17/2026,Mavericks,Knicks,W,Starter,PF,20:15,0,0,4,0.0,0,3,0.0,0,0,0.0,2,1,3,1,0,3,0,2,2.8
 Tobi Lawal,2025-2026,7/16/2026,Mavericks,Thunder,W,Starter,PF,24:01,10,3,5,0.6,0,2,0.0,2,2,1.0,1,6,7,1,0,1,0,2,12.0
 Tobi Lawal,2025-2026,7/13/2026,Mavericks,Grizzlies,W,Starter,PF,16:30,6,3,3,1.0,0,0,0.0,0,0,0.0,0,0,0,0,0,1,0,4,2.8
 Tobi Lawal,2025-2026,7/11/2026,Mavericks,Lakers,L,Starter,PF,21:40,8,2,7,0.286,2,5,0.4,1,1,1.0,0,5,5,0,0,0,0,1,5.6
@@ -31260,7 +31266,7 @@ Trayce Jackson-Davis,2025-2026,10/14/2025,Warriors,Trail Blazers,W,Bench,PF,16:4
 Trayce Jackson-Davis,2025-2026,10/12/2025,Warriors,Lakers,L,Bench,PF,20:01,14,7,9,0.778,0,0,0.0,0,0,0.0,3,4,7,1,1,2,0,3,15.8
 Trayce Jackson-Davis,2025-2026,10/8/2025,Warriors,Trail Blazers,W,Bench,PF,7:33,6,3,5,0.6,0,0,0.0,0,2,0.0,2,3,5,3,0,1,0,1,9.3
 Trayce Jackson-Davis,2025-2026,10/5/2025,Warriors,Lakers,W,Bench,PF,12:46,4,1,1,1.0,0,0,0.0,2,2,1.0,1,3,4,2,1,0,1,3,6.3
-Tre Donaldson,2025-2026,7/17/2026,Heat,Pistons,W,Starter,PG,37:12,20,8,12,.667,3,4,.750,1,1,1.000,0,8,8,10,1,0,7,4,18.6
+Tre Donaldson,2025-2026,7/17/2026,Heat,Pistons,W,Starter,PG,37:12,20,8,12,0.667,3,4,0.75,1,1,1.0,0,8,8,10,1,0,7,4,18.6
 Tre Donaldson,2025-2026,7/16/2026,Heat,Raptors,L,Starter,SG,31:30,11,5,16,0.313,1,5,0.2,0,2,0.0,2,4,6,8,3,0,1,2,12.3
 Tre Donaldson,2025-2026,7/13/2026,Heat,Cavaliers,L,Starter,SG,33:18,22,10,18,0.556,1,5,0.2,1,2,0.5,2,2,4,3,1,0,2,1,12.8
 Tre Donaldson,2025-2026,7/10/2026,Heat,Bucks,W,Starter,PG,23:16,12,4,5,0.8,2,2,1.0,1,1,1.0,0,0,0,6,2,1,2,1,14.4
@@ -31889,6 +31895,7 @@ Tristen Newton,2025-2026,7/16/2025,Timberwolves,Suns,W,Bench,SG,23:23,9,1,3,0.33
 Tristen Newton,2025-2026,7/15/2025,Timberwolves,Pistons,W,Bench,SG,15:47,0,0,3,0.0,0,2,0.0,0,0,0.0,0,1,1,2,3,0,0,1,3.0
 Tristen Newton,2025-2026,7/12/2025,Timberwolves,Nuggets,W,Bench,SG,19:16,12,4,11,0.364,3,8,0.375,1,1,1.0,1,0,1,3,0,0,0,2,6.4
 Tristen Newton,2025-2026,7/10/2025,Timberwolves,Pelicans,W,Bench,SG,13:26,1,0,2,0.0,0,0,0.0,1,2,0.5,0,2,2,1,2,0,2,2,0.3
+Tucker DeVries,2025-2026,7/18/2026,Celtics,Magic,L,Starter,PF,16:09,11,4,7,.571,3,6,.500,0,0,.000,0,0,0,2,0,0,2,2,4.8
 Tucker DeVries,2025-2026,7/15/2026,Celtics,Kings,W,Starter,PF,21:50,2,1,7,0.143,0,6,0.0,0,0,0.0,1,1,2,1,0,0,0,1,-1.0
 Tucker DeVries,2025-2026,7/13/2026,Celtics,Hawks,L,Starter,SF,20:51,11,4,10,0.4,3,8,0.375,0,0,0.0,1,0,1,1,0,0,0,1,5.0
 Tucker DeVries,2025-2026,7/12/2026,Celtics,Hornets,W,Bench,PF,18:19,11,3,7,0.429,3,7,0.429,1,1,1.0,0,1,1,2,0,0,0,3,6.6
@@ -33337,6 +33344,7 @@ Yanic Konan Niederhauser,2025-2026,10/9/2025,Clippers,Guangzhou Loong Lions,W,Be
 Yanic Konan Niederhauser,2025-2026,7/14/2025,Clippers,Lakers,W,Starter,C,22:54,10,5,9,0.556,0,1,0.0,0,0,0.0,1,1,2,0,2,0,3,2,3.0
 Yanic Konan Niederhauser,2025-2026,7/13/2025,Clippers,Bucks,W,Starter,C,23:08,2,1,1,1.0,0,0,0.0,0,0,0.0,0,3,3,0,2,1,0,3,5.0
 Yanic Konan Niederhauser,2025-2026,7/11/2025,Clippers,Rockets,W,Starter,C,26:24,1,0,4,0.0,0,1,0.0,1,2,0.5,2,8,10,0,2,4,2,4,7.3
+Yaxel Lendeborg,2025-2026,7/18/2026,Warriors,Lakers,W,Starter,SF,28:38,15,5,8,.625,1,2,.500,3,3,1.000,1,3,4,3,1,2,1,3,14.6
 Yaxel Lendeborg,2025-2026,7/16/2026,Warriors,Knicks,W,Starter,SF,27:38,3,1,9,0.111,1,6,0.167,0,0,0.0,0,6,6,6,1,2,1,2,7.8
 Yaxel Lendeborg,2025-2026,7/14/2026,Warriors,Grizzlies,L,Starter,SF,28:50,15,6,12,0.5,0,2,0.0,2,2,1.0,4,5,9,3,2,0,4,6,11.0
 Yaxel Lendeborg,2025-2026,7/12/2026,Warriors,Thunder,W,Starter,SF,24:21,14,5,14,0.357,4,8,0.5,0,0,0.0,0,2,2,4,3,0,2,1,9.5
