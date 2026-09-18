@@ -162,6 +162,7 @@ jobs:
           path: |
             scrape_log.txt
             scrape_wnba_log.txt
+            debug/
           # retention-days: 保留天數
           retention-days: 7
 

@@ -212,12 +212,9 @@ def setup_chrome_driver():
     # 設定視窗大小
     options.add_argument("--window-size=1920,1080")
     
-    # 設定 User-Agent
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    )
-    
+    # ⚠️ 不要寫死 User-Agent：寫死的版本號會和實際 Chrome 對不上（例如 UA 說 120、
+    #    實際是 153），Cloudflare 會視為機器人訊號。改成啟動後動態覆寫（見下方）。
+
     # 禁用 Blink 引擎的自動化控制特徵
     options.add_argument("--disable-blink-features=AutomationControlled")
     
@@ -230,7 +227,14 @@ def setup_chrome_driver():
     # ============================================================
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
-    
+
+    # 💡 讀取瀏覽器真實 UA，只把 "HeadlessChrome" 換成 "Chrome"，
+    #    版本號就會永遠跟著實際安裝的 Chrome 走，不會再過期
+    real_ua = driver.execute_script("return navigator.userAgent")
+    driver.execute_cdp_cmd("Network.setUserAgentOverride", {
+        "userAgent": real_ua.replace("HeadlessChrome", "Chrome")
+    })
+
     # 進一步阻擋圖片資源（CDP）
     try:
         driver.execute_cdp_cmd("Network.enable", {})
@@ -272,6 +276,25 @@ def setup_chrome_driver():
     
     logger.info("Chrome 瀏覽器已啟動（Headless 模式 + 反偵測配置）")
     return driver, wait
+
+
+def dump_debug_page(driver, tag):
+    """
+    失敗時記錄當下頁面狀態（title / URL / 內文開頭），並存截圖與 HTML 到 debug/
+
+    Selenium 的 TimeoutException 訊息通常是空的，只知道「等不到」；
+    看頁面內容才知道「為什麼等不到」（例如被 Cloudflare 驗證頁擋住）
+    """
+    try:
+        body = driver.find_element(By.TAG_NAME, "body").text[:300].replace("\n", " | ")
+        logger.warning(f"[debug] title={driver.title!r} url={driver.current_url} body={body!r}")
+        os.makedirs("debug", exist_ok=True)
+        driver.save_screenshot(f"debug/{tag}.png")
+        with open(f"debug/{tag}.html", "w", encoding="utf-8") as f:
+            f.write(driver.page_source)
+    except Exception as e:
+        # ⚠️ 除錯本身不能讓爬蟲多一個新的失敗點
+        logger.warning(f"[debug] 無法擷取頁面狀態：{e}")
 
 
 def get_player_links(driver, wait, max_retries=3):
@@ -343,6 +366,7 @@ def get_player_links(driver, wait, max_retries=3):
         except Exception as e:
             error_msg = str(e)[:100]
             logger.warning(f"載入球員列表失敗（嘗試 {attempt + 1}）：{error_msg}")
+            dump_debug_page(driver, f"nba_player_list_attempt{attempt + 1}")
             
             # 如果是最後一次嘗試，拋出錯誤
             if attempt == max_retries - 1:
