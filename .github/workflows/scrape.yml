@@ -34,6 +34,12 @@ on:
         description: '啟用 debug 模式'
         required: false
         default: false
+      target:
+        type: choice
+        description: '要跑哪支爬蟲'
+        required: false
+        default: all
+        options: [all, nba, wnba]
 
 # jobs: 定義要執行的工作
 jobs:
@@ -124,6 +130,8 @@ jobs:
         # 這樣可以確保已收集的資料被儲存（即使 NBA 失敗，WNBA 仍會跑）
         continue-on-error: true
         id: scraper_nba
+        # 💡 排程觸發時沒有 inputs，inputs.target 是空字串 → 視同 all
+        if: inputs.target != 'wnba'
         run: |
           # 執行 NBA 爬蟲腳本
           python scrape_nba.py
@@ -141,6 +149,7 @@ jobs:
         # continue-on-error: 即使 WNBA 失敗，仍要 commit 已成功的部分
         continue-on-error: true
         id: scraper_wnba
+        if: inputs.target != 'nba'
         run: |
           # 執行 WNBA 爬蟲腳本
           python scrape_wnba.py
